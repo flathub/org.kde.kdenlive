@@ -434,6 +434,10 @@
                     "sha256": "d756091521efaf36251b5747fd08ce87337e7cca1e637a6e630cead8f45ac8ca"
                 },
                 {
+                    "type": "patch",
+                    "path": "kdenlive-appdata-release.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "xine.sh",
                     "commands": [
