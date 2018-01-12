@@ -430,8 +430,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/applications/17.12.0/src/kdenlive-17.12.0.tar.xz",
-                    "sha256": "d756091521efaf36251b5747fd08ce87337e7cca1e637a6e630cead8f45ac8ca"
+                    "url": "https://download.kde.org/stable/applications/17.12.1/src/kdenlive-17.12.1.tar.xz",
+                    "sha256": "412e909ca66dc9c3e8ab5d227f3a9752f4d20187c5426bd2315f33360d176567"
                 },
                 {
                     "type": "patch",
