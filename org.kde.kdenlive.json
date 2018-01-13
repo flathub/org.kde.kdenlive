@@ -318,7 +318,9 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "tar xf opencv_contrib.tar.gz --strip 1"
+                        "tar xf opencv_contrib.tar.gz",
+                        "cd opencv_contrib-*.*/modules && mv tracking plot ../../modules",
+                        "cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz"
                     ]
                 }
             ]
