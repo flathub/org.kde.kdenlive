@@ -9,9 +9,8 @@
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
-        "--device=all",
+        "--device=dri",
         "--socket=pulseaudio",
-        "--share=network",
         "--filesystem=host",
         "--env=FREI0R_PATH=/app/lib/frei0r-1"
     ],
@@ -297,8 +296,7 @@
             "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DBUILD_opencv_xfeatures2d=OFF"
+                "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "cleanup": [
                 "/bin"
@@ -313,13 +311,13 @@
                     "type": "file",
                     "url": "https://github.com/opencv/opencv_contrib/archive/3.4.0.tar.gz",
                     "sha256": "699ab3eee7922fbd3e8f98c68e6d16a1d453b20ef364e76172e56466dc9c16cd",
-                    "dest-filename": "opencv_contrib.tar.gz"
+                    "dest-filename": "opencv-contrib.tar.gz"
                 },
                 {
                     "type": "shell",
                     "commands": [
-                        "tar xf opencv_contrib.tar.gz",
-                        "cd opencv_contrib-*.*/modules && mv tracking plot ../../modules",
+                        "tar xf opencv-contrib.tar.gz",
+                        "cd opencv_contrib-*/modules && mv tracking plot ../../modules",
                         "cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz"
                     ]
                 }
