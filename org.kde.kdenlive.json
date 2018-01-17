@@ -54,8 +54,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DENABLE_TESTING=OFF",
-                "-DCMAKE_INSTALL_LIBDIR=lib"
+                "-DENABLE_TESTING=OFF"
             ],
             "sources": [
                 {
@@ -295,8 +294,7 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_LIBDIR=lib"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "cleanup": [
                 "/bin"
@@ -414,8 +412,7 @@
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_LIBDIR=lib"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "post-install": [
                 "install -Dm755 xine.sh /app/bin/xine",
