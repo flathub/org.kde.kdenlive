@@ -54,13 +54,14 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DENABLE_TESTING=OFF"
+                "-DENABLE_TESTING=OFF",
+                "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.41/kfilemetadata-5.41.0.tar.xz",
-                    "sha256": "714b78e075023a8047595ae8821d073e373e1bc0c283c044741a29bc50503e79"
+                    "url": "https://download.kde.org/stable/frameworks/5.42/kfilemetadata-5.42.0.tar.xz",
+                    "sha256": "9f57998a1a781993efeed0749f49728d8e63a77f8bb7f4a72765603d301a930f"
                 }
             ]
         },
@@ -336,8 +337,10 @@
                     "sha256": "51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce"
                 },
                 {
-                    "type": "patch",
-                    "path": "ubuntu_armel_ftbfs.patch"
+                    "type": "shell",
+                    "commands": [
+                        "sed -i 's/volume_test_LDADD =/volume_test_LDADD = -lm/' src/Makefile.am"
+                    ]
                 },
                 {
                     "type": "script",
@@ -384,12 +387,13 @@
                 "--enable-qt",
                 "--enable-resample",
                 "--enable-rtaudio",
-                "--enable-sdl",
+                "--enable-sdl2",
                 "--enable-sox",
                 "--enable-vid.stab",
                 "--enable-videostab",
                 "--enable-vmfx",
                 "--enable-xml",
+                "--disable-sdl",
                 "--disable-decklink",
                 "--disable-dv",
                 "--disable-jackrack",
@@ -402,9 +406,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "ea973eb65c8ca79a859028a9e008360836ca4941"
+                    "type": "archive",
+                    "url": "https://github.com/mltframework/mlt/releases/download/v6.6.0/mlt-6.6.0.tar.gz",
+                    "sha256": "28cbc5974f72ef228d624a58809c7c8055372f5f62f5882dc055099d444b2cdd"
                 }
             ]
         },
@@ -412,7 +416,8 @@
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "post-install": [
                 "install -Dm755 xine.sh /app/bin/xine",
@@ -427,12 +432,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/applications/17.12.1/src/kdenlive-17.12.1.tar.xz",
-                    "sha256": "412e909ca66dc9c3e8ab5d227f3a9752f4d20187c5426bd2315f33360d176567"
+                    "url": "https://download.kde.org/stable/applications/17.12.2/src/kdenlive-17.12.2.tar.xz",
+                    "sha256": "e07064d2c2041ae3d59bf715350e911a863abf8ea46a8388f2993bced1d95ad0"
                 },
                 {
-                    "type": "patch",
-                    "path": "kdenlive-appdata-release.patch"
+                    "type": "shell",
+                    "commands": [
+                        "sed -i 's|<releases>|<releases><release date=\"2018-02-06\" version=\"17.12.2\"/>|' data/org.kde.kdenlive.appdata.xml"
+                    ]
                 },
                 {
                     "type": "script",
