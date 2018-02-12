@@ -2,7 +2,7 @@
     "app-id": "org.kde.kdenlive",
     "branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.9",
+    "runtime-version": "5.10",
     "sdk": "org.kde.Sdk",
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -285,8 +285,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-3.4.1.tar.xz",
-                    "sha256": "5a77278a63741efa74e26bf197b9bb09ac6381b9757391b922407210f0f991c0"
+                    "url": "https://ffmpeg.org/releases/ffmpeg-3.4.2.tar.xz",
+                    "sha256": "2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740"
                 }
             ]
         },
@@ -416,8 +416,7 @@
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_LIBDIR=lib"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "post-install": [
                 "install -Dm755 xine.sh /app/bin/xine",
