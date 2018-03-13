@@ -437,7 +437,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "sed -i 's|<releases>|<releases><release date=\"2018-02-06\" version=\"17.12.3\"/>|' data/org.kde.kdenlive.appdata.xml"
+                        "sed -i 's|<releases>|<releases><release date=\"2018-03-08\" version=\"17.12.3\"/>|' data/org.kde.kdenlive.appdata.xml"
                     ]
                 },
                 {
