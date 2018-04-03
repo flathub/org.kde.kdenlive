@@ -416,7 +416,8 @@
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "post-install": [
                 "install -Dm755 xine.sh /app/bin/xine",
@@ -431,14 +432,18 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/applications/17.12.2/src/kdenlive-17.12.2.tar.xz",
-                    "sha256": "e07064d2c2041ae3d59bf715350e911a863abf8ea46a8388f2993bced1d95ad0"
+                    "url": "https://download.kde.org/stable/applications/17.12.3/src/kdenlive-17.12.3.tar.xz",
+                    "sha256": "371f860365d01c4c0aebe931354cc99a646d44f17e6846c93ee2c002258f503e"
                 },
                 {
                     "type": "shell",
                     "commands": [
-                        "sed -i 's|<releases>|<releases><release date=\"2018-02-06\" version=\"17.12.2\"/>|' data/org.kde.kdenlive.appdata.xml"
+                        "sed -i 's|<releases>|<releases><release date=\"2018-03-06\" version=\"17.12.3\"/>|' data/org.kde.kdenlive.appdata.xml"
                     ]
+                },
+                {
+                    "type": "patch",
+                    "path": "kdenlive-nvidia-crash-fix.patch"
                 },
                 {
                     "type": "script",
