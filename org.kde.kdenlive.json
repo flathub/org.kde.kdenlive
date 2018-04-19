@@ -420,9 +420,6 @@
                 "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "post-install": [
-                "install -Dm755 xine.sh /app/bin/xine",
-                "install -Dm755 mkisofs.sh /app/bin/mkisofs",
-                "install -Dm755 dvdauthor.sh /app/bin/dvdauthor",
                 "mv /app/share/mime/packages/kdenlive.xml /app/share/mime/packages/org.kde.kdenlive.xml",
                 "mv /app/share/icons/hicolor/32x32/mimetypes/application-x-kdenlivetitle.png /app/share/icons/hicolor/32x32/mimetypes/org.kde.kdenlive-mime.png",
                 "mv /app/share/icons/hicolor/64x64/mimetypes/application-x-kdenlivetitle.png /app/share/icons/hicolor/64x64/mimetypes/org.kde.kdenlive-mime.png",
@@ -432,39 +429,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/applications/17.12.3/src/kdenlive-17.12.3.tar.xz",
-                    "sha256": "371f860365d01c4c0aebe931354cc99a646d44f17e6846c93ee2c002258f503e"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i 's|<releases>|<releases><release date=\"2018-03-06\" version=\"17.12.3\"/>|' data/org.kde.kdenlive.appdata.xml"
-                    ]
-                },
-                {
-                    "type": "patch",
-                    "path": "kdenlive-nvidia-crash-fix.patch"
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "xine.sh",
-                    "commands": [
-                        "echo \"xine dummy\""
-                    ]
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "mkisofs.sh",
-                    "commands": [
-                        "echo \"mkisofs dummy\""
-                    ]
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "dvdauthor.sh",
-                    "commands": [
-                        "echo \"dvdauthor dummy\""
-                    ]
+                    "url": "https://download.kde.org/stable/applications/18.04.0/src/kdenlive-18.04.0.tar.xz",
+                    "sha256": "50bd6b1ecbab63065f3404f42d31bcfbd253c1870e0dea21c04d461a7564a46c"
                 }
             ]
         }
