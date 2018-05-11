@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.31.tar.xz",
-                    "sha256": "68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658"
+                    "url": "http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.32.tar.xz",
+                    "sha256": "b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e"
                 }
             ]
         },
@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.42/kfilemetadata-5.42.0.tar.xz",
-                    "sha256": "9f57998a1a781993efeed0749f49728d8e63a77f8bb7f4a72765603d301a930f"
+                    "url": "https://download.kde.org/stable/frameworks/5.45/kfilemetadata-5.45.0.tar.xz",
+                    "sha256": "467166170082f09d9e6a27933a11a687362406239f08f893a617c53defd28f71"
                 }
             ]
         },
@@ -226,8 +226,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://bitbucket.org/multicoreware/x265/downloads/x265_2.6.tar.gz",
-                    "sha256": "1bf0036415996af841884802161065b9e6be74f5f6808ac04831363e2549cdbf"
+                    "url": "https://bitbucket.org/multicoreware/x265/downloads/x265_2.7.tar.gz",
+                    "sha256": "d5e75fa62ffe6ed49e691f8eb8ab8c1634ffcc0725dd553c6fdb4d5443b494a2"
                 }
             ]
         },
@@ -362,7 +362,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "446b6fa72d57f037afee8102c299367d05c83e4c"
+                    "commit": "c1ef8ae0d573665ff881083d07e0576ea59a9efc"
                 }
             ]
         },
@@ -383,8 +383,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/applications/18.04.0/src/kdenlive-18.04.0.tar.xz",
-                    "sha256": "50bd6b1ecbab63065f3404f42d31bcfbd253c1870e0dea21c04d461a7564a46c"
+                    "url": "https://download.kde.org/stable/applications/18.04.1/src/kdenlive-18.04.1.tar.xz",
+                    "sha256": "8376586b85690df13848958aea87e845421e742bbddb55c5203ce46197c73d15"
                 }
             ]
         }
