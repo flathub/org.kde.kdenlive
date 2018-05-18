@@ -16,15 +16,16 @@
     ],
     "cleanup": [
         "/include",
-        "*.la",
-        "*.cmake",
         "/lib/pkgconfig",
         "/lib/cmake",
         "/share/aclocal",
         "/share/doc",
         "/share/gtk-doc",
         "/share/man",
-        "/share/pkgconfig"
+        "/share/pkgconfig",
+        "*.a",
+        "*.la",
+        "*.cmake"
     ],
     "modules": [
         {
@@ -52,6 +53,7 @@
         {
             "name": "kfilemetadata",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DENABLE_TESTING=OFF",
@@ -106,7 +108,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "./autogen.sh --prefix=/app",
-                "make -j `nproc` libmovit.la",
+                "make -j $FLATPAK_BUILDER_N_JOBS libmovit.la",
                 "make install"
             ],
             "sources": [
@@ -157,6 +159,7 @@
         {
             "name": "vidstab",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release"
             ],
@@ -171,13 +174,13 @@
         {
             "name": "openjpeg",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release"
             ],
             "cleanup": [
                 "/bin",
-                "/lib/openjpeg-*",
-                "*.a"
+                "/lib/openjpeg-*"
             ],
             "sources": [
                 {
@@ -204,6 +207,8 @@
         {
             "name": "x265",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "subdir": "source",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DBUILD_STATIC_LIBS=OFF"
@@ -219,10 +224,8 @@
                 }
             },
             "cleanup": [
-                "/bin",
-                "*.a"
+                "/bin"
             ],
-            "subdir": "source",
             "sources": [
                 {
                     "type": "archive",
@@ -266,6 +269,9 @@
                 "--enable-libx265",
                 "--enable-libxml2"
             ],
+            "post-install": [
+                "chrpath -d /app/bin/ffmpeg"
+            ],
             "cleanup": [
                 "/share/ffmpeg/examples"
             ],
@@ -294,16 +300,15 @@
                     "sha256": "678cc3d2d1b3464b512b084a8cca1fad7de207c7abdf2caa1fed636c13e916da"
                 },
                 {
-                    "type": "file",
+                    "type": "archive",
+                    "dest": "opencv_contrib",
                     "url": "https://github.com/opencv/opencv_contrib/archive/3.4.0.tar.gz",
-                    "sha256": "699ab3eee7922fbd3e8f98c68e6d16a1d453b20ef364e76172e56466dc9c16cd",
-                    "dest-filename": "opencv-contrib.tar.gz"
+                    "sha256": "699ab3eee7922fbd3e8f98c68e6d16a1d453b20ef364e76172e56466dc9c16cd"
                 },
                 {
                     "type": "shell",
                     "commands": [
-                        "tar xf opencv-contrib.tar.gz",
-                        "cd opencv_contrib-*/modules && mv tracking plot ../../modules",
+                        "cd opencv_contrib/modules && mv tracking plot ../../modules",
                         "cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz"
                     ]
                 }
@@ -325,6 +330,9 @@
                 },
                 {
                     "type": "shell",
+                    "only-arches": [
+                        "arm"
+                    ],
                     "commands": [
                         "sed -i 's/volume_test_LDADD =/volume_test_LDADD = -lm/' src/Makefile.am"
                     ]
@@ -341,6 +349,7 @@
         {
             "name": "frei0r-plugins",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release"
             ],
@@ -369,6 +378,7 @@
         {
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=lib"
