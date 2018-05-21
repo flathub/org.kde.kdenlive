@@ -105,11 +105,8 @@
         },
         {
             "name": "movit",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./autogen.sh --prefix=/app",
-                "make -j $FLATPAK_BUILDER_N_JOBS libmovit.la",
-                "make install"
+            "make-args": [
+                "libmovit.la"
             ],
             "sources": [
                 {
@@ -270,7 +267,7 @@
                 "--enable-libxml2"
             ],
             "post-install": [
-                "chrpath -d /app/bin/ffmpeg"
+                "chrpath -d /app/bin/ffmpeg /app/bin/ffplay /app/bin/ffprobe"
             ],
             "cleanup": [
                 "/share/ffmpeg/examples"
@@ -380,7 +377,7 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DCMAKE_INSTALL_LIBDIR=lib"
             ],
             "post-install": [
@@ -395,6 +392,10 @@
                     "type": "archive",
                     "url": "https://download.kde.org/stable/applications/18.04.1/src/kdenlive-18.04.1.tar.xz",
                     "sha256": "8376586b85690df13848958aea87e845421e742bbddb55c5203ce46197c73d15"
+                },
+                {
+                    "type": "patch",
+                    "path": "kdenlive-mlt680-fix.patch"
                 }
             ]
         }
