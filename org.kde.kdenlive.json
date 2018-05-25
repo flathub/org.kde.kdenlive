@@ -2,7 +2,7 @@
     "app-id": "org.kde.kdenlive",
     "branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.10",
+    "runtime-version": "5.11",
     "sdk": "org.kde.Sdk",
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -12,7 +12,8 @@
         "--device=dri",
         "--socket=pulseaudio",
         "--filesystem=host",
-        "--env=FREI0R_PATH=/app/lib/frei0r-1"
+        "--env=FREI0R_PATH=/app/lib/frei0r-1",
+        "--env=LADSPA_PATH=/app/lib/ladspa"
     ],
     "cleanup": [
         "/include",
@@ -87,13 +88,18 @@
         },
         {
             "name": "fftw",
-            "config-opts": [
-                "--disable-static",
-                "--enable-shared",
-                "--disable-doc"
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --prefix=/app --disable-doc --with-pic --enable-threads --enable-type-prefix",
+                "make -j $FLATPAK_BUILDER_N_JOBS",
+                "make install",
+                "make clean",
+                "./configure --prefix=/app --disable-doc --with-pic --enable-threads --enable-type-prefix --enable-float",
+                "make -j $FLATPAK_BUILDER_N_JOBS",
+                "make install"
             ],
             "cleanup": [
-                "/bin"
+                "*"
             ],
             "sources": [
                 {
@@ -355,6 +361,53 @@
                     "type": "archive",
                     "url": "https://files.dyne.org/frei0r/frei0r-plugins-1.6.1.tar.gz",
                     "sha256": "e0c24630961195d9bd65aa8d43732469e8248e8918faa942cfb881769d11515e"
+                }
+            ]
+        },
+        {
+            "name": "swh-plugins",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/swh/ladspa/archive/v0.4.17.tar.gz",
+                    "sha256": "d1b090feec4c5e8f9605334b47faaad72db7cc18fe91d792b9161a9e3b821ce7"
+                }
+            ]
+        },
+        {
+            "name": "ladspa",
+            "buildsystem": "simple",
+            "subdir": "src",
+            "build-commands": [
+                "make INSTALL_PLUGINS_DIR=/app/lib/ladspa/ INSTALL_INCLUDE_DIR=/app/include/ INSTALL_BINARY_DIR=/app/bin/ install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.ladspa.org/download/ladspa_sdk_1.13.tgz",
+                    "sha256": "b5ed3f4f253a0f6c1b7a1f4b8cf62376ca9f51d999650dd822650c43852d306b"
+                }
+            ]
+        },
+        {
+            "name": "jack2",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --freebob=no --classic",
+                "./waf build -j $FLATPAK_BUILDER_N_JOBS",
+                "./waf install"
+            ],
+            "cleanup": [
+                "/bin",
+                "/share",
+                "/lib/jack",
+                "/lib/libjackserver.so*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jackaudio/jack2/releases/download/v1.9.12/jack2-1.9.12.tar.gz",
+                    "sha256": "deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33"
                 }
             ]
         },
