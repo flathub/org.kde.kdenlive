@@ -180,7 +180,6 @@ modules:
       - --enable-gpl
       - --disable-static
       - --enable-shared
-      - --disable-ffserver
       - --disable-doc
       - --disable-alsa
       - --enable-libfontconfig
@@ -195,13 +194,13 @@ modules:
       - --enable-libx265
       - --enable-libxml2
     post-install:
-      - chrpath -d /app/bin/ffmpeg /app/bin/ffplay /app/bin/ffprobe
+      - chrpath -d /app/bin/ff{mpeg,play,probe}
     cleanup:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://ffmpeg.org/releases/ffmpeg-3.4.2.tar.xz
-        sha256: 2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740
+        url: https://ffmpeg.org/releases/ffmpeg-4.0.tar.xz
+        sha256: ed945daf40b124e77a685893cc025d086f638bc703183460aff49508edb3a43f
 
   - name: opencv
     buildsystem: cmake-ninja
@@ -292,7 +291,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: c1ef8ae0d573665ff881083d07e0576ea59a9efc
+        commit: ee1b9cbdd311a24dc724215f15dc0116725dee00
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -300,11 +299,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DCMAKE_INSTALL_LIBDIR=lib
-    post-install:
-      - mv /app/share/mime/packages/kdenlive.xml /app/share/mime/packages/org.kde.kdenlive.xml
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.04.1/src/kdenlive-18.04.1.tar.xz
-        sha256: 8376586b85690df13848958aea87e845421e742bbddb55c5203ce46197c73d15
-      - type: patch
-        path: kdenlive-mlt680-fix.patch
+        url: https://download.kde.org/stable/applications/18.04.2/src/kdenlive-18.04.2.tar.xz
+        sha256: 31bb2809c43537224eef0a7d71fd8f474eef05648adb7f9379012bc0b943be21
