@@ -1,7 +1,7 @@
 app-id: org.kde.kdenlive
 branch: stable
 runtime: org.kde.Platform
-runtime-version: 5.11
+runtime-version: '5.11'
 sdk: org.kde.Sdk
 command: kdenlive
 rename-icon: kdenlive
@@ -17,8 +17,8 @@ cleanup:
   - /include
   - /lib/pkgconfig
   - /lib/cmake
+  - /mkspecs
   - /share/aclocal
-  - /share/doc
   - /share/gtk-doc
   - /share/man
   - /share/pkgconfig
@@ -48,11 +48,10 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DENABLE_TESTING=OFF
-      - -DCMAKE_INSTALL_LIBDIR=lib
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.45/kfilemetadata-5.45.0.tar.xz
-        sha256: 467166170082f09d9e6a27933a11a687362406239f08f893a617c53defd28f71
+        url: https://download.kde.org/stable/frameworks/5.48/kfilemetadata-5.48.0.tar.xz
+        sha256: aefc53d26491254dd4991f41d25c9f2425c761b9aa3d80d272a0242dd428364f
 
   - name: eigen
     buildsystem: cmake-ninja
@@ -63,8 +62,8 @@ modules:
       - /share
     sources:
       - type: archive
-        url: https://bitbucket.org/eigen/eigen/get/3.3.4.tar.bz2
-        sha256: dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
+        url: https://bitbucket.org/eigen/eigen/get/3.3.5.tar.bz2
+        sha256: 7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2
 
   - name: fftw
     buildsystem: simple
@@ -80,8 +79,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: http://www.fftw.org/fftw-3.3.7.tar.gz
-        sha256: 3b609b7feba5230e8f6dd8d245ddbefac324c5a6ae4186947670d9ac2cd25573
+        url: http://www.fftw.org/fftw-3.3.8.tar.gz
+        sha256: 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
 
   - name: movit
     make-args:
@@ -95,10 +94,14 @@ modules:
     rm-configure: true
     config-opts:
       - --disable-static
+    cleanup:
+      - /share/doc
     sources:
       - type: archive
-        url: http://http.debian.net/debian/pool/main/libs/libsamplerate/libsamplerate_0.1.9.orig.tar.gz
+        url: http://www.mega-nerd.com/SRC/libsamplerate-0.1.9.tar.gz
         sha256: 0a7eb168e2f21353fb6d84da152e4512126f7dc48ccb0be80578c565413444c1
+        mirror-urls:
+          - http://http.debian.net/debian/pool/main/libs/libsamplerate/libsamplerate_0.1.9.orig.tar.gz
       - type: script
         dest-filename: autogen.sh
         commands:
@@ -111,8 +114,10 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: http://http.debian.net/debian/pool/main/s/sox/sox_14.4.2.orig.tar.bz2
+        url: https://sourceforge.net/projects/sox/files/sox/14.4.2/sox-14.4.2.tar.bz2
         sha256: 81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
+        mirror-urls:
+          - http://http.debian.net/debian/pool/main/s/sox/sox_14.4.2.orig.tar.bz2
 
   - name: vidstab
     buildsystem: cmake-ninja
@@ -174,33 +179,6 @@ modules:
       - type: archive
         url: http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.0.0.tar.gz
         sha256: 799deae1192da52cc2c15a078ed3b42449580be7d096fe9bc841c5bba0289c57
-
-  - name: ffmpeg
-    config-opts:
-      - --enable-gpl
-      - --disable-static
-      - --enable-shared
-      - --disable-doc
-      - --disable-alsa
-      - --enable-libfontconfig
-      - --enable-libfreetype
-      - --enable-libopenjpeg
-      - --enable-libopus
-      - --enable-libpulse
-      - --enable-librsvg
-      - --enable-libvidstab
-      - --enable-libvpx
-      - --enable-libx264
-      - --enable-libx265
-      - --enable-libxml2
-    post-install:
-      - chrpath -d /app/bin/ff{mpeg,play,probe}
-    cleanup:
-      - /share/ffmpeg/examples
-    sources:
-      - type: archive
-        url: https://ffmpeg.org/releases/ffmpeg-4.0.tar.xz
-        sha256: ed945daf40b124e77a685893cc025d086f638bc703183460aff49508edb3a43f
 
   - name: opencv
     buildsystem: cmake-ninja
@@ -284,6 +262,33 @@ modules:
         url: https://github.com/jackaudio/jack2/releases/download/v1.9.12/jack2-1.9.12.tar.gz
         sha256: deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
 
+  - name: ffmpeg
+    config-opts:
+      - --enable-gpl
+      - --disable-static
+      - --enable-shared
+      - --disable-doc
+      - --disable-alsa
+      - --enable-libfontconfig
+      - --enable-libfreetype
+      - --enable-libopenjpeg
+      - --enable-libopus
+      - --enable-libpulse
+      - --enable-librsvg
+      - --enable-libvidstab
+      - --enable-libvpx
+      - --enable-libx264
+      - --enable-libx265
+      - --enable-libxml2
+    post-install:
+      - chrpath -d /app/bin/ff{mpeg,play,probe}
+    cleanup:
+      - /share/ffmpeg/examples
+    sources:
+      - type: archive
+        url: https://ffmpeg.org/releases/ffmpeg-4.0.2.tar.xz
+        sha256: a95c0cc9eb990e94031d2183f2e6e444cc61c99f6f182d1575c433d62afb2f97
+
   - name: mlt
     config-opts:
       - --enable-gpl
@@ -291,15 +296,14 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: ee1b9cbdd311a24dc724215f15dc0116725dee00
+        commit: f39609dfb03121ac62e5d5e84a7b02151e2406b9
 
   - name: kdenlive
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DCMAKE_INSTALL_LIBDIR=lib
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.04.2/src/kdenlive-18.04.2.tar.xz
-        sha256: 31bb2809c43537224eef0a7d71fd8f474eef05648adb7f9379012bc0b943be21
+        url: https://download.kde.org/stable/applications/18.08.0/src/kdenlive-18.08.0.tar.xz
+        sha256: 43247d070e6898c26271235b915b45422ee8668e512f38f6df711e5571dca019
