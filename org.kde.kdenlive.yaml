@@ -6,10 +6,12 @@ sdk: org.kde.Sdk
 command: kdenlive
 rename-icon: kdenlive
 finish-args:
+  - --require-version=0.11.4 # fixes file saving
   - --share=ipc
   - --socket=x11
   - --device=dri
   - --socket=pulseaudio
+  - --share=network
   - --filesystem=host
   - --env=FREI0R_PATH=/app/lib/frei0r-1
   - --env=LADSPA_PATH=/app/lib/ladspa
@@ -208,8 +210,10 @@ modules:
       - --enable-shared
     sources:
       - type: archive
-        url: http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
+        url: https://sourceforge.net/projects/gmerlin/files/gavl/1.4.0/gavl-1.4.0.tar.gz
         sha256: 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
+        mirror-urls:
+          - http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
       - type: shell
         only-arches:
           - arm
