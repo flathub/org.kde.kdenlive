@@ -13,6 +13,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --filesystem=host
+  - --filesystem=xdg-config/kdeglobals:ro
   - --env=FREI0R_PATH=/app/lib/frei0r-1
   - --env=LADSPA_PATH=/app/lib/ladspa
 cleanup:
