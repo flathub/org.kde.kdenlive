@@ -53,8 +53,8 @@ modules:
       - -DENABLE_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.48/kfilemetadata-5.48.0.tar.xz
-        sha256: aefc53d26491254dd4991f41d25c9f2425c761b9aa3d80d272a0242dd428364f
+        url: https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
+        sha256: f414e10bfb3d5f3cec14a7074bfb493d6621dbf73c36fcdca7f765bb3a226118
 
   - name: eigen
     buildsystem: cmake-ninja
@@ -67,17 +67,51 @@ modules:
         sha256: 7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2
 
   - name: fftw
-    buildsystem: simple
-    build-commands:
-      - ./configure --prefix=/app --disable-doc --with-pic --enable-threads --enable-type-prefix
-      - make -j $FLATPAK_BUILDER_N_JOBS
-      - make install
-      - make clean
-      - ./configure --prefix=/app --disable-doc --with-pic --enable-threads --enable-type-prefix --enable-float
-      - make -j $FLATPAK_BUILDER_N_JOBS
-      - make install
+    config-opts:
+      - --disable-doc
+      - --enable-shared
+      - --disable-static
+      - --enable-threads
+    build-options:
+      arch:
+        i386:
+          config-opts:
+            - --enable-avx
+            - --enable-openmp
+            - --enable-sse2
+        x86_64:
+          config-opts:
+            - --enable-avx
+            - --enable-openmp
+            - --enable-sse2
     cleanup:
-      - '*'
+      - /bin
+    sources:
+      - type: archive
+        url: http://www.fftw.org/fftw-3.3.8.tar.gz
+        sha256: 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
+
+  - name: fftw-float
+    config-opts:
+      - --disable-doc
+      - --enable-shared
+      - --disable-static
+      - --enable-threads
+      - --enable-float
+    build-options:
+      arch:
+        i386:
+          config-opts:
+            - --enable-avx
+            - --enable-openmp
+            - --enable-sse
+        x86_64:
+          config-opts:
+            - --enable-avx
+            - --enable-openmp
+            - --enable-sse
+    cleanup:
+      - /bin
     sources:
       - type: archive
         url: http://www.fftw.org/fftw-3.3.8.tar.gz
@@ -143,35 +177,6 @@ modules:
         url: https://github.com/uclouvain/openjpeg/archive/v2.3.0.tar.gz
         sha256: 3dc787c1bb6023ba846c2a0d9b1f6e179f1cd255172bde9eb75b01f1e6c7d71a
 
-  - name: x264
-    config-opts:
-      - --disable-cli
-      - --enable-shared
-    sources:
-      - type: archive
-        url: https://download.videolan.org/x264/snapshots/x264-snapshot-20171223-2245-stable.tar.bz2
-        sha256: ee4ba2c3d1caf786ad66d3fa86bdc368a8f827318788a62a9c8444b2c35816bf
-
-  - name: x265
-    buildsystem: cmake-ninja
-    builddir: true
-    subdir: source
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DBUILD_STATIC_LIBS=OFF
-    build-options:
-      arch:
-        arm:
-          cxxflags: -fPIC
-        aarch64:
-          cxxflags: -fPIC
-    cleanup:
-      - /bin
-    sources:
-      - type: archive
-        url: https://bitbucket.org/multicoreware/x265/downloads/x265_2.7.tar.gz
-        sha256: d5e75fa62ffe6ed49e691f8eb8ab8c1634ffcc0725dd553c6fdb4d5443b494a2
-
   - name: rtaudio
     config-opts:
       - --disable-static
@@ -185,7 +190,7 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     cleanup:
       - /bin
     sources:
@@ -227,7 +232,7 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
         url: https://files.dyne.org/frei0r/frei0r-plugins-1.6.1.tar.gz
@@ -265,6 +270,43 @@ modules:
         url: https://github.com/jackaudio/jack2/releases/download/v1.9.12/jack2-1.9.12.tar.gz
         sha256: deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
 
+  - name: nasm
+    only-arches:
+      - x86_64
+      - 'i386'
+    cleanup:
+      - '*'
+    sources:
+      - type: archive
+        url: https://www.nasm.us/pub/nasm/releasebuilds/2.13.03/nasm-2.13.03.tar.xz
+        sha256: 812ecfb0dcbc5bd409aaa8f61c7de94c5b8752a7b00c632883d15b2ed6452573
+
+  - name: 'x264'
+    config-opts:
+      - --disable-cli
+      - --enable-shared
+    sources:
+      - type: archive
+        url: https://download.videolan.org/x264/snapshots/x264-snapshot-20180807-2245-stable.tar.bz2
+        sha256: 1439f1a054c87965089b646e77d16e1a8bf2f9687e4dd696ac518e44c7644c2a
+
+  - name: 'x265'
+    only-arches:
+      - x86_64
+      - 'i386'
+    buildsystem: cmake-ninja
+    builddir: true
+    subdir: source
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_STATIC_LIBS=OFF
+    cleanup:
+      - /bin
+    sources:
+      - type: archive
+        url: https://bitbucket.org/multicoreware/x265/downloads/x265_2.9.tar.gz
+        sha256: ebae687c84a39f54b995417c52a2fdde65a4e2e7ebac5730d251471304b91024
+
   - name: ffmpeg
     config-opts:
       - --enable-gpl
@@ -281,8 +323,15 @@ modules:
       - --enable-libvidstab
       - --enable-libvpx
       - --enable-libx264
-      - --enable-libx265
       - --enable-libxml2
+    build-options:
+      arch:
+        x86_64:
+          config-opts:
+            - --enable-libx265
+        i386:
+          config-opts:
+            - --enable-libx265
     post-install:
       - chrpath -d /app/bin/ff{mpeg,play,probe}
     cleanup:
@@ -299,7 +348,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: f39609dfb03121ac62e5d5e84a7b02151e2406b9
+        commit: 4d086b86100d5a8c67ac272f41ced0394f282164
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -308,5 +357,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.08.1/src/kdenlive-18.08.1.tar.xz
-        sha256: ee521740bd3b10d966fd102116cdadbf3f383025575912eba0080fdba9dcb7aa
+        url: https://download.kde.org/stable/applications/18.08.2/src/kdenlive-18.08.2.tar.xz
+        sha256: ec8ecc49a4ac83f6d4234416dedda4e47463f64fecb2485c52b7d2899ba173e1
