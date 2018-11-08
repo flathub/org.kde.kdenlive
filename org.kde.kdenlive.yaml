@@ -207,16 +207,11 @@ modules:
           - cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz
 
   - name: gavl
-    rm-configure: true
     config-opts:
       - --without-doxygen
       - --disable-static
       - --enable-shared
     sources:
-      - type: script
-        dest-filename: autogen.sh
-        commands:
-          - autoreconf -vfi
       - type: archive
         url: https://downloads.sourceforge.net/project/gmerlin/gavl/1.4.0/gavl-1.4.0.tar.gz
         sha256: 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
@@ -224,6 +219,9 @@ modules:
           - http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
       - type: patch
         path: patches/gavl-armel-ftbfs.patch
+      - type: shell
+        commands:
+          - cp -p /usr/share/automake-*/config.{sub,guess} .
 
   - name: frei0r-plugins
     buildsystem: cmake-ninja
