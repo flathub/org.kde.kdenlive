@@ -53,8 +53,8 @@ modules:
       - -DENABLE_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
-        sha256: f414e10bfb3d5f3cec14a7074bfb493d6621dbf73c36fcdca7f765bb3a226118
+        url: https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
+        sha256: d6db35f1ff5df56f495f713b0cc437625099758e0e5ee6a2ccf53e156adbde13
 
   - name: eigen
     buildsystem: cmake-ninja
@@ -66,7 +66,7 @@ modules:
         url: https://bitbucket.org/eigen/eigen/get/3.3.5.tar.bz2
         sha256: 7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2
 
-  - name: fftw
+  - name: fftw # TODO: remove with 5.12 runtime
     config-opts:
       - --disable-doc
       - --enable-shared
@@ -91,7 +91,7 @@ modules:
         url: http://www.fftw.org/fftw-3.3.8.tar.gz
         sha256: 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
 
-  - name: fftw-float
+  - name: fftw-float # TODO: remove with 5.12 runtime
     config-opts:
       - --disable-doc
       - --enable-shared
@@ -149,7 +149,7 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/sox/files/sox/14.4.2/sox-14.4.2.tar.bz2
+        url: https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
         sha256: 81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
         mirror-urls:
           - http://http.debian.net/debian/pool/main/s/sox/sox_14.4.2.orig.tar.bz2
@@ -213,20 +213,17 @@ modules:
       - --disable-static
       - --enable-shared
     sources:
-      - type: archive
-        url: https://sourceforge.net/projects/gmerlin/files/gavl/1.4.0/gavl-1.4.0.tar.gz
-        sha256: 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
-        mirror-urls:
-          - http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
-      - type: shell
-        only-arches:
-          - arm
-        commands:
-          - sed -i 's/volume_test_LDADD =/volume_test_LDADD = -lm/' src/Makefile.am
       - type: script
         dest-filename: autogen.sh
         commands:
           - autoreconf -vfi
+      - type: archive
+        url: https://downloads.sourceforge.net/project/gmerlin/gavl/1.4.0/gavl-1.4.0.tar.gz
+        sha256: 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
+        mirror-urls:
+          - http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
+      - type: patch
+        path: patches/gavl-armel-ftbfs.patch
 
   - name: frei0r-plugins
     buildsystem: cmake-ninja
@@ -270,7 +267,7 @@ modules:
         url: https://github.com/jackaudio/jack2/releases/download/v1.9.12/jack2-1.9.12.tar.gz
         sha256: deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
 
-  - name: nasm
+  - name: nasm # TODO: remove with 5.12 runtime
     only-arches:
       - x86_64
       - 'i386'
@@ -291,21 +288,22 @@ modules:
         sha256: 1439f1a054c87965089b646e77d16e1a8bf2f9687e4dd696ac518e44c7644c2a
 
   - name: 'x265'
-    only-arches:
-      - x86_64
-      - 'i386'
     buildsystem: cmake-ninja
     builddir: true
     subdir: source
     config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DBUILD_STATIC_LIBS=OFF
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DCMAKE_POSITION_INDEPENDENT_CODE=ON
     cleanup:
       - /bin
     sources:
       - type: archive
         url: https://bitbucket.org/multicoreware/x265/downloads/x265_2.9.tar.gz
         sha256: ebae687c84a39f54b995417c52a2fdde65a4e2e7ebac5730d251471304b91024
+      - type: patch
+        paths:
+          - patches/x265-Fix-arm-flags.patch
+          - patches/x265-detect512-is-needed-on-all-architectures.patch
 
   - name: ffmpeg
     config-opts:
@@ -322,24 +320,15 @@ modules:
       - --enable-librsvg
       - --enable-libvidstab
       - --enable-libvpx
-      - --enable-libx264
       - --enable-libxml2
-    build-options:
-      arch:
-        x86_64:
-          config-opts:
-            - --enable-libx265
-        i386:
-          config-opts:
-            - --enable-libx265
-    post-install:
-      - chrpath -d /app/bin/ff{mpeg,play,probe}
+      - --enable-libx264
+      - --enable-libx265
     cleanup:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://ffmpeg.org/releases/ffmpeg-4.0.2.tar.xz
-        sha256: a95c0cc9eb990e94031d2183f2e6e444cc61c99f6f182d1575c433d62afb2f97
+        url: https://ffmpeg.org/releases/ffmpeg-4.0.3.tar.xz
+        sha256: 253c37e3f1d3626a2566e496554de9a4c29050753660835909a466d66b12e2ed
 
   - name: mlt
     config-opts:
@@ -357,5 +346,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.08.2/src/kdenlive-18.08.2.tar.xz
-        sha256: ec8ecc49a4ac83f6d4234416dedda4e47463f64fecb2485c52b7d2899ba173e1
+        url: https://download.kde.org/stable/applications/18.08.3/src/kdenlive-18.08.3.tar.xz
+        sha256: 587941cccff85ff87063dbb70fe1a67f140fce207a46e35ce136cbf104e35d15
