@@ -207,6 +207,7 @@ modules:
           - cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz
 
   - name: gavl
+    rm-configure: true
     config-opts:
       - --without-doxygen
       - --disable-static
@@ -222,6 +223,10 @@ modules:
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} .
+      - type: script
+        dest-filename: autogen.sh
+        commands:
+          - autoreconf -vfi
 
   - name: frei0r-plugins
     buildsystem: cmake-ninja
