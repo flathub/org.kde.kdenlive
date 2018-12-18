@@ -270,6 +270,19 @@ modules:
         url: https://github.com/jackaudio/jack2/releases/download/v1.9.12/jack2-1.9.12.tar.gz
         sha256: deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
 
+  - name: v4l-utils
+    config-opts:
+      - --disable-static
+      - --disable-doxygen-doc
+      - --disable-libdvbv5
+      - --disable-v4l-utils
+      - --disable-qv4l2
+      - --with-udevdir=/app/lib/udev
+    sources:
+      - type: archive
+        url: https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.3.tar.bz2
+        sha256: 7c5c0d49c130cf65d384f28e9f3a53c5f7d17bf18740c48c40810e0fbbed5b54
+
   - name: nasm # TODO: remove with 5.12 runtime
     only-arches:
       - x86_64
@@ -326,6 +339,7 @@ modules:
       - --enable-libxml2
       - --enable-libx264
       - --enable-libx265
+      - --enable-libv4l2
     cleanup:
       - /share/ffmpeg/examples
     sources:
