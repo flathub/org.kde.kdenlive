@@ -351,3 +351,6 @@ modules:
       - type: archive
         url: https://download.kde.org/stable/applications/18.12.0/src/kdenlive-18.12.0.tar.xz
         sha256: 978327f841b352d8b879a44b6f1f98eb76b8fb0acb02b9ee1185e277b4bb764a
+      - type: shell
+        commands:
+          - sed -i 's/2018-10-11/2018-12-13/;s/18.08.2/18.12.0/' data/org.kde.kdenlive.appdata.xml
