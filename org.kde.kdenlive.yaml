@@ -9,7 +9,7 @@ finish-args:
   - --require-version=0.11.4 # fixes file saving
   - --share=ipc
   - --socket=x11
-  - --device=dri
+  - --device=all # webcams
   - --socket=pulseaudio
   - --share=network
   - --filesystem=host
