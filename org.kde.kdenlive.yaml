@@ -1,7 +1,7 @@
 app-id: org.kde.kdenlive
 branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.11'
+runtime-version: '5.12'
 sdk: org.kde.Sdk
 command: kdenlive
 rename-icon: kdenlive
@@ -53,8 +53,8 @@ modules:
       - -DENABLE_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
-        sha256: d6db35f1ff5df56f495f713b0cc437625099758e0e5ee6a2ccf53e156adbde13
+        url: https://download.kde.org/stable/frameworks/5.54/kfilemetadata-5.54.0.tar.xz
+        sha256: 4b6de53b791ad8cf19d5aa331555e3863f22e54adf6149668125635b820f86c2
 
   - name: eigen
     buildsystem: cmake-ninja
@@ -66,32 +66,7 @@ modules:
         url: https://bitbucket.org/eigen/eigen/get/3.3.5.tar.bz2
         sha256: 7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2
 
-  - name: fftw # TODO: remove with 5.12 runtime
-    config-opts:
-      - --disable-doc
-      - --enable-shared
-      - --disable-static
-      - --enable-threads
-    build-options:
-      arch:
-        i386:
-          config-opts:
-            - --enable-avx
-            - --enable-openmp
-            - --enable-sse2
-        x86_64:
-          config-opts:
-            - --enable-avx
-            - --enable-openmp
-            - --enable-sse2
-    cleanup:
-      - /bin
-    sources:
-      - type: archive
-        url: http://www.fftw.org/fftw-3.3.8.tar.gz
-        sha256: 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
-
-  - name: fftw-float # TODO: remove with 5.12 runtime
+  - name: fftw-float
     config-opts:
       - --disable-doc
       - --enable-shared
@@ -124,23 +99,6 @@ modules:
       - type: git
         url: https://github.com/ddennedy/movit.git
         commit: 3e8b4ebb796bcbe7e9727a2d7f2d0ba8f0170dfa
-
-  - name: libsamplerate
-    rm-configure: true
-    config-opts:
-      - --disable-static
-    cleanup:
-      - /share/doc
-    sources:
-      - type: archive
-        url: http://www.mega-nerd.com/SRC/libsamplerate-0.1.9.tar.gz
-        sha256: 0a7eb168e2f21353fb6d84da152e4512126f7dc48ccb0be80578c565413444c1
-        mirror-urls:
-          - http://http.debian.net/debian/pool/main/libs/libsamplerate/libsamplerate_0.1.9.orig.tar.gz
-      - type: script
-        dest-filename: autogen.sh
-        commands:
-          - autoreconf -vfi
 
   - name: sox
     config-opts:
@@ -239,16 +197,23 @@ modules:
         sha256: e0c24630961195d9bd65aa8d43732469e8248e8918faa942cfb881769d11515e
 
   - name: swh-plugins
+    build-options:
+      cflags: -fPIC
+      ldflags: -fpic
     sources:
       - type: archive
         url: https://github.com/swh/ladspa/archive/v0.4.17.tar.gz
         sha256: d1b090feec4c5e8f9605334b47faaad72db7cc18fe91d792b9161a9e3b821ce7
 
   - name: ladspa-sdk
-    buildsystem: simple
+    no-autogen: true
     subdir: src
-    build-commands:
-      - make INSTALL_PLUGINS_DIR=/app/lib/ladspa/ INSTALL_INCLUDE_DIR=/app/include/ INSTALL_BINARY_DIR=/app/bin/ install
+    make-install-args:
+      - INSTALL_PLUGINS_DIR=/app/lib/ladspa
+      - INSTALL_INCLUDE_DIR=/app/include
+      - INSTALL_BINARY_DIR=/app/bin
+    cleanup:
+      - /bin
     sources:
       - type: archive
         url: https://www.ladspa.org/download/ladspa_sdk_1.13.tgz
@@ -282,17 +247,6 @@ modules:
       - type: archive
         url: https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.3.tar.bz2
         sha256: 7c5c0d49c130cf65d384f28e9f3a53c5f7d17bf18740c48c40810e0fbbed5b54
-
-  - name: nasm # TODO: remove with 5.12 runtime
-    only-arches:
-      - x86_64
-      - 'i386'
-    cleanup:
-      - '*'
-    sources:
-      - type: archive
-        url: https://www.nasm.us/pub/nasm/releasebuilds/2.13.03/nasm-2.13.03.tar.xz
-        sha256: 812ecfb0dcbc5bd409aaa8f61c7de94c5b8752a7b00c632883d15b2ed6452573
 
   - name: 'x264'
     config-opts:
@@ -334,7 +288,6 @@ modules:
       - --enable-libopus
       - --enable-libpulse
       - --enable-librsvg
-      - --enable-libvidstab
       - --enable-libvpx
       - --enable-libxml2
       - --enable-libx264
@@ -344,8 +297,8 @@ modules:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://ffmpeg.org/releases/ffmpeg-4.0.3.tar.xz
-        sha256: 253c37e3f1d3626a2566e496554de9a4c29050753660835909a466d66b12e2ed
+        url: https://ffmpeg.org/releases/ffmpeg-4.1.tar.xz
+        sha256: a38ec4d026efb58506a99ad5cd23d5a9793b4bf415f2c4c2e9c1bb444acd1994
 
   - name: mlt
     config-opts:
@@ -354,7 +307,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: 4d086b86100d5a8c67ac272f41ced0394f282164
+        commit: eaf73b149347f2229eea44a038edea3170e03d39
 
   - name: kdenlive
     buildsystem: cmake-ninja
