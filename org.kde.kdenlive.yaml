@@ -277,6 +277,7 @@ modules:
 
   - name: ffmpeg
     config-opts:
+      - --enable-rpath
       - --enable-gpl
       - --disable-static
       - --enable-shared
