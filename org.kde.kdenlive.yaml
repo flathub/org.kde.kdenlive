@@ -298,8 +298,8 @@ modules:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://ffmpeg.org/releases/ffmpeg-4.1.tar.xz
-        sha256: a38ec4d026efb58506a99ad5cd23d5a9793b4bf415f2c4c2e9c1bb444acd1994
+        url: https://www.ffmpeg.org/releases/ffmpeg-4.1.1.tar.xz
+        sha256: 373749824dfd334d84e55dff406729edfd1606575ee44dd485d97d45ea4d2d86
 
   - name: mlt
     config-opts:
@@ -317,8 +317,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.1/src/kdenlive-18.12.1.tar.xz
-        sha256: 4e2e513a6a71597e784add11133f51d0f0a96b05b0061f9bee6aba4ab10637a1
+        url: https://download.kde.org/stable/applications/18.12.2/src/kdenlive-18.12.2.tar.xz
+        sha256: 47675eca0af26b4716aa587612f05364b6e49da47eb42e9f19d2fbd8aa236d16
       - type: shell
         commands:
-          - sed -i 's/2018-12-13/2019-01-08/;s/18.12.0/18.12.1/' data/org.kde.kdenlive.appdata.xml
+          - sed -i 's/2018-12-13/2019-02-07/;s/18.12.0/18.12.2/' data/org.kde.kdenlive.appdata.xml
