@@ -1,5 +1,6 @@
 app-id: org.kde.kdenlive
-default-branch: stable
+default-branch: beta
+desktop-file-name-suffix: ' (Beta)'
 runtime: org.kde.Platform
 runtime-version: '5.12'
 sdk: org.kde.Sdk
@@ -30,21 +31,6 @@ cleanup:
   - '*.la'
   - '*.cmake'
 modules:
-  - name: gtk2
-    config-opts:
-      - --disable-gtk-doc
-      - --disable-introspection
-      - --disable-man
-      - --disable-static
-      - --with-xinput=xfree
-    cleanup:
-      - /bin
-      - /share/gtk-2.0
-      - /lib/gtk-2.0/include
-    sources:
-      - type: archive
-        url: http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.32.tar.xz
-        sha256: b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e
 
   - name: kfilemetadata
     buildsystem: cmake-ninja
@@ -74,18 +60,9 @@ modules:
       - --disable-static
       - --enable-threads
       - --enable-float
-    build-options:
-      arch:
-        i386:
-          config-opts:
-            - --enable-avx
-            - --enable-openmp
-            - --enable-sse
-        x86_64:
-          config-opts:
-            - --enable-avx
-            - --enable-openmp
-            - --enable-sse
+      - --enable-avx
+      - --enable-openmp
+      - --enable-sse
     cleanup:
       - /bin
     sources:
@@ -145,26 +122,6 @@ modules:
         url: http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.0.0.tar.gz
         sha256: 799deae1192da52cc2c15a078ed3b42449580be7d096fe9bc841c5bba0289c57
 
-  - name: opencv
-    buildsystem: cmake-ninja
-    builddir: true
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-    cleanup:
-      - /bin
-    sources:
-      - type: archive
-        url: https://github.com/opencv/opencv/archive/3.4.0.tar.gz
-        sha256: 678cc3d2d1b3464b512b084a8cca1fad7de207c7abdf2caa1fed636c13e916da
-      - type: archive
-        dest: opencv_contrib
-        url: https://github.com/opencv/opencv_contrib/archive/3.4.0.tar.gz
-        sha256: 699ab3eee7922fbd3e8f98c68e6d16a1d453b20ef364e76172e56466dc9c16cd
-      - type: shell
-        commands:
-          - cd opencv_contrib/modules && mv tracking plot ../../modules
-          - cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz
-
   - name: gavl
     rm-configure: true
     config-opts:
@@ -177,8 +134,6 @@ modules:
         sha256: 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
         mirror-urls:
           - http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz
-      - type: patch
-        path: patches/gavl-armel-ftbfs.patch
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} .
@@ -271,8 +226,6 @@ modules:
       - type: archive
         url: https://bitbucket.org/multicoreware/x265/downloads/x265_3.0.tar.gz
         sha256: c5b9fc260cabbc4a81561a448f4ce9cad7218272b4011feabc3a6b751b2f0662
-      - type: patch
-        path: patches/x265-Fix-arm-flags.patch
 
   - name: ffmpeg
     config-opts:
@@ -304,20 +257,25 @@ modules:
     config-opts:
       - --enable-gpl
       - --enable-gpl3
+      - --disable-gtk2
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: eaf73b149347f2229eea44a038edea3170e03d39
+        commit: 5fdf2a77466bdd2ece1be5b945f55677c200c20c
 
   - name: kdenlive
     buildsystem: cmake-ninja
-    builddir: true
+    builddir: false
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
-      - type: archive
-        url: https://download.kde.org/stable/applications/18.12.2/src/kdenlive-18.12.2.tar.xz
-        sha256: 47675eca0af26b4716aa587612f05364b6e49da47eb42e9f19d2fbd8aa236d16
+      - type: file
+        dest-filename: rttr.tar.gz
+        url: https://github.com/rttrorg/rttr/archive/v0.9.6.tar.gz
+        sha256: 058554f8644450185fd881a6598f9dee7ef85785cbc2bb5a5526a43225aa313f
+      - type: git
+        url: https://anongit.kde.org/kdenlive.git
+        commit: 32b01e2feaff9b205152345139b95d030c57cfa4
       - type: shell
         commands:
-          - sed -i 's/2018-12-13/2019-02-07/;s/18.12.0/18.12.2/' data/org.kde.kdenlive.appdata.xml
+          - sed -i 's|https://github.com/rttrorg/rttr/archive/v0.9.6.tar.gz|${CMAKE_CURRENT_SOURCE_DIR}/rttr.tar.gz|' rttr.CMakeLists.txt
