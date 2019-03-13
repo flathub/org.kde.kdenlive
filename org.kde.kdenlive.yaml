@@ -32,16 +32,25 @@ cleanup:
   - '*.cmake'
 modules:
 
-  - name: kfilemetadata
+  - name: rttr
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DENABLE_TESTING=OFF
+      - -DCMAKE_INSTALL_LIBDIR=lib
+      - -DBUILD_EXAMPLES=OFF
+      - -DBUILD_DOCUMENTATION=OFF
+      - -DBUILD_UNIT_TESTS=OFF
+      - -DBUILD_PACKAGE=OFF
+      - -DBUILD_STATIC=ON
+    cleanup:
+      - '*'
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.54/kfilemetadata-5.54.0.tar.xz
-        sha256: 4b6de53b791ad8cf19d5aa331555e3863f22e54adf6149668125635b820f86c2
+        url: https://github.com/rttrorg/rttr/releases/download/v0.9.6/rttr-0.9.6-src.tar.gz
+        sha256: f62caee43016489320f8a69145c9208cddd72e451ea95618bc26a49a4cd6c990
+      - type: shell
+        commands:
+          - sed -i 's/-Werror/-Wno-error/' CMake/utility.cmake
 
   - name: eigen
     buildsystem: cmake-ninja
@@ -52,6 +61,17 @@ modules:
       - type: archive
         url: https://bitbucket.org/eigen/eigen/get/3.3.5.tar.bz2
         sha256: 7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2
+
+  - name: kfilemetadata
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DENABLE_TESTING=OFF
+    sources:
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/5.54/kfilemetadata-5.54.0.tar.xz
+        sha256: 4b6de53b791ad8cf19d5aa331555e3863f22e54adf6149668125635b820f86c2
 
   - name: fftw-float
     config-opts:
@@ -261,7 +281,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: 5fdf2a77466bdd2ece1be5b945f55677c200c20c
+        commit: 6ac737cf16f2e87fdbb818d5f7ff54bebf0b40c3
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -269,13 +289,6 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
-      - type: file
-        dest-filename: rttr.tar.gz
-        url: https://github.com/rttrorg/rttr/archive/v0.9.6.tar.gz
-        sha256: 058554f8644450185fd881a6598f9dee7ef85785cbc2bb5a5526a43225aa313f
       - type: git
         url: https://anongit.kde.org/kdenlive.git
-        commit: 32b01e2feaff9b205152345139b95d030c57cfa4
-      - type: shell
-        commands:
-          - sed -i 's|https://github.com/rttrorg/rttr/archive/v0.9.6.tar.gz|${CMAKE_CURRENT_SOURCE_DIR}/rttr.tar.gz|' rttr.CMakeLists.txt
+        commit: 24a9c86a9a3064414fa002ae55c8127d7e0c3024
