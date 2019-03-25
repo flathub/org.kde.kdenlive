@@ -270,8 +270,8 @@ modules:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://www.ffmpeg.org/releases/ffmpeg-4.1.1.tar.xz
-        sha256: 373749824dfd334d84e55dff406729edfd1606575ee44dd485d97d45ea4d2d86
+        url: https://www.ffmpeg.org/releases/ffmpeg-4.1.2.tar.xz
+        sha256: b95f0ae44798ab1434155ac7f81f30a7e9760a02282e4b5898372c22a335347b
 
   - name: mlt
     config-opts:
@@ -281,7 +281,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: 6ac737cf16f2e87fdbb818d5f7ff54bebf0b40c3
+        commit: 4baee6c05566e4cfbf2b59089dd9159692e180dd
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -291,4 +291,4 @@ modules:
     sources:
       - type: git
         url: https://anongit.kde.org/kdenlive.git
-        commit: 24a9c86a9a3064414fa002ae55c8127d7e0c3024
+        commit: d23e670acfc4fe34c569fcaa7a8e05a2b863f730
