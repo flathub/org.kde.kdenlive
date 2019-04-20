@@ -335,8 +335,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.3/src/kdenlive-18.12.3.tar.xz
-        sha256: fcfe2474bc271e730ed95edb21ae46e93c1ce773ed036f63c9fb2db02cbc7e64
+        url: https://download.kde.org/stable/applications/19.04.0/src/kdenlive-19.04.0.tar.xz
+        sha256: 274ae17b4376258ef83d810cb33677ca3224e205ea8b69982dd0fc4e5ee5878a
       - type: shell
         commands:
-          - sed -i 's/2018-12-13/2019-03-06/;s/18.12.0/18.12.3/' data/org.kde.kdenlive.appdata.xml
+          - sed -i 's/2019-03-26/2019-04-18/' data/org.kde.kdenlive.appdata.xml
