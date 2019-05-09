@@ -326,7 +326,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: ca29df6bff11d28ef47d38682d2b532835666c46
+        commit: 0022b1f4cc7cac0565c592e1954521e795720042
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -335,8 +335,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/19.04.0/src/kdenlive-19.04.0.tar.xz
-        sha256: 274ae17b4376258ef83d810cb33677ca3224e205ea8b69982dd0fc4e5ee5878a
-      - type: shell
-        commands:
-          - sed -i 's/2019-03-26/2019-04-18/' data/org.kde.kdenlive.appdata.xml
+        url: https://download.kde.org/stable/applications/19.04.1/src/kdenlive-19.04.1.tar.xz
+        sha256: feb3202ee1aa0f47acc12ad7d6ca78977a4c9af0d705f8792ca2f8e3e6defbe5
