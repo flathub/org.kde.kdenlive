@@ -339,5 +339,5 @@ modules:
         sha256: c0c19895629b2183e51c04fe55baa2df7ea370a27bb991151dbbb75486549ac9
       - type: shell
         commands:
-          - sed -i -e '256i <release version=\"19.04.2\" date=\"2019-06-06\"/>' -e '256d'
+          - sed -i -e '265i <release version=\"19.04.2\" date=\"2019-06-06\"/>' -e '265d'
             data/org.kde.kdenlive.appdata.xml
