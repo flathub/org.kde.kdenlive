@@ -316,8 +316,8 @@ modules:
       - /share/ffmpeg/examples
     sources:
       - type: archive
-        url: https://www.ffmpeg.org/releases/ffmpeg-4.1.4.tar.xz
-        sha256: f1f049a82fcfbf156564e73a3935d7e750891fab2abf302e735104fd4050a7e1
+        url: https://www.ffmpeg.org/releases/ffmpeg-4.2.tar.xz
+        sha256: 023f10831a97ad93d798f53a3640e55cd564abfeba807ecbe8524dac4fedecd5
 
   - name: mlt
     config-opts:
@@ -326,7 +326,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mltframework/mlt.git
-        commit: e7db400561287fe7a759a1f901f3190af83eb881
+        commit: 0d0d78c3205d7723c0b09776028197c3bef43899
 
   - name: kdenlive
     buildsystem: cmake-ninja
@@ -335,8 +335,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/19.04.3/src/kdenlive-19.04.3.tar.xz
-        sha256: c981954ce9759da2878b4c76d97b9bb7aa92fc1f073a9f759142870e287d2a1e
-      - type: shell
-        commands:
-          - sed -i -e '267i <content_rating type=\"oars-1.1\"/>' data/org.kde.kdenlive.appdata.xml
+        url: https://download.kde.org/stable/applications/19.08.0/src/kdenlive-19.08.0.tar.xz
+        sha256: 01b60bf58f6818a5ca9aa6e7a79111965700e6948da0bc0edd1184c26fd872e4
