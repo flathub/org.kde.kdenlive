@@ -337,3 +337,7 @@ modules:
       - type: archive
         url: https://download.kde.org/stable/applications/19.08.0/src/kdenlive-19.08.0.tar.xz
         sha256: 01b60bf58f6818a5ca9aa6e7a79111965700e6948da0bc0edd1184c26fd872e4
+      - type: shell
+        commands:
+          - sed -i -e '265i <release version="19.08.0" date="2019-08-15"/>'
+            data/org.kde.kdenlive.appdata.xml
