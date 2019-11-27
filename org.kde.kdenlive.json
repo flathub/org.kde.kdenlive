@@ -324,7 +324,7 @@
       "name": "jack2",
       "buildsystem": "simple",
       "build-commands": [
-        "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --freebob=no --classic",
+        "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --classic",
         "./waf build -j $FLATPAK_BUILDER_N_JOBS",
         "./waf install"
       ],
