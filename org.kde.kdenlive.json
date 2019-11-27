@@ -209,37 +209,6 @@
       ]
     },
     {
-      "name": "opencv",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-      ],
-      "cleanup": [
-        "/bin"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/opencv/opencv/archive/3.4.0.tar.gz",
-          "sha256": "678cc3d2d1b3464b512b084a8cca1fad7de207c7abdf2caa1fed636c13e916da"
-        },
-        {
-          "type": "archive",
-          "dest": "opencv_contrib",
-          "url": "https://github.com/opencv/opencv_contrib/archive/3.4.0.tar.gz",
-          "sha256": "699ab3eee7922fbd3e8f98c68e6d16a1d453b20ef364e76172e56466dc9c16cd"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "cd opencv_contrib/modules && mv tracking plot ../../modules",
-            "cd modules && rm -rf calib3d cuda* cudev dnn features2d flann java js ml shape stitching superres ts videoio videostab viz"
-          ]
-        }
-      ]
-    },
-    {
       "name": "gavl",
       "rm-configure": true,
       "config-opts": [
