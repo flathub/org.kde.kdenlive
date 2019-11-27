@@ -10,8 +10,6 @@
     "--require-version=0.11.4",
     "--share=ipc",
     "--socket=x11",
-    "--socket=wayland",
-    "--env=QT_QPA_PLATFORM=xcb",
     "--device=all",
     "--socket=pulseaudio",
     "--share=network",
