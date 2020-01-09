@@ -384,8 +384,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.2.1.tar.xz",
-          "sha256": "cec7c87e9b60d174509e263ac4011b522385fd0775292e1670ecc1180c9bb6d4"
+          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz",
+          "sha256": "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c"
         }
       ]
     },
@@ -400,7 +400,7 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "a757e35a165ab72d3e3c2b76dc45bd1f58e52aa9"
+          "commit": "0a3a474af6695d36c1ad8221e1b7551842a3470f"
         }
       ]
     },
@@ -414,8 +414,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://download.kde.org/stable/release-service/19.12.0/src/kdenlive-19.12.0.tar.xz",
-          "sha256": "4f3f434a89169a948c3ea402df8333ebaef2f24dc23247be0244538c856c7717"
+          "url": "https://download.kde.org/stable/release-service/19.12.1/src/kdenlive-19.12.1.tar.xz",
+          "sha256": "fccf34a4660ce8a78ceefe8a4b9dd93d104f6871976d991ceec769366627dc77"
         }
       ]
     }
