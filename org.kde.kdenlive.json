@@ -416,6 +416,10 @@
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/19.12.1/src/kdenlive-19.12.1.tar.xz",
           "sha256": "fccf34a4660ce8a78ceefe8a4b9dd93d104f6871976d991ceec769366627dc77"
+        },
+        {
+          "type": "patch",
+          "path": "patches/kdenlive-19.12.1-appdata.patch"
         }
       ]
     }
