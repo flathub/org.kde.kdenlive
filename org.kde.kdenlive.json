@@ -346,9 +346,13 @@
     },
     {
       "name": "nv-codec-headers",
-      "cleanup": ["*"],
+      "cleanup": [
+        "*"
+      ],
       "no-autogen": true,
-      "make-install-args": ["PREFIX=/app"],
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
       "sources": [
         {
           "type": "git",

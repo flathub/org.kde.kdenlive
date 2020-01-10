@@ -1,5 +1,6 @@
---- data/org.kde.kdenlive.appdata.xml	2020-01-06 19:37:16.000000000 +0100
-+++ data/org.kde.kdenlive_new.appdata.xml	2020-01-10 12:44:59.526340833 +0100
+diff -ur kdenlive-19.12.1.orig/data/org.kde.kdenlive.appdata.xml kdenlive-19.12.1/data/org.kde.kdenlive.appdata.xml
+--- kdenlive-19.12.1.orig/data/org.kde.kdenlive.appdata.xml	2020-01-06 19:37:16.000000000 +0100
++++ kdenlive-19.12.1/data/org.kde.kdenlive.appdata.xml	2020-01-10 12:48:52.160399844 +0100
 @@ -269,7 +269,7 @@
    <url type="help">https://userbase.kde.org/Kdenlive/Manual</url>
    <url type="donation">https://www.kde.org/community/donations/?app=kdenlive&amp;source=appdata</url>
