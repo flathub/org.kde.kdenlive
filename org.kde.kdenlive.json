@@ -167,8 +167,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.0.0.tar.gz",
-          "sha256": "799deae1192da52cc2c15a078ed3b42449580be7d096fe9bc841c5bba0289c57"
+          "url": "http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.1.0.tar.gz",
+          "sha256": "ff138b2b6ed2b700b04b406be718df213052d4c952190280cf4e2fab4b61fe09"
         }
       ]
     },
