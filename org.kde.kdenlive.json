@@ -49,12 +49,6 @@
           "type": "archive",
           "url": "https://github.com/rttrorg/rttr/releases/download/v0.9.6/rttr-0.9.6-src.tar.gz",
           "sha256": "f62caee43016489320f8a69145c9208cddd72e451ea95618bc26a49a4cd6c990"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "sed -i 's/-Werror/-Wno-error/' CMake/utility.cmake"
-          ]
         }
       ]
     },
@@ -80,26 +74,11 @@
         "--enable-shared",
         "--disable-static",
         "--enable-threads",
-        "--enable-float"
+        "--enable-float",
+        "--enable-avx",
+        "--enable-openmp",
+        "--enable-sse"
       ],
-      "build-options": {
-        "arch": {
-          "i386": {
-            "config-opts": [
-              "--enable-avx",
-              "--enable-openmp",
-              "--enable-sse"
-            ]
-          },
-          "x86_64": {
-            "config-opts": [
-              "--enable-avx",
-              "--enable-openmp",
-              "--enable-sse"
-            ]
-          }
-        }
-      },
       "cleanup": [
         "/bin"
       ],
@@ -209,7 +188,7 @@
       "buildsystem": "cmake-ninja",
       "builddir": true,
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "sources": [
         {
@@ -221,10 +200,6 @@
     },
     {
       "name": "swh-plugins",
-      "build-options": {
-        "cflags": "-fPIC",
-        "ldflags": "-fpic"
-      },
       "sources": [
         {
           "type": "archive",
@@ -313,11 +288,8 @@
       "builddir": true,
       "subdir": "source",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-        "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
-      ],
-      "cleanup": [
-        "/bin"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DENABLE_CLI=OFF"
       ],
       "sources": [
         {
@@ -364,7 +336,9 @@
         "--enable-libx264",
         "--enable-libx265",
         "--enable-libv4l2",
-        "--enable-libmp3lame"
+        "--enable-libmp3lame",
+        "--enable-nvenc",
+        "--enable-vaapi"
       ],
       "cleanup": [
         "/share/ffmpeg/examples"
@@ -378,17 +352,42 @@
       ]
     },
     {
+      "name": "opencv",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DOPENCV_GENERATE_PKGCONFIG=ON",
+        "-DBUILD_LIST=tracking"
+      ],
+      "cleanup": [
+        "/bin"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/opencv/opencv/archive/4.3.0.tar.gz",
+          "sha256": "68bc40cbf47fdb8ee73dfaf0d9c6494cd095cf6294d99de445ab64cf853d278a"
+        },
+        {
+          "type": "archive",
+          "url": "https://github.com/opencv/opencv_contrib/archive/4.3.0.tar.gz",
+          "sha256": "acb8e89c9e7d1174e63e40532125b60d248b00e517255a98a419d415228c6a55"
+        }
+      ]
+    },
+    {
       "name": "mlt",
       "config-opts": [
         "--enable-gpl",
         "--enable-gpl3",
-        "--disable-gtk2"
+        "--enable-opencv"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "48c3eb46b3bced0cded4dc60f315faac5be8c6ff"
+          "commit": "cd37ae17aa4b9077aedee7f81230a7e167d429c5"
         }
       ]
     },
@@ -397,7 +396,7 @@
       "buildsystem": "cmake-ninja",
       "builddir": true,
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "sources": [
         {
