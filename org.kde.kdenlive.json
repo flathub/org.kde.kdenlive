@@ -17,9 +17,26 @@
     "--env=TMPDIR=/var/tmp",
     "--env=QT_ENABLE_HIGHDPI_SCALING=1",
     "--env=FREI0R_PATH=/app/lib/frei0r-1",
-    "--env=LADSPA_PATH=/app/lib/ladspa",
+    "--env=LADSPA_PATH=/app/extensions/LadspaPlugins/ladspa:/app/lib/ladspa",
     "--env=XDG_CURRENT_DESKTOP=kde"
   ],
+  "add-extensions": {
+    "org.freedesktop.LinuxAudio.LadspaPlugins": {
+      "directory": "extensions/LadspaPlugins",
+      "version": "19.08",
+      "add-ld-path": "lib",
+      "merge-dirs": "ladspa",
+      "subdirectories": true,
+      "no-autodownload": true
+    },
+    "org.freedesktop.LinuxAudio.LadspaPlugins.swh": {
+      "directory": "extensions/LadspaPlugins/swh",
+      "version": "19.08",
+      "add-ld-path": "lib",
+      "merge-dirs": "ladspa",
+      "subdirectories": true
+    }
+  },
   "cleanup": [
     "/include",
     "/lib/pkgconfig",
@@ -230,16 +247,6 @@
       ]
     },
     {
-      "name": "swh-plugins",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/swh/ladspa/archive/v0.4.17.tar.gz",
-          "sha256": "d1b090feec4c5e8f9605334b47faaad72db7cc18fe91d792b9161a9e3b821ce7"
-        }
-      ]
-    },
-    {
       "name": "ladspa-sdk",
       "no-autogen": true,
       "subdir": "src",
@@ -428,6 +435,9 @@
       "builddir": true,
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "post-install": [
+        "install -d /app/extensions/LadspaPlugins"
       ],
       "sources": [
         {
