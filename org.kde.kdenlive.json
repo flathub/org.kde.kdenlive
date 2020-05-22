@@ -50,6 +50,19 @@
           "url": "https://files.pythonhosted.org/packages/fb/c1/67ceeba190efa1e6281b214c7d827cd05e7c8b82ba456a043f0ba5cc3eb4/pyaaf2-1.2.0.tar.gz",
           "sha256": "08cba1f96caa41e23570e6961761ac192a42910fb2991dda3004550c931a610c"
         }
+      ],
+      "modules": [
+        {
+          "name": "opentimelineIO",
+          "buildsystem": "cmake-ninja",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/PixarAnimationStudios/OpenTimelineIO.git",
+              "commit": "c61d309c9b00cedd13ed256db8e9c2b659128bca"
+            }
+          ]
+        }
       ]
     },
     {
