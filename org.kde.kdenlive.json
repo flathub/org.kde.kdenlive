@@ -33,35 +33,18 @@
     "*.cmake"
   ],
   "modules": [
+    
     {
-      "name": "python3-OpenTimelineIO",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} OpenTimelineIO"
+      "name": "opentimelineIO",
+      "buildsystem": "cmake-ninja",
+      "config-opts": [
+        "-DOTIO_PYTHON_INSTALL=ON"
       ],
       "sources": [
         {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/81/8d/f8a5470adf58c0841a8343debee2fa835861e62f05380933aa2fdc056fff/OpenTimelineIO-0.12.1.tar.gz",
-          "sha256": "f9742498dc8631981a7a7781932749936fb1d716fd4a34693ecb7d02972cef13"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/fb/c1/67ceeba190efa1e6281b214c7d827cd05e7c8b82ba456a043f0ba5cc3eb4/pyaaf2-1.2.0.tar.gz",
-          "sha256": "08cba1f96caa41e23570e6961761ac192a42910fb2991dda3004550c931a610c"
-        }
-      ],
-      "modules": [
-        {
-          "name": "opentimelineIO",
-          "buildsystem": "cmake-ninja",
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/PixarAnimationStudios/OpenTimelineIO.git",
-              "commit": "c61d309c9b00cedd13ed256db8e9c2b659128bca"
-            }
-          ]
+          "type": "git",
+          "url": "https://github.com/PixarAnimationStudios/OpenTimelineIO.git",
+          "commit": "c61d309c9b00cedd13ed256db8e9c2b659128bca"
         }
       ]
     },
