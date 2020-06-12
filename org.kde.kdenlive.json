@@ -17,8 +17,26 @@
     "--env=TMPDIR=/var/tmp",
     "--env=QT_ENABLE_HIGHDPI_SCALING=1",
     "--env=FREI0R_PATH=/app/lib/frei0r-1",
-    "--env=LADSPA_PATH=/app/lib/ladspa"
+    "--env=LADSPA_PATH=/app/extensions/LadspaPlugins/ladspa:/app/lib/ladspa",
+    "--env=XDG_CURRENT_DESKTOP=kde"
   ],
+  "add-extensions": {
+    "org.freedesktop.LinuxAudio.LadspaPlugins": {
+      "directory": "extensions/LadspaPlugins",
+      "version": "19.08",
+      "add-ld-path": "lib",
+      "merge-dirs": "ladspa",
+      "subdirectories": true,
+      "no-autodownload": true
+    },
+    "org.freedesktop.LinuxAudio.LadspaPlugins.swh": {
+      "directory": "extensions/LadspaPlugins/swh",
+      "version": "19.08",
+      "add-ld-path": "lib",
+      "merge-dirs": "ladspa",
+      "subdirectories": true
+    }
+  },
   "cleanup": [
     "/include",
     "/lib/pkgconfig",
@@ -33,6 +51,35 @@
     "*.cmake"
   ],
   "modules": [
+    {
+      "name": "pyaaf2",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://files.pythonhosted.org/packages/fb/c1/67ceeba190efa1e6281b214c7d827cd05e7c8b82ba456a043f0ba5cc3eb4/pyaaf2-1.2.0.tar.gz",
+          "sha256": "08cba1f96caa41e23570e6961761ac192a42910fb2991dda3004550c931a610c"
+        }
+      ]
+    },
+    {
+      "name": "OpenTimelineIO",
+      "buildsystem": "simple",
+      "build-commands": [
+        "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.7m'|\" -i setup.py",
+        "python3 setup.py install --prefix=/app --root=/ --cxx-install-root=/app"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://files.pythonhosted.org/packages/81/8d/f8a5470adf58c0841a8343debee2fa835861e62f05380933aa2fdc056fff/OpenTimelineIO-0.12.1.tar.gz",
+          "sha256": "f9742498dc8631981a7a7781932749936fb1d716fd4a34693ecb7d02972cef13"
+        }
+      ]
+    },
     {
       "name": "rttr",
       "buildsystem": "cmake-ninja",
@@ -196,16 +243,6 @@
           "type": "archive",
           "url": "https://files.dyne.org/frei0r/releases/frei0r-plugins-1.7.0.tar.gz",
           "sha256": "1b1ff8f0f9bc23eed724e94e9a7c1d8f0244bfe33424bb4fe68e6460c088523a"
-        }
-      ]
-    },
-    {
-      "name": "swh-plugins",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/swh/ladspa/archive/v0.4.17.tar.gz",
-          "sha256": "d1b090feec4c5e8f9605334b47faaad72db7cc18fe91d792b9161a9e3b821ce7"
         }
       ]
     },
@@ -398,6 +435,9 @@
       "builddir": true,
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "post-install": [
+        "install -d /app/extensions/LadspaPlugins"
       ],
       "sources": [
         {
