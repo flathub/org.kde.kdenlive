@@ -454,6 +454,10 @@
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/20.04.2/src/kdenlive-20.04.2.tar.xz",
           "sha256": "17539ba44397aeff19cda6c767741212f3e7e4ecb852b3d35787c1aca3d53ca6"
+        },
+        {
+          "type": "patch",
+          "path": "appdata-version.patch"
         }
       ]
     }
