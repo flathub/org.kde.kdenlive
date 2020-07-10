@@ -4,7 +4,7 @@
      </ul>
    </description>
    <releases>
-+    <release date="2020-06-09" version="20.04.2"/>
++    <release version="20.04.3" date="2020-07-09"/>
      <release date="2020-05-11" version="20.04.1"/>
    </releases>
    <url type="homepage">https://kdenlive.org/</url>
