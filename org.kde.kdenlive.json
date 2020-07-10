@@ -341,8 +341,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://bitbucket.org/multicoreware/x265/downloads/x265_3.3.tar.gz",
-          "sha256": "f26e148ed1f4dfb33fd1eb3ff5e60e08078d1b2017e88bcbb045b3fb58300b9c"
+          "url": "https://bitbucket.org/multicoreware/x265/downloads/x265_3.4.tar.gz",
+          "sha256": "c2047f23a6b729e5c70280d23223cb61b57bfe4ad4e8f1471eeee2a61d148672"
         }
       ]
     },
@@ -393,8 +393,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz",
-          "sha256": "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c"
+          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.2.3.tar.xz",
+          "sha256": "9df6c90aed1337634c1fb026fb01c154c29c82a64ea71291ff2da9aacb9aad31"
         }
       ]
     },
@@ -434,7 +434,7 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "cd37ae17aa4b9077aedee7f81230a7e167d429c5"
+          "commit": "6eb12c3ac97b2d8f4c5d466f1e81e35a8df64751"
         }
       ]
     },
