@@ -424,7 +424,28 @@
       ]
     },
     {
+      "name": "vamp-plugin-sdk",
+      "cleanup": [
+        "bin"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/c4dm/vamp-plugin-sdk/archive/vamp-plugin-sdk-v2.8.tar.gz",
+          "sha256": "a64aedfabcaf1349d695b48b1457f90868fa8ecf2a1c49d1743f1943339d709c"
+        }
+      ]
+    },
+    {
       "name": "rubberband",
+      "config-opts": [
+        "--disable-program",
+        "--enable-shared",
+        "--disable-static",
+        "--without-ladspa",
+        "--with-vamp",
+        "--without-jni"
+      ],
       "sources": [
         {
           "type": "archive",
