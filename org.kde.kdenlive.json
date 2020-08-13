@@ -451,6 +451,11 @@
           "type": "archive",
           "url": "https://breakfastquay.com/files/releases/rubberband-1.8.2.tar.bz2",
           "sha256": "86bed06b7115b64441d32ae53634fcc0539a50b9b648ef87443f936782f6c3ca"
+        },
+        {
+          "type": "patch",
+          "path": "bfeaa98475f6a0035f588effcafd17bb0160903d.patch",
+          "sha256": "aebeb251c9ce85692d965853031cc49b0d61005251535eba602de748550696fa"
         }
       ]
     },
