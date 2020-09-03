@@ -488,8 +488,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/20.08.0/src/kdenlive-20.08.0.tar.xz",
-          "sha256": "89914ee37f5bbdd16051b0db4a6cfb6f8c3d748f47c9e28e5349920ca133c0bd"
+          "url": "https://download.kde.org/stable/release-service/20.08.1/src/kdenlive-20.08.1.tar.xz",
+          "sha256": "f99e3f22c3d5e41a3ca251299d010ac2bc44933091c25d360104d562a1090873"
         }
       ]
     }
