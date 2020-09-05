@@ -88,6 +88,9 @@
       "name": "genisoimage",
       "buildsystem": "cmake-ninja",
       "builddir": true,
+      "build-options" : {
+        "cflags": "-fcommon"
+      },
       "sources": [
         {
           "type": "archive",
