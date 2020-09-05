@@ -2,7 +2,7 @@
   "app-id": "org.kde.kdenlive",
   "default-branch": "stable",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.14",
+  "runtime-version": "5.15",
   "sdk": "org.kde.Sdk",
   "command": "kdenlive",
   "rename-icon": "kdenlive",
@@ -88,6 +88,9 @@
       "name": "genisoimage",
       "buildsystem": "cmake-ninja",
       "builddir": true,
+      "build-options" : {
+        "cflags": "-fcommon"
+      },
       "sources": [
         {
           "type": "archive",
@@ -110,7 +113,7 @@
       "name": "OpenTimelineIO",
       "buildsystem": "simple",
       "build-commands": [
-        "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.7m'|\" -i setup.py",
+        "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.8'|\" -i setup.py",
         "python3 setup.py install --prefix=/app --root=/ --cxx-install-root=/app"
       ],
       "sources": [
