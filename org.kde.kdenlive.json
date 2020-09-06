@@ -17,29 +17,21 @@
     "--env=TMPDIR=/var/tmp",
     "--env=QT_ENABLE_HIGHDPI_SCALING=1",
     "--env=FREI0R_PATH=/app/lib/frei0r-1",
-    "--env=LADSPA_PATH=/app/extensions/Plugins/ladspa:/app/extensions/LadspaPlugins/ladspa:/app/lib/ladspa",
+    "--env=LADSPA_PATH=/app/extensions/Plugins/ladspa:/app/lib/ladspa",
     "--env=XDG_CURRENT_DESKTOP=kde"
   ],
   "add-extensions": {
     "org.freedesktop.LinuxAudio.Plugins": {
       "directory": "extensions/Plugins",
-      "version": "19.08",
+      "version": "20.08",
       "add-ld-path": "lib",
       "merge-dirs": "ladspa",
       "subdirectories": true,
       "no-autodownload": true
     },
-    "org.freedesktop.LinuxAudio.LadspaPlugins": {
-      "directory": "extensions/LadspaPlugins",
-      "version": "19.08",
-      "add-ld-path": "lib",
-      "merge-dirs": "ladspa",
-      "subdirectories": true,
-      "no-autodownload": true
-    },
-    "org.freedesktop.LinuxAudio.LadspaPlugins.swh": {
-      "directory": "extensions/LadspaPlugins/swh",
-      "version": "19.08",
+    "org.freedesktop.LinuxAudio.Plugins.swh": {
+      "directory": "extensions/Plugins/swh",
+      "version": "20.08",
       "add-ld-path": "lib",
       "merge-dirs": "ladspa",
       "autodelete": false,
@@ -517,8 +509,7 @@
         "-DCMAKE_BUILD_TYPE=Release"
       ],
       "post-install": [
-        "install -d /app/extensions/Plugins",
-        "install -d /app/extensions/LadspaPlugins"
+        "install -d /app/extensions/Plugins"
       ],
       "sources": [
         {
