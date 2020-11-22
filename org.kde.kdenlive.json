@@ -159,10 +159,23 @@
         "--disable-static",
         "--enable-threads",
         "--enable-float",
-        "--enable-avx",
-        "--enable-openmp",
-        "--enable-sse"
+        "--enable-openmp"
       ],
+      "build-options": {
+        "arch": {
+          "x86_64": {
+            "config-opts": [
+              "--enable-avx",
+              "--enable-sse"
+            ]
+          },
+          "aarch64": {
+            "config-opts": [
+              "--enable-neon"
+            ]
+          }
+        }
+      },
       "cleanup": [
         "/bin"
       ],
@@ -411,9 +424,17 @@
         "--enable-libx265",
         "--enable-libv4l2",
         "--enable-libmp3lame",
-        "--enable-nvenc",
         "--enable-vaapi"
       ],
+      "build-options": {
+        "arch": {
+          "x86_64": {
+            "config-opts": [
+              "--enable-nvenc"
+            ]
+          }
+        }
+      },
       "cleanup": [
         "/share/ffmpeg/examples"
       ],
