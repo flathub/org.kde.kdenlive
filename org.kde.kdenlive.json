@@ -350,8 +350,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.18.0.tar.bz2",
-          "sha256": "6cb60d822eeed20486a03cc23e0fc65956fbc1e85e0c1a7477f68bbd9802880d"
+          "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.20.0.tar.bz2",
+          "sha256": "956118713f7ccb405c55c7088a6a2490c32d54300dd9a30d8d5008c28d3726f7"
         }
       ]
     },
@@ -363,9 +363,9 @@
       ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://code.videolan.org/videolan/x264/-/archive/1771b556ee45207f8711744ccbd5d42a3949b14c/x264-1771b556ee45207f8711744ccbd5d42a3949b14c.tar.bz2",
-          "sha256": "b31c5db5337873b9ee42b8cbc60b56d60ce368fa7e4c4eff90a729b36eeb8326"
+          "type": "git",
+          "url": "https://code.videolan.org/videolan/x264.git",
+          "commit": "d198931a63049db1f2c92d96c34904c69fde8117"
         }
       ]
     },
@@ -381,7 +381,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://anduin.linuxfromscratch.org/BLFS/x265/x265_3.4.tar.gz",
+          "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_3.4.orig.tar.gz",
           "sha256": "c2047f23a6b729e5c70280d23223cb61b57bfe4ad4e8f1471eeee2a61d148672"
         }
       ]
@@ -399,8 +399,8 @@
         {
           "type": "git",
           "url": "https://git.videolan.org/git/ffmpeg/nv-codec-headers.git",
-          "commit": "4a0bbfd58724d6d19851cd8a6f7a9098dde9ab77",
-          "tag": "n9.1.23.1"
+          "commit": "a99740a84b49fd609e04b03279e66c5a8b767440",
+          "tag": "n10.0.26.1"
         }
       ]
     },
@@ -419,6 +419,7 @@
         "--enable-libpulse",
         "--enable-librsvg",
         "--enable-libvpx",
+        "--enable-libdav1d",
         "--enable-libxml2",
         "--enable-libx264",
         "--enable-libx265",
@@ -441,8 +442,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.2.3.tar.xz",
-          "sha256": "9df6c90aed1337634c1fb026fb01c154c29c82a64ea71291ff2da9aacb9aad31"
+          "url": "https://www.ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz",
+          "sha256": "ad009240d46e307b4e03a213a0f49c11b650e445b1f8be0dda2a9212b34d2ffb"
         }
       ]
     },
@@ -472,37 +473,20 @@
       ]
     },
     {
-      "name": "vamp-plugin-sdk",
-      "cleanup": [
-        "bin"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/c4dm/vamp-plugin-sdk/archive/vamp-plugin-sdk-v2.8.tar.gz",
-          "sha256": "a64aedfabcaf1349d695b48b1457f90868fa8ecf2a1c49d1743f1943339d709c"
-        }
-      ]
-    },
-    {
       "name": "rubberband",
       "config-opts": [
         "--disable-program",
         "--enable-shared",
         "--disable-static",
         "--without-ladspa",
-        "--with-vamp",
+        "--disable-vamp",
         "--without-jni"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://breakfastquay.com/files/releases/rubberband-1.8.2.tar.bz2",
-          "sha256": "86bed06b7115b64441d32ae53634fcc0539a50b9b648ef87443f936782f6c3ca"
-        },
-        {
-          "type": "patch",
-          "path": "bfeaa98475f6a0035f588effcafd17bb0160903d.patch"
+          "url": "https://breakfastquay.com/files/releases/rubberband-1.9.0.tar.bz2",
+          "sha256": "4f5b9509364ea876b4052fc390c079a3ad4ab63a2683aad09662fb905c2dc026"
         }
       ]
     },
@@ -517,7 +501,7 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "6eb12c3ac97b2d8f4c5d466f1e81e35a8df64751"
+          "commit": "0e756b692b4b1248d27254d124cd41f580878372"
         }
       ]
     },
