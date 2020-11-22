@@ -146,8 +146,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://bitbucket.org/eigen/eigen/get/3.3.7.tar.bz2",
-          "sha256": "9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce"
+          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.bz2",
+          "sha256": "685adf14bd8e9c015b78097c1dc22f2f01343756f196acdc76a678e1ae352e11"
         }
       ]
     },
@@ -159,10 +159,23 @@
         "--disable-static",
         "--enable-threads",
         "--enable-float",
-        "--enable-avx",
-        "--enable-openmp",
-        "--enable-sse"
+        "--enable-openmp"
       ],
+      "build-options": {
+        "arch": {
+          "x86_64": {
+            "config-opts": [
+              "--enable-avx",
+              "--enable-sse"
+            ]
+          },
+          "aarch64": {
+            "config-opts": [
+              "--enable-neon"
+            ]
+          }
+        }
+      },
       "cleanup": [
         "/bin"
       ],
@@ -368,7 +381,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://bitbucket.org/multicoreware/x265/downloads/x265_3.4.tar.gz",
+          "url": "http://anduin.linuxfromscratch.org/BLFS/x265/x265_3.4.tar.gz",
           "sha256": "c2047f23a6b729e5c70280d23223cb61b57bfe4ad4e8f1471eeee2a61d148672"
         }
       ]
@@ -411,9 +424,17 @@
         "--enable-libx265",
         "--enable-libv4l2",
         "--enable-libmp3lame",
-        "--enable-nvenc",
         "--enable-vaapi"
       ],
+      "build-options": {
+        "arch": {
+          "x86_64": {
+            "config-opts": [
+              "--enable-nvenc"
+            ]
+          }
+        }
+      },
       "cleanup": [
         "/share/ffmpeg/examples"
       ],
@@ -481,8 +502,7 @@
         },
         {
           "type": "patch",
-          "path": "bfeaa98475f6a0035f588effcafd17bb0160903d.patch",
-          "sha256": "aebeb251c9ce85692d965853031cc49b0d61005251535eba602de748550696fa"
+          "path": "bfeaa98475f6a0035f588effcafd17bb0160903d.patch"
         }
       ]
     },
