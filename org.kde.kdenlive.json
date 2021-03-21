@@ -422,7 +422,6 @@
         "--disable-static",
         "--enable-shared",
         "--disable-doc",
-        "--disable-alsa",
         "--enable-libfontconfig",
         "--enable-libfreetype",
         "--enable-libopus",
@@ -436,7 +435,9 @@
         "--enable-libv4l2",
         "--enable-libmp3lame",
         "--enable-vaapi",
-        "--enable-libass"
+        "--enable-libass",
+        "--enable-gnutls",
+        "--enable-libvorbis"
       ],
       "build-options": {
         "arch": {
