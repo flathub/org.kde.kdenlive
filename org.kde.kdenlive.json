@@ -439,6 +439,7 @@
         "--enable-gnutls",
         "--enable-libvorbis",
         "--enable-libvidstab",
+        "--enable-cuda-llvm",
         "--enable-ffnvcodec"
       ],
       "build-options": {
