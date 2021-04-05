@@ -438,6 +438,7 @@
         "--enable-libass",
         "--enable-gnutls",
         "--enable-libvorbis"
+        "--enable-libvidstab"
       ],
       "build-options": {
         "arch": {
