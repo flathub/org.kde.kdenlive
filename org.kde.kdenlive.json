@@ -415,6 +415,29 @@
       ]
     },
     {
+      "name": "aom",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/app",
+        "-DBUILD_SHARED_LIBS=1",
+        "-DENABLE_DOCS=0",
+        "-DENABLE_EXAMPLES=0",
+        "-DENABLE_TESTDATA=0",
+        "-DENABLE_TESTS=0",
+        "-DENABLE_TOOLS=0"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://aomedia.googlesource.com/aom.git",
+          "commit": "d853caa2ab62d161e5edf344ffee7b597449dc0d",
+          "tag": "v3.0.0"
+        }
+      ]
+    },
+    {
       "name": "ffmpeg",
       "config-opts": [
         "--enable-rpath",
