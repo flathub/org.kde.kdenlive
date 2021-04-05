@@ -467,6 +467,8 @@
         "arch": {
           "x86_64": {
             "config-opts": [
+              "--enable-ffnvcodec",
+              "--enable-cuda-llvm",
               "--enable-nvenc"
             ]
           }
