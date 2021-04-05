@@ -437,7 +437,8 @@
         "--enable-vaapi",
         "--enable-libass",
         "--enable-gnutls",
-        "--enable-libvorbis"
+        "--enable-libvorbis",
+        "--enable-libvidstab"
       ],
       "build-options": {
         "arch": {
