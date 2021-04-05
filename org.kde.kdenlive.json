@@ -438,14 +438,14 @@
         "--enable-libass",
         "--enable-gnutls",
         "--enable-libvorbis",
-        "--enable-libvidstab",
-        "--enable-cuda-llvm",
-        "--enable-ffnvcodec"
+        "--enable-libvidstab"
       ],
       "build-options": {
         "arch": {
           "x86_64": {
             "config-opts": [
+              "--enable-ffnvcodec",
+              "--enable-cuda-llvm",
               "--enable-nvenc"
             ]
           }
