@@ -470,7 +470,9 @@
               "--enable-ffnvcodec",
               "--enable-cuda-llvm",
               "--enable-nvenc",
-              "--enable-vdpau"
+              "--enable-vdpau",
+              "--enable-nvdec",
+              "--enable-cuvid"
             ]
           }
         }
