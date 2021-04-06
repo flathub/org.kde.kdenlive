@@ -469,6 +469,9 @@
             "config-opts": [
               "--enable-ffnvcodec",
               "--enable-cuda-llvm",
+              "--enable-libnpp", 
+              "--enable-cuda-nvcc", 
+              "--enable-nonfree",
               "--enable-nvenc",
               "--enable-vdpau"
             ]
