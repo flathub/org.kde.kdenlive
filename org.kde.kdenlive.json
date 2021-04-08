@@ -207,12 +207,13 @@
           "type": "git",
           "url": "https://github.com/sekrit-twc/zimg.git",
           "commit": "e17ee6cf72509c32c15067b32615849e69486367"
-        }
+        },
         {
           "type": "script",
           "dest-filename": "autogen.sh",
           "commands": [
             "autoreconf -vfi"
+          ]
         }
       ]
     },
