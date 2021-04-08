@@ -537,7 +537,8 @@
       "config-opts": [
         "--enable-gpl",
         "--enable-gpl3",
-        "--enable-opencv"
+        "--enable-opencv",
+        "--enable-opengl"
       ],
       "sources": [
         {
