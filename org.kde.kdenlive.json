@@ -438,6 +438,17 @@
       ]
     },
     {
+      "name": "dav1d",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://get.videolan.org/dav1d/0.8.2/dav1d-0.8.2.tar.xz",
+          "sha256": "3dd91d96b44e9d8ba7e82ad9e730d6c579ab5e19edca0db857a60f5ae6a0eb13"
+        }
+      ]
+    },
+    {
       "name": "ffmpeg",
       "config-opts": [
         "--enable-rpath",
@@ -461,7 +472,9 @@
         "--enable-libass",
         "--enable-gnutls",
         "--enable-libvorbis",
-        "--enable-libvidstab"
+        "--enable-libvidstab",
+        "--enable-libdav1d",
+        "--disable-decoder=libaom_av1"
       ],
       "build-options": {
         "arch": {
