@@ -36,6 +36,14 @@
       "merge-dirs": "ladspa",
       "autodelete": false,
       "subdirectories": true
+    },
+    "org.freedesktop.LinuxAudio.Plugins.TAP": {
+      "directory": "extensions/Plugins/TAP",
+      "version": "20.08",
+      "add-ld-path": "lib",
+      "merge-dirs": "ladspa",
+      "autodelete": false,
+      "subdirectories": true
     }
   },
   "cleanup": [
