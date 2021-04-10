@@ -452,8 +452,8 @@
           ],
           "make-install-args": [
               "-v"
-          ],
-      }
+          ]
+      },
       "sources": [
         {
           "type": "archive",
@@ -485,7 +485,7 @@
       "build-options": {
           "prefix" : "/app/extensions/IntelMediaSDK",
           "prepend-pkg-config-path": "/app/extensions/IntelMediaSDK/lib/pkgconfig"
-      }
+      },
       "sources": [
         {
           "type": "archive",
