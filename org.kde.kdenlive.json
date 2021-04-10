@@ -438,6 +438,61 @@
           "tag": "n11.0.10.0"
         }
       ]
+    },    {
+      "name": "intel-gmmlib",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "build-options": {
+        "prefix" : "/app/extensions/IntelMediaSDK",
+        "make-args": [
+              "-v"
+          ],
+          "make-install-args": [
+              "-v"
+          ],
+      }
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-21.1.1.tar.gz",
+          "sha256": "b996f09264e05ebca0dc275ea32791ba22769fe04147592371b4a61cdf508763"
+        }
+      ]  
+    },
+    {
+      "name": "libva",
+      "no-autogen": true,
+      "config-opts": [
+        "--with-drivers-path=/app/extensions/IntelMediaSDK/lib/dri"
+      ],
+      "build-options": {
+          "prefix" : "/app/extensions/IntelMediaSDK"
+      },
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/intel/libva/releases/download/2.11.0/libva-2.11.0.tar.bz2",
+          "sha256": "6e361117038b571ad4741d38c9280db8c140b17e76e8c01fc7a4d608d3ed7d5d"
+        }
+      ],
+    },
+    {
+      "name": "libva-utils",
+      "no-autogen": true,
+      "build-options": {
+          "prefix" : "/app/extensions/IntelMediaSDK",
+          "prepend-pkg-config-path": "/app/extensions/IntelMediaSDK/lib/pkgconfig"
+      }
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/intel/libva-utils/releases/download/2.11.1/libva-utils-2.11.1.tar.bz2",
+          "sha256": "9e5a6138869c79bdc0cd0598b6a6763110360f301e7294e5270704cb38bf53fb"
+        }
+      ] 
     },
     {
       "name": "aom",
