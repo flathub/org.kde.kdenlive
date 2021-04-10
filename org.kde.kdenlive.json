@@ -203,8 +203,8 @@
       "sources": [
         {
           "type": "git",
-          "url": "http://git.sesse.net/movit",
-          "commit": "f0c77209245aa206996c7ef5395888e2859ff4bf"
+          "url": "https://github.com/ddennedy/movit.git",
+          "commit": "3e8b4ebb796bcbe7e9727a2d7f2d0ba8f0170dfa"
         }
       ]
     },
