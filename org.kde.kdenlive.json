@@ -440,6 +440,9 @@
       ]
     },    {
       "name": "intel-gmmlib",
+      "skip-arches": [
+        "aarch64"
+      ],
       "buildsystem": "cmake-ninja",
       "builddir": true,
       "config-opts": [
@@ -464,6 +467,9 @@
     },
     {
       "name": "libva",
+      "skip-arches": [
+        "aarch64"
+      ],
       "no-autogen": true,
       "config-opts": [
         "--with-drivers-path=/app/extensions/IntelMediaSDK/lib/dri"
@@ -481,6 +487,9 @@
     },
     {
       "name": "libva-utils",
+      "skip-arches": [
+        "aarch64"
+      ],
       "no-autogen": true,
       "build-options": {
           "prefix" : "/app/extensions/IntelMediaSDK",
