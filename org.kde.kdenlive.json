@@ -463,6 +463,26 @@
       ]
     },
     {
+      "name": "mediasdk",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SAMPLES=OFF",
+        "-DBUILD_TESTS=OFF",
+        "-DBUILD_TOOLS=OFF",
+        "-DBUILD_TESTS=OFF",
+        "-DMFX_ENABLE_SW_FALLBACK=OFF"
+      ],
+      "sources": [
+         {
+           "type": "archive",
+           "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-21.1.3.tar.gz",
+           "sha256": "718e68e3be78fcdc2dea0e3cd4714c38df2d451d7c8afef840c9c07e82bd4cb9"
+         }
+      ]
+    },
+    {
       "name": "ffmpeg",
       "config-opts": [
         "--enable-rpath",
@@ -499,7 +519,8 @@
               "--enable-nvenc",
               "--enable-vdpau",
               "--enable-nvdec",
-              "--enable-cuvid"
+              "--enable-cuvid",
+              "--enable-libmfx"
             ]
           }
         }
