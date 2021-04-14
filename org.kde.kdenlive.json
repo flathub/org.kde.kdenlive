@@ -356,11 +356,10 @@
     },
     {
       "name": "opencl-headers",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "config-opts": [
-        "-DCMAKE_INSTALL_PREFIX=/app"
-      ],
+      "buildsystem": "simple",
+      "build-commands": [
+        "cp -av CL /app/include"
+        ],
       "sources": [
         {
           "type": "archive",
