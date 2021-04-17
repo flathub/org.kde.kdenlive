@@ -425,20 +425,6 @@
       ]
     },
     {
-      "name": "opencl-headers",
-      "buildsystem": "simple",
-      "build-commands": [
-        "cp -av CL /app/include"
-        ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2020.06.16.tar.gz",
-          "sha256": "2f5a60e5ac4b127650618c58a7e3b35a84dbf23c1a0ac72eb5e7baf221600e06"
-        }
-      ]
-    },
-    {
       "name": "v4l-utils",
       "config-opts": [
         "--disable-static",
@@ -494,6 +480,34 @@
           "type": "archive",
           "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_3.4.orig.tar.gz",
           "sha256": "c2047f23a6b729e5c70280d23223cb61b57bfe4ad4e8f1471eeee2a61d148672"
+        }
+      ]
+    },
+    {
+      "name": "opencl-headers",
+      "buildsystem": "simple",
+      "build-commands": [
+        "cp -av CL /app/include"
+        ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2020.06.16.tar.gz",
+          "sha256": "2f5a60e5ac4b127650618c58a7e3b35a84dbf23c1a0ac72eb5e7baf221600e06"
+        }
+      ]
+    },
+    {
+      "name": "amf-headers",
+      "buildsystem": "simple",
+      "build-commands": [
+        "cp -av amf/public/include/. /app/include/AMF"
+        ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.18.tar.gz",
+          "sha256": "4f21ee07c8bb9b73ff48dbce7cb0917cdcd4d81d33333da391d97ce7f00642fe"
         }
       ]
     },
@@ -601,7 +615,8 @@
               "--enable-vdpau",
               "--enable-nvdec",
               "--enable-cuvid",
-              "--enable-libmfx"
+              "--enable-libmfx",
+              "--enable-amf"
             ]
           }
         }
