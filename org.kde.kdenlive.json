@@ -145,6 +145,7 @@
     },
     {
       "name": "python3-cffi",
+      "skip-arches": ["aarch64"],
       "buildsystem": "simple",
       "build-commands": [
         "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"cffi\" --no-build-isolation"
@@ -164,6 +165,7 @@
     },
     {
       "name": "python3-vosk",
+      "skip-arches": ["aarch64"],
       "buildsystem": "simple",
       "build-commands": [
         "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"vosk\" --no-build-isolation"
@@ -183,6 +185,7 @@
     },
     {
       "name": "python3-srt",
+      "skip-arches": ["aarch64"],
       "buildsystem": "simple",
       "build-commands": [
         "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"srt\" --no-build-isolation"
