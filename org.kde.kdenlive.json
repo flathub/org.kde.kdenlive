@@ -598,6 +598,44 @@
       ]
     },
     {
+      "name": "libzen",
+      "subdir": "Project/GNU/Library",
+      "config-opts": [ "--enable-shared", "--disable-static" ],
+      "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la" ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://mediaarea.net/download/source/libzen/0.4.39/libzen_0.4.39.tar.xz",
+          "sha256": "cded5d7774294e7d5b42768ceb285243709b6e99eec6e980a3cf7f0890dbb622"
+        }
+      ]
+    },
+    {
+      "name": "libmediainfo",
+      "subdir": "Project/GNU/Library",
+      "config-opts": [ "--enable-shared", "--disable-static", "--with-libcurl" ],
+      "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la" ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://mediaarea.net/download/source/libmediainfo/21.03/libmediainfo_21.03.tar.xz",
+          "sha256": "56b7e9abf80cba48032165cd7a46fd8d43dd63e3af35765f66c3f134caaca4ca"
+        }
+      ]
+    },
+    {
+      "name": "mediainfo-cli",
+      "subdir": "Project/GNU/CLI",
+      "cleanup": [ "share/pixmaps", "/share/apps", "/share/kde4", "/share/kservices5" ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://mediaarea.net/download/source/mediainfo/21.03/mediainfo_21.03.tar.xz",
+          "sha256": "de50ca0b2c607b8999d3c9e542d27c97030a59f31859b612335315be6850021e"
+        }
+      ]
+    },
+    {
       "name": "opencv",
       "buildsystem": "cmake-ninja",
       "builddir": true,
