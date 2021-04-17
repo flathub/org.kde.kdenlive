@@ -173,6 +173,11 @@
           "type": "file",
           "url": "https://files.pythonhosted.org/packages/64/76/750788d585bbec701a6be11bf5a15587ed75a60f732c8044fe5e859d9b02/vosk-0.3.22-py3-none-manylinux2010_x86_64.whl",
           "sha256": "d9c4106285536c91b08928a0b3a475e4329affea16c6508e4e9d6af1c6ada8fd"
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/96/43/c993eae7c0b0e099f967020d4ffbf6d010bd0498bc6c3457357b3a74e2f0/vosk-0.3.22-py3-none-linux_armv7l.whl",
+          "sha256": "903fc96aa9e9cf935fefd0cb8a305475fa9cc35401964c467aa8e34769a4f4fd"
         }
       ]
     },
