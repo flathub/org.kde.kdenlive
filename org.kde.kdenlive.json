@@ -569,7 +569,8 @@
         "--enable-gnutls",
         "--enable-libvorbis",
         "--enable-libvidstab",
-        "--enable-libaom"
+        "--enable-libaom",
+        "--enable-libopenjpeg"
       ],
       "build-options": {
         "arch": {
