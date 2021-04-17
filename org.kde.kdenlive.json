@@ -306,6 +306,28 @@
       ]
     },
     {
+      "name": "exiv2",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+      ],
+      "cleanup": [
+        "/bin"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.exiv2.org/builds/exiv2-0.27.3-Source.tar.gz",
+          "sha256": "a79f5613812aa21755d578a297874fb59a85101e793edc64ec2c6bd994e3e778"
+        },
+        {
+          "type": "patch",
+          "path": "patches/exiv2-fcf-protection-only-on-x86.patch"
+        }
+      ]
+    },
+    {
       "name": "libass",
       "config-opts": [
         "--enable-harfbuzz",
