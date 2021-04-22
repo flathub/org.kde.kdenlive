@@ -65,7 +65,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/libdvdread/last/libdvdread-6.1.1.tar.bz2",
+          "url": "https://download.videolan.org/pub/videolan/libdvdread/6.1.1/libdvdread-6.1.1.tar.bz2",
           "sha256": "3e357309a17c5be3731385b9eabda6b7e3fa010f46022a06f104553bf8e21796"
         }
       ]
@@ -780,7 +780,7 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "branch": "v6",
+          "tag": "7063e88e09977282470c4f2f93e56e05f21b7c2b",
           "commit": "7063e88e09977282470c4f2f93e56e05f21b7c2b"
         }
       ]
@@ -798,8 +798,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/20.12.3/src/kdenlive-20.12.3.tar.xz",
-          "sha256": "8d9f94699befc59b0a410d99dcafd445f33126678c18d859df4fceb553a88586"
+          "url": "https://download.kde.org/stable/release-service/21.04.0/src/kdenlive-21.04.0.tar.xz",
+          "sha256": "b0be8f0adef51d3305ec6bebde089b8e4d2fb4519c83456cd91647e7763d4bdf"
         }
       ]
     }
