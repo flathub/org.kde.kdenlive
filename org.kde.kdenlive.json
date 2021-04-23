@@ -625,8 +625,8 @@
       "sources": [
          {
            "type": "archive",
-           "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-20.1.1.tar.gz",
-           "sha256": "44300c0f068f6d018d182455dd9c2f48db1e85fe0b38fcd60d0353bd145923dc"
+           "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-21.1.3.tar.gz",
+           "sha256": "718e68e3be78fcdc2dea0e3cd4714c38df2d451d7c8afef840c9c07e82bd4cb9"
          }
       ]
     },
