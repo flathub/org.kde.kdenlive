@@ -684,6 +684,10 @@
           "type": "archive",
           "url": "https://www.ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
           "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
+        },
+        {
+          "type": "patch",
+          "path": "patches/nvenc-fix-lossless-tuning-logic.patch"
         }
       ]
     },
