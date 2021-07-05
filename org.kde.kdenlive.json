@@ -631,6 +631,17 @@
       ]
     },
     {
+      "name": "dav1d",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://get.videolan.org/dav1d/0.9.0/dav1d-0.9.0.tar.xz",
+          "sha256": "cfae88e8067c9b2e5b96d95a7a00155c353376fe9b992a96b4336e0eab19f9f6"
+        }
+      ]
+    },
+    {
       "name": "ffmpeg",
       "config-opts": [
         "--enable-rpath",
