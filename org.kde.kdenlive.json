@@ -769,6 +769,10 @@
           "type": "archive",
           "url": "https://www.ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
           "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
+        },
+        {
+          "type": "patch",
+          "path": "patches/nvenc-fix-lossless-tuning-logic.patch"
         }
       ]
     },
@@ -865,8 +869,8 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "tag": "7063e88e09977282470c4f2f93e56e05f21b7c2b",
-          "commit": "7063e88e09977282470c4f2f93e56e05f21b7c2b"
+          "tag": "a87229bcea6242da2a0b923ad11dffd37d44098f",
+          "commit": "a87229bcea6242da2a0b923ad11dffd37d44098f"
         }
       ]
     },
@@ -883,8 +887,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.04.0/src/kdenlive-21.04.0.tar.xz",
-          "sha256": "b0be8f0adef51d3305ec6bebde089b8e4d2fb4519c83456cd91647e7763d4bdf"
+          "url": "https://download.kde.org/stable/release-service/21.04.2/src/kdenlive-21.04.2.tar.xz",
+          "sha256": "5510106b6bdda3f2048702b23d90f7438d4ec4d2ddb932e53df716e6d4afdd4f"
         }
       ]
     }
