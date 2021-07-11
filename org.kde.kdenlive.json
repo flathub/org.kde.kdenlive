@@ -265,18 +265,12 @@
     },
     {
       "name": "zimg",
+      "buildsystem": "autotools",
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/sekrit-twc/zimg.git",
-          "commit": "e17ee6cf72509c32c15067b32615849e69486367"
-        },
-        {
-          "type": "script",
-          "dest-filename": "autogen.sh",
-          "commands": [
-            "autoreconf -vfi"
-          ]
+          "type": "archive",
+          "url": "https://github.com/sekrit-twc/zimg/archive/release-3.0.2.tar.gz",
+          "sha256": "b9eadf1df12ae8395ba781f2468965d411b21abbebbebeae3651d492227d4633"
         }
       ]
     },
