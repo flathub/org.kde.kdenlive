@@ -545,8 +545,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.18.tar.gz",
-          "sha256": "4f21ee07c8bb9b73ff48dbce7cb0917cdcd4d81d33333da391d97ce7f00642fe"
+          "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v.1.4.21.tar.gz",
+          "sha256": "66b3a94bd284d313f9c682b331fae503f617d20126c9ce24f51b2117f5b3cf05"
         }
       ]
     },
