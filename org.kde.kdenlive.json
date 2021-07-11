@@ -740,19 +740,12 @@
     },
     {
       "name": "rubberband",
-      "config-opts": [
-        "--disable-program",
-        "--enable-shared",
-        "--disable-static",
-        "--without-ladspa",
-        "--disable-vamp",
-        "--without-jni"
-      ],
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "archive",
-          "url": "https://breakfastquay.com/files/releases/rubberband-1.9.0.tar.bz2",
-          "sha256": "4f5b9509364ea876b4052fc390c079a3ad4ab63a2683aad09662fb905c2dc026"
+          "url": "https://breakfastquay.com/files/releases/rubberband-1.9.2.tar.bz2",
+          "sha256": "b3cff5968517141fcf9e1ef6b5a1fdb06a5511f148000609216cf182ff4ab612"
         }
       ]
     },
