@@ -60,6 +60,7 @@
     "*.cmake"
   ],
   "modules": [
+    "python-modules.json",
     {
       "name": "libdvdread",
       "sources": [
@@ -67,20 +68,6 @@
           "type": "archive",
           "url": "https://download.videolan.org/pub/videolan/libdvdread/6.1.1/libdvdread-6.1.1.tar.bz2",
           "sha256": "3e357309a17c5be3731385b9eabda6b7e3fa010f46022a06f104553bf8e21796"
-        }
-      ]
-    },
-    {
-      "name": "pyaaf2",
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py install --prefix=/app --root=/"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/fb/c1/67ceeba190efa1e6281b214c7d827cd05e7c8b82ba456a043f0ba5cc3eb4/pyaaf2-1.2.0.tar.gz",
-          "sha256": "08cba1f96caa41e23570e6961761ac192a42910fb2991dda3004550c931a610c"
         }
       ]
     },
@@ -106,76 +93,6 @@
           "type": "archive",
           "url": "https://downloads.sourceforge.net/project/dvdauthor/dvdauthor-0.7.2.tar.gz",
           "sha1": "0e605642140576bfb3e963414d77630d1c073a51"
-        }
-      ]
-    },
-    {
-      "name": "OpenTimelineIO",
-      "buildsystem": "simple",
-      "build-commands": [
-        "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.8'|\" -i setup.py",
-        "python3 setup.py install --prefix=/app --root=/ --cxx-install-root=/app"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/9e/bb/a3b1f7c94b42f20a59a0d5dbc693ebfeb7623f0f86953f0d946595e2b03d/OpenTimelineIO-0.13.0.tar.gz",
-          "sha256": "c29c947479687cad7844684016aecc2a640daa67cbefb2dbf5c6a1aca45bfe1b"
-        }
-      ]
-    },
-    {
-      "name": "python3-cffi",
-      "skip-arches": ["aarch64"],
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"cffi\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/a8/20/025f59f929bbcaa579704f443a438135918484fffaacfaddba776b374563/cffi-1.14.5.tar.gz",
-          "sha256": "fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/0f/86/e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd/pycparser-2.20.tar.gz",
-          "sha256": "2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"
-        }
-      ]
-    },
-    {
-      "name": "python3-vosk",
-      "skip-arches": ["aarch64"],
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"vosk\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/64/76/750788d585bbec701a6be11bf5a15587ed75a60f732c8044fe5e859d9b02/vosk-0.3.22-py3-none-manylinux2010_x86_64.whl",
-          "sha256": "d9c4106285536c91b08928a0b3a475e4329affea16c6508e4e9d6af1c6ada8fd"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/96/43/c993eae7c0b0e099f967020d4ffbf6d010bd0498bc6c3457357b3a74e2f0/vosk-0.3.22-py3-none-linux_armv7l.whl",
-          "sha256": "903fc96aa9e9cf935fefd0cb8a305475fa9cc35401964c467aa8e34769a4f4fd"
-        }
-      ]
-    },
-    {
-      "name": "python3-srt",
-      "skip-arches": ["aarch64"],
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"srt\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/3b/dd/0629a23b11da7696ce69e4432a2de6a1d1277bf2ba5cda624009069d4bb3/srt-3.4.1.tar.gz",
-          "sha256": "aa507439bf593adb1b207d21c5975c9774263da97489f8b90d8a016bfa67ee94"
         }
       ]
     },
@@ -209,8 +126,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.bz2",
-          "sha256": "685adf14bd8e9c015b78097c1dc22f2f01343756f196acdc76a678e1ae352e11"
+          "url": "https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.bz2",
+          "sha256": "0fa5cafe78f66d2b501b43016858070d52ba47bd9b1016b0165a7b8e04675677"
         }
       ]
     },
@@ -245,8 +162,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.fftw.org/fftw-3.3.8.tar.gz",
-          "sha256": "6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303"
+          "url": "http://www.fftw.org/fftw-3.3.9.tar.gz",
+          "sha256": "bf2c7ce40b04ae811af714deb512510cc2c17b9ab9d6ddcf49fe4487eea7af3d"
         }
       ]
     },
@@ -265,18 +182,12 @@
     },
     {
       "name": "zimg",
+      "buildsystem": "autotools",
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/sekrit-twc/zimg.git",
-          "commit": "e17ee6cf72509c32c15067b32615849e69486367"
-        },
-        {
-          "type": "script",
-          "dest-filename": "autogen.sh",
-          "commands": [
-            "autoreconf -vfi"
-          ]
+          "type": "archive",
+          "url": "https://github.com/sekrit-twc/zimg/archive/release-3.0.2.tar.gz",
+          "sha256": "b9eadf1df12ae8395ba781f2468965d411b21abbebbebeae3651d492227d4633"
         }
       ]
     },
@@ -311,6 +222,28 @@
           "type": "archive",
           "url": "https://github.com/georgmartius/vid.stab/archive/v1.1.0.tar.gz",
           "sha256": "14d2a053e56edad4f397be0cb3ef8eb1ec3150404ce99a426c4eb641861dc0bb"
+        }
+      ]
+    },
+    {
+      "name": "jack2",
+      "buildsystem": "simple",
+      "build-commands": [
+        "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --classic",
+        "./waf build -j $FLATPAK_BUILDER_N_JOBS",
+        "./waf install"
+      ],
+      "cleanup": [
+        "/bin",
+        "/share",
+        "/lib/jack",
+        "/lib/libjackserver.so*"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/jackaudio/jack2/releases/download/v1.9.14/v1.9.14.tar.gz",
+          "sha256": "a20a32366780c0061fd58fbb5f09e514ea9b7ce6e53b080a44b11a558a83217c"
         }
       ]
     },
@@ -373,12 +306,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.exiv2.org/builds/exiv2-0.27.3-Source.tar.gz",
-          "sha256": "a79f5613812aa21755d578a297874fb59a85101e793edc64ec2c6bd994e3e778"
-        },
-        {
-          "type": "patch",
-          "path": "patches/exiv2-fcf-protection-only-on-x86.patch"
+          "url": "https://www.exiv2.org/builds/exiv2-0.27.4-Source.tar.gz",
+          "sha256": "84366dba7c162af9a7603bcd6c16f40fe0e9af294ba2fd2f66ffffb9fbec904e"
         }
       ]
     },
@@ -391,8 +320,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
-          "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
+          "url": "https://github.com/libass/libass/releases/download/0.15.1/libass-0.15.1.tar.xz",
+          "sha256": "1cdd39c9d007b06e737e7738004d7f38cf9b1e92843f37307b24e7ff63ab8e53"
         },
         {
           "type": "script",
@@ -458,28 +387,6 @@
       ]
     },
     {
-      "name": "jack2",
-      "buildsystem": "simple",
-      "build-commands": [
-        "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --classic",
-        "./waf build -j $FLATPAK_BUILDER_N_JOBS",
-        "./waf install"
-      ],
-      "cleanup": [
-        "/bin",
-        "/share",
-        "/lib/jack",
-        "/lib/libjackserver.so*"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/jackaudio/jack2/releases/download/v1.9.14/v1.9.14.tar.gz",
-          "sha256": "a20a32366780c0061fd58fbb5f09e514ea9b7ce6e53b080a44b11a558a83217c"
-        }
-      ]
-    },
-    {
       "name": "v4l-utils",
       "config-opts": [
         "--disable-static",
@@ -498,16 +405,6 @@
       ]
     },
     {
-      "name": "libass",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
-          "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
-        }
-      ]
-    },
-    {
       "name": "x264",
       "config-opts": [
         "--disable-cli",
@@ -517,7 +414,7 @@
         {
           "type": "git",
           "url": "https://code.videolan.org/videolan/x264.git",
-          "commit": "d198931a63049db1f2c92d96c34904c69fde8117"
+          "commit": "5db6aa6cab1b146e07b60cc1736a01f21da01154"
         }
       ]
     },
@@ -547,8 +444,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2020.06.16.tar.gz",
-          "sha256": "2f5a60e5ac4b127650618c58a7e3b35a84dbf23c1a0ac72eb5e7baf221600e06"
+          "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2021.06.30.tar.gz",
+          "sha256": "6640d590c30d90f89351f5e3043ae6363feeb19ac5e64bc35f8cfa1a6cd5498e"
         }
       ]
     },
@@ -561,8 +458,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.18.tar.gz",
-          "sha256": "4f21ee07c8bb9b73ff48dbce7cb0917cdcd4d81d33333da391d97ce7f00642fe"
+          "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v.1.4.21.tar.gz",
+          "sha256": "66b3a94bd284d313f9c682b331fae503f617d20126c9ce24f51b2117f5b3cf05"
         }
       ]
     },
@@ -579,8 +476,8 @@
         {
           "type": "git",
           "url": "https://git.videolan.org/git/ffmpeg/nv-codec-headers.git",
-          "commit": "7a81595786463d1c7efcb03aa85def69fc2cad41",
-          "tag": "n11.0.10.0"
+          "commit": "315ad740ac77282c7cea67ba31f2e4b373132919",
+          "tag": "n11.0.10.1"
         }
       ]
     },
@@ -601,9 +498,9 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://aomedia.googlesource.com/aom.git",
-          "commit": "d853caa2ab62d161e5edf344ffee7b597449dc0d",
-          "tag": "v3.0.0"
+          "url": "https://aomedia.googlesource.com/aom",
+          "commit": "2929e7809ac84c43363ab6e1bada7302787af9b5",
+          "tag": "v3.1.1"
         }
       ]
     },
@@ -755,31 +652,24 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/opencv/opencv/archive/4.3.0.tar.gz",
-          "sha256": "68bc40cbf47fdb8ee73dfaf0d9c6494cd095cf6294d99de445ab64cf853d278a"
+          "url": "https://github.com/opencv/opencv/archive/4.5.3.tar.gz",
+          "sha256": "77f616ae4bea416674d8c373984b20c8bd55e7db887fd38c6df73463a0647bab"
         },
         {
           "type": "archive",
-          "url": "https://github.com/opencv/opencv_contrib/archive/4.3.0.tar.gz",
-          "sha256": "acb8e89c9e7d1174e63e40532125b60d248b00e517255a98a419d415228c6a55"
+          "url": "https://github.com/opencv/opencv_contrib/archive/4.5.3.tar.gz",
+          "sha256": "73da052fd10e73aaba2560eaff10cc5177e2dcc58b27f8aedf7c649e24c233bc"
         }
       ]
     },
     {
       "name": "rubberband",
-      "config-opts": [
-        "--disable-program",
-        "--enable-shared",
-        "--disable-static",
-        "--without-ladspa",
-        "--disable-vamp",
-        "--without-jni"
-      ],
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "archive",
-          "url": "https://breakfastquay.com/files/releases/rubberband-1.9.0.tar.bz2",
-          "sha256": "4f5b9509364ea876b4052fc390c079a3ad4ab63a2683aad09662fb905c2dc026"
+          "url": "https://breakfastquay.com/files/releases/rubberband-1.9.2.tar.bz2",
+          "sha256": "b3cff5968517141fcf9e1ef6b5a1fdb06a5511f148000609216cf182ff4ab612"
         }
       ]
     },
@@ -813,8 +703,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.04.2/src/kdenlive-21.04.2.tar.xz",
-          "sha256": "5510106b6bdda3f2048702b23d90f7438d4ec4d2ddb932e53df716e6d4afdd4f"
+          "url": "https://download.kde.org/stable/release-service/21.04.3/src/kdenlive-21.04.3.tar.xz",
+          "sha256": "754fae49644afbc8ecc0f5a4d579f09738f189a7626c99f862e5e4cdb6426df1"
         }
       ]
     }
