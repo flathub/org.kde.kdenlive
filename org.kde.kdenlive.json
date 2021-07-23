@@ -575,7 +575,7 @@
       ]
     },
     {
-      "name": "aom",
+      "name": "libaom",
       "buildsystem": "cmake-ninja",
       "builddir": true,
       "config-opts": [
