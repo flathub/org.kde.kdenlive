@@ -62,41 +62,6 @@
   "modules": [
     "python-modules.json",
     {
-      "name": "libdvdread",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/libdvdread/6.1.1/libdvdread-6.1.1.tar.bz2",
-          "sha256": "3e357309a17c5be3731385b9eabda6b7e3fa010f46022a06f104553bf8e21796"
-        }
-      ]
-    },
-    {
-      "name": "genisoimage",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "build-options" : {
-        "cflags": "-fcommon"
-      },
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://deb.debian.org/debian/pool/main/c/cdrkit/cdrkit_1.1.11.orig.tar.gz",
-          "sha256": "d1c030756ecc182defee9fe885638c1785d35a2c2a297b4604c0e0dcc78e47da"
-        }
-      ]
-    },
-    {
-      "name": "dvdauthor",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/dvdauthor/dvdauthor-0.7.2.tar.gz",
-          "sha1": "0e605642140576bfb3e963414d77630d1c073a51"
-        }
-      ]
-    },
-    {
       "name": "rttr",
       "buildsystem": "cmake-ninja",
       "builddir": true,
