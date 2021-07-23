@@ -308,10 +308,6 @@
           "type": "archive",
           "url": "https://www.exiv2.org/builds/exiv2-0.27.4-Source.tar.gz",
           "sha256": "84366dba7c162af9a7603bcd6c16f40fe0e9af294ba2fd2f66ffffb9fbec904e"
-        },
-        {
-          "type": "patch",
-          "path": "patches/exiv2-fcf-protection-only-on-x86.patch"
         }
       ]
     },
