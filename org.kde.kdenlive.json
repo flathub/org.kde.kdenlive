@@ -581,7 +581,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "autoreconf -fiv",
-        "./configure",
+        "./configure --prefix=/app",
         "make",
         "make install"
       ],
