@@ -498,7 +498,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://aomedia.googlesource.com/aom.git",
+          "url": "https://aomedia.googlesource.com/aom",
           "commit": "2929e7809ac84c43363ab6e1bada7302787af9b5",
           "tag": "v3.1.1"
         }
