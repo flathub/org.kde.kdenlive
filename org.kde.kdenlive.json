@@ -639,8 +639,8 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "tag": "a87229bcea6242da2a0b923ad11dffd37d44098f",
-          "commit": "a87229bcea6242da2a0b923ad11dffd37d44098f"
+          "tag": "66b73f12aa9b585ffcb6ea3014aeb9bbf304af46",
+          "commit": "66b73f12aa9b585ffcb6ea3014aeb9bbf304af46"
         }
       ]
     },
@@ -657,8 +657,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.04.3/src/kdenlive-21.04.3.tar.xz",
-          "sha256": "754fae49644afbc8ecc0f5a4d579f09738f189a7626c99f862e5e4cdb6426df1"
+          "url": "https://download.kde.org/stable/release-service/21.08.0/src/kdenlive-21.08.0.tar.xz",
+          "sha256": "b8983e395634766910140d3750cbc4f2bd6fd37cd9edb10eb01606601e9098b5"
         }
       ]
     }
