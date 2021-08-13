@@ -62,41 +62,6 @@
   "modules": [
     "python-modules.json",
     {
-      "name": "libdvdread",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/libdvdread/6.1.1/libdvdread-6.1.1.tar.bz2",
-          "sha256": "3e357309a17c5be3731385b9eabda6b7e3fa010f46022a06f104553bf8e21796"
-        }
-      ]
-    },
-    {
-      "name": "genisoimage",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "build-options" : {
-        "cflags": "-fcommon"
-      },
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://deb.debian.org/debian/pool/main/c/cdrkit/cdrkit_1.1.11.orig.tar.gz",
-          "sha256": "d1c030756ecc182defee9fe885638c1785d35a2c2a297b4604c0e0dcc78e47da"
-        }
-      ]
-    },
-    {
-      "name": "dvdauthor",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/dvdauthor/dvdauthor-0.7.2.tar.gz",
-          "sha1": "0e605642140576bfb3e963414d77630d1c073a51"
-        }
-      ]
-    },
-    {
       "name": "rttr",
       "buildsystem": "cmake-ninja",
       "builddir": true,
@@ -459,7 +424,7 @@
         {
           "type": "archive",
           "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v.1.4.21.tar.gz",
-          "sha256": "66b3a94bd284d313f9c682b331fae503f617d20126c9ce24f51b2117f5b3cf05"
+          "sha256": "ffbd24e6e6bc47faff8e91061357046544c32733048b459f227986ea5fe30456"
         }
       ]
     },
@@ -685,8 +650,8 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "tag": "a87229bcea6242da2a0b923ad11dffd37d44098f",
-          "commit": "a87229bcea6242da2a0b923ad11dffd37d44098f"
+          "tag": "66b73f12aa9b585ffcb6ea3014aeb9bbf304af46",
+          "commit": "66b73f12aa9b585ffcb6ea3014aeb9bbf304af46"
         }
       ]
     },
@@ -703,8 +668,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.04.3/src/kdenlive-21.04.3.tar.xz",
-          "sha256": "754fae49644afbc8ecc0f5a4d579f09738f189a7626c99f862e5e4cdb6426df1"
+          "url": "https://download.kde.org/stable/release-service/21.08.0/src/kdenlive-21.08.0.tar.xz",
+          "sha256": "e441df27deab64cb342f4b1b874313f149950d4baada12f074ad833aa996ce22"
         }
       ]
     }
