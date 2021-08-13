@@ -658,7 +658,7 @@
         {
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/21.08.0/src/kdenlive-21.08.0.tar.xz",
-          "sha256": "b8983e395634766910140d3750cbc4f2bd6fd37cd9edb10eb01606601e9098b5"
+          "sha256": "e441df27deab64cb342f4b1b874313f149950d4baada12f074ad833aa996ce22"
         }
       ]
     }
