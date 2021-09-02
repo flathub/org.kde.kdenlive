@@ -493,7 +493,7 @@
       ]
     },
     {
-        "name": "dav1d",
+      "name": "dav1d",
       "buildsystem": "meson",
       "sources": [
         {
@@ -649,7 +649,7 @@
       "sources": [
         {
           "type": "git",
-            "url": "https://github.com/mltframework/mlt.git",
+           "url": "https://github.com/mltframework/mlt.git",
           "commit": "685698ab01fea2ac5322ab074b3e827ead5a6739"
         }
       ]
