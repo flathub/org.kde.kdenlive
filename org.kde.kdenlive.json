@@ -207,8 +207,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/jackaudio/jack2/releases/download/v1.9.14/v1.9.14.tar.gz",
-          "sha256": "a20a32366780c0061fd58fbb5f09e514ea9b7ce6e53b080a44b11a558a83217c"
+          "url": "https://github.com/jackaudio/jack2/archive/refs/tags/v1.9.19.tar.gz",
+          "sha256": "9030f4dc11773351b6ac96affd9c89803a5587ebc1b091e5ff866f433327e4b0"
         }
       ]
     },
@@ -667,8 +667,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.08.0/src/kdenlive-21.08.0.tar.xz",
-          "sha256": "e441df27deab64cb342f4b1b874313f149950d4baada12f074ad833aa996ce22"
+          "url": "https://download.kde.org/stable/release-service/21.08.1/src/kdenlive-21.08.1.tar.xz",
+          "sha256": "9fdd7c66e9b528c668f8b1736bc84f51a7e72b2a2a6e5aef6438b803aa0b5b3e"
         }
       ]
     }
