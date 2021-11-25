@@ -2,7 +2,7 @@
   "app-id": "org.kde.kdenlive",
   "default-branch": "stable",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15",
+  "runtime-version": "5.15-21.08",
   "sdk": "org.kde.Sdk",
   "command": "kdenlive",
   "rename-icon": "kdenlive",
@@ -23,7 +23,7 @@
   "add-extensions": {
     "org.freedesktop.LinuxAudio.Plugins": {
       "directory": "extensions/Plugins",
-      "version": "20.08",
+      "version": "21.08",
       "add-ld-path": "lib",
       "merge-dirs": "ladspa",
       "subdirectories": true,
@@ -31,7 +31,7 @@
     },
     "org.freedesktop.LinuxAudio.Plugins.swh": {
       "directory": "extensions/Plugins/swh",
-      "version": "20.08",
+      "version": "21.08",
       "add-ld-path": "lib",
       "merge-dirs": "ladspa",
       "autodelete": false,
@@ -39,7 +39,7 @@
     },
     "org.freedesktop.LinuxAudio.Plugins.TAP": {
       "directory": "extensions/Plugins/TAP",
-      "version": "20.08",
+      "version": "21.08",
       "add-ld-path": "lib",
       "merge-dirs": "ladspa",
       "autodelete": false,
@@ -503,8 +503,8 @@
       "sources": [
          {
            "type": "archive",
-           "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-20.1.1.tar.gz",
-           "sha256": "44300c0f068f6d018d182455dd9c2f48db1e85fe0b38fcd60d0353bd145923dc"
+           "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-21.3.5.tar.gz",
+           "sha256": "3f13869298d3946d7d91e58846e274ef62cd5af2473f59f36b57b2c27ebfd87c"
          }
       ]
     },
