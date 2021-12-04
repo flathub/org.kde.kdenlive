@@ -2,7 +2,7 @@
   "app-id": "org.kde.kdenlive",
   "default-branch": "stable",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15",
+  "runtime-version": "5.15-21.08",
   "sdk": "org.kde.Sdk",
   "command": "kdenlive",
   "rename-icon": "kdenlive",
@@ -542,7 +542,6 @@
           "x86_64": {
             "config-opts": [
               "--enable-ffnvcodec",
-              "--enable-cuda-llvm",
               "--enable-nvenc",
               "--enable-vdpau",
               "--enable-nvdec",
