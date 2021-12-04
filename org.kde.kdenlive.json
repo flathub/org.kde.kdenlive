@@ -541,6 +541,8 @@
       "build-options": {
         "arch": {
           "x86_64": {
+            "prepend-path": "/usr/lib/sdk/llvm12/bin",
+            "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib",
             "config-opts": [
               "--enable-ffnvcodec",
               "--enable-cuda-llvm",
