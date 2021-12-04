@@ -4,6 +4,7 @@
   "runtime": "org.kde.Platform",
   "runtime-version": "5.15-21.08",
   "sdk": "org.kde.Sdk",
+  "sdk-extensions" : [ "org.freedesktop.Sdk.Extension.llvm11" ],
   "command": "kdenlive",
   "rename-icon": "kdenlive",
   "finish-args": [
@@ -542,6 +543,7 @@
           "x86_64": {
             "config-opts": [
               "--enable-ffnvcodec",
+              "--enable-cuda-llvm",
               "--enable-nvenc",
               "--enable-vdpau",
               "--enable-nvdec",
@@ -560,10 +562,6 @@
           "type": "archive",
           "url": "https://www.ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
           "sha256": "eadbad9e9ab30b25f5520fbfde99fae4a92a1ae3c0257a8d68569a4651e30e02"
-        },
-        {
-          "type": "patch",
-          "path": "patches/nvenc-fix-lossless-tuning-logic.patch"
         }
       ]
     },
