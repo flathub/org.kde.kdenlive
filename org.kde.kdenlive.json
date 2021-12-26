@@ -15,6 +15,7 @@
     "--socket=pulseaudio",
     "--share=network",
     "--filesystem=host",
+    "--system-talk-name=org.freedesktop.UDisks2",
     "--env=TMPDIR=/var/tmp",
     "--env=QT_ENABLE_HIGHDPI_SCALING=1",
     "--env=FREI0R_PATH=/app/lib/frei0r-1",
