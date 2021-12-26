@@ -613,7 +613,7 @@
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
         "-DOPENCV_GENERATE_PKGCONFIG=ON",
-        "-DBUILD_LIST=tracking"
+        "-DBUILD_LIST=tracking,dnn"
       ],
       "cleanup": [
         "/bin"
