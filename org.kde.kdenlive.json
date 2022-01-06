@@ -15,6 +15,7 @@
     "--socket=pulseaudio",
     "--share=network",
     "--filesystem=host",
+    "--system-talk-name=org.freedesktop.UDisks2",
     "--env=TMPDIR=/var/tmp",
     "--env=QT_ENABLE_HIGHDPI_SCALING=1",
     "--env=FREI0R_PATH=/app/lib/frei0r-1",
@@ -612,7 +613,7 @@
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
         "-DOPENCV_GENERATE_PKGCONFIG=ON",
-        "-DBUILD_LIST=tracking"
+        "-DBUILD_LIST=tracking,dnn"
       ],
       "cleanup": [
         "/bin"
@@ -666,7 +667,7 @@
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "e8cd5258e49fcc2cda52d314edbcb46c5ebe7371"
+          "commit": "e2b52fb83ba9af6eb52b6663f860e2b7bb162ad9"
         }
       ]
     },
