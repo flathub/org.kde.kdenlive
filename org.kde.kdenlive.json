@@ -684,7 +684,7 @@
       ],
       "sources": [
         {
-          "type": "archive",
+          "type": "git",
           "url": "https://invent.kde.org/multimedia/kdenlive.git",
           "commit": "077f2f290a4f42ca7bacae1cc05c87db16c3f35c"
         }
