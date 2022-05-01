@@ -685,8 +685,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/22.04.0/src/kdenlive-22.04.0.tar.xz",
-          "sha256": "66147b2f1a2cf6f05eda15e4cc3e9d9b126d2dbcc187ecc6d78dea2c7b2c6d79"
+          "url": "https://invent.kde.org/multimedia/kdenlive.git",
+          "commit": "077f2f290a4f42ca7bacae1cc05c87db16c3f35c"
         }
       ]
     }
