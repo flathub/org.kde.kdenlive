@@ -338,7 +338,7 @@
         {
           "type": "archive",
           "url": "https://www.ladspa.org/download/ladspa_sdk_1.17.tgz",
-          "sha256": "d9d596171d93f9c226fcdb7e27c6f917422ac487efe2c05e0a18094df4268061"
+          "sha256": "27d24f279e4b81bd17ecbdcc38e4c42991bb388826c0b200067ce0eb59d3da5b"
         }
       ]
     },
@@ -685,8 +685,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/22.04.1/src/kdenlive-22.04.1.tar.xz",
-          "sha256": "ae879041f18ee89b3fef2dc85cbb6899bf184c433b234d0c2145085767952a4e"
+          "url": "https://download.kde.org/stable/release-service/22.04.2/src/kdenlive-22.04.2.tar.xz",
+          "sha256": "1f74804ece89b4a95b2971e959e5fc9403b7b723acb5e4406acde88e4e02dcc9"
         }
       ]
     }
