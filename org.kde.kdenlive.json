@@ -663,13 +663,14 @@
       "builddir": true,
       "config-opts": [
         "-DMOD_OPENCV=ON",
-        "-DMOD_MOVIT=ON"
+        "-DMOD_MOVIT=ON",
+        "-DMOD_GLAXNIMATE=ON"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/mltframework/mlt.git",
-          "commit": "e2b52fb83ba9af6eb52b6663f860e2b7bb162ad9"
+          "commit": "87347147eac8adf5ecfac0c3c4ec2d4aaf041f9d"
         }
       ]
     },
