@@ -688,7 +688,13 @@
         {
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/22.04.3/src/kdenlive-22.04.3.tar.xz",
-          "sha256": "7ee62ff9ed3a9e81552ff48b908976e73b5a78f1c93dfa858317af503c345790"
+          "sha256": "7ee62ff9ed3a9e81552ff48b908976e73b5a78f1c93dfa858317af503c345790",
+          "x-checker-data": {
+              "type": "anitya",
+              "project-id": 8763,
+              "stable-only": true,
+              "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
+          }
         }
       ]
     }
