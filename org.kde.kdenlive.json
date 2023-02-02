@@ -711,8 +711,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.1/src/kdenlive-22.12.1.tar.xz",
-                    "sha256": "af1e6ef56733c986c5993f48d19fbb3e8a1b14354819e9d029b5f63d1f00d7dd",
+                    "url": "https://download.kde.org/stable/release-service/22.12.2/src/kdenlive-22.12.2.tar.xz",
+                    "sha256": "069dbc1eb22c7d8ba6fe820824560a932b490ddfdbd7f861bb4e8748f4a4bebc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
