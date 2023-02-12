@@ -10,8 +10,12 @@
         "sources": [
           {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/fb/c1/67ceeba190efa1e6281b214c7d827cd05e7c8b82ba456a043f0ba5cc3eb4/pyaaf2-1.2.0.tar.gz",
-            "sha256": "08cba1f96caa41e23570e6961761ac192a42910fb2991dda3004550c931a610c"
+            "url": "https://files.pythonhosted.org/packages/c5/65/cd8c6eac8632ba817387d56f112c7a4bbea3760377ea8a8a78ea1b60ecac/pyaaf2-1.6.0.tar.gz",
+            "sha256": "83815554dbe56aabae4cf48d02e58cd7c102733d649672832ec8a2542d3f24ad",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "pyaaf2"
+            }
           }
         ]
       },
@@ -20,53 +24,17 @@
         "buildsystem": "simple",
         "build-commands": [
           "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.9'|\" -i setup.py",
-          "python3 setup.py install --prefix=/app --root=/ --cxx-install-root=/app"
+          "python3 setup.py install --prefix=/app --root=/"
         ],
         "sources": [
           {
             "type": "archive",
-            "url": "https://files.pythonhosted.org/packages/9e/bb/a3b1f7c94b42f20a59a0d5dbc693ebfeb7623f0f86953f0d946595e2b03d/OpenTimelineIO-0.13.0.tar.gz",
-            "sha256": "c29c947479687cad7844684016aecc2a640daa67cbefb2dbf5c6a1aca45bfe1b"
-          }
-        ]
-      },
-      {
-        "name": "python3-cffi",
-        "skip-arches": ["aarch64"],
-        "buildsystem": "simple",
-        "build-commands": [
-          "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"cffi\" --no-build-isolation"
-        ],
-        "sources": [
-          {
-              "type": "file",
-              "url": "https://files.pythonhosted.org/packages/2e/92/87bb61538d7e60da8a7ec247dc048f7671afe17016cd0008b3b710012804/cffi-1.14.6.tar.gz",
-              "sha256": "c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd"
-          },
-          {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0f/86/e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd/pycparser-2.20.tar.gz",
-            "sha256": "2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"
-          }
-        ]
-      },
-      {
-        "name": "python3-vosk",
-        "skip-arches": ["aarch64"],
-        "buildsystem": "simple",
-        "build-commands": [
-          "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"vosk\" --no-build-isolation"
-        ],
-        "sources": [
-          {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e1/93/4d3b1843897f0290a2c93d48b9124058ae156b8e82aaf8b0764c536997b3/vosk-0.3.30-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
-            "sha256": "8883a61abc4d12278378fc23bc7041adcfb43e90aa90327ca41d5554426a01a0"
-          },
-          {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/dd/6b/d82b1fd391a9851b637e6889b05cd6ff1af66fa60af3e170bd1fcc27d2c4/vosk-0.3.30-py3-none-linux_armv7l.whl",
-            "sha256": "c7702a52d3f940b50131069cf2f82ef5930cf0d40bd3129922e15f8da515f661"
+            "url": "https://files.pythonhosted.org/packages/6d/5f/e9e9227b475b27a2b922e059edf01aab0b1b034c490c7eb54f46fd64b3a3/OpenTimelineIO-0.15.0.tar.gz",
+            "sha256": "bb093fb1d1a6e0f2c0ebbda6f7be0906080a63d611da5aa9b6c5d0f1f2f86916",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "OpenTimelineIO"
+            }
           }
         ]
       },
@@ -80,8 +48,167 @@
         "sources": [
           {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/3b/dd/0629a23b11da7696ce69e4432a2de6a1d1277bf2ba5cda624009069d4bb3/srt-3.4.1.tar.gz",
-            "sha256": "aa507439bf593adb1b207d21c5975c9774263da97489f8b90d8a016bfa67ee94"
+            "url": "https://files.pythonhosted.org/packages/18/a3/e1466f7c86a9e5d3e462ed6eb3a548917e93cc1ee212cd927f8f4e887ae9/srt-3.5.2.tar.gz",
+            "sha256": "7aa4ad5ce4126d3f53b3e7bc4edaa86653d0378bf1c0b1ab8c59f5ab41384450",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "srt"
+            }
+          }
+        ]
+      },
+      {
+        "name": "python3-cffi",
+        "skip-arches": ["aarch64"],
+        "buildsystem": "simple",
+        "build-commands": [
+          "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"cffi\" --no-build-isolation"
+        ],
+        "sources": [
+          {
+              "type": "file",
+              "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
+              "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9",
+              "x-checker-data": {
+                "type": "pypi",
+                "name": "cffi"
+            }
+          },
+          {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/5e/0b/95d387f5f4433cb0f53ff7ad859bd2c6051051cebbb564f139a999ab46de/pycparser-2.21.tar.gz",
+            "sha256": "e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "pycparser"
+            }
+          }
+        ]
+      },
+      {
+          "name": "python3-websockets",
+          "buildsystem": "simple",
+          "build-commands": [
+              "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"websockets\" --no-build-isolation"
+          ],
+          "sources": [
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/85/dc/549a807a53c13fd4a8dac286f117a7a71260defea9ec0c05d6027f2ae273/websockets-10.4.tar.gz",
+                  "sha256": "eef610b23933c54d5d921c92578ae5f89813438fded840c2e9809d378dc765d3",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "websockets"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "python3-requests",
+          "buildsystem": "simple",
+          "build-commands": [
+              "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requests\" --no-build-isolation"
+          ],
+          "sources": [
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/37/f7/2b1b0ec44fdc30a3d31dfebe52226be9ddc40cd6c0f34ffc8923ba423b69/certifi-2022.12.7.tar.gz",
+                  "sha256": "35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "certifi"
+                  }
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/96/d7/1675d9089a1f4677df5eb29c3f8b064aa1e70c1251a0a8a127803158942d/charset-normalizer-3.0.1.tar.gz",
+                  "sha256": "ebea339af930f8ca5d7a699b921106c6e29c617fe9606fa7baa043c1cdae326f",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "charset-normalizer"
+                  }
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/8b/e1/43beb3d38dba6cb420cefa297822eac205a277ab43e5ba5d5c46faf96438/idna-3.4.tar.gz",
+                  "sha256": "814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "idna"
+                  }
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/9d/ee/391076f5937f0a8cdf5e53b701ffc91753e87b07d66bae4a09aa671897bf/requests-2.28.2.tar.gz",
+                  "sha256": "98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "requests"
+                  }
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/c5/52/fe421fb7364aa738b3506a2d99e4f3a56e079c0a798e9f4fa5e14c60922f/urllib3-1.26.14.tar.gz",
+                  "sha256": "076907bf8fd355cde77728471316625a4d2f7e713c125f51953bb5b3eecf4f72",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "urllib3"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "python3-tqdm",
+          "buildsystem": "simple",
+          "build-commands": [
+              "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tqdm\" --no-build-isolation"
+          ],
+          "sources": [
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/c1/c2/d8a40e5363fb01806870e444fc1d066282743292ff32a9da54af51ce36a2/tqdm-4.64.1.tar.gz",
+                  "sha256": "5f4f682a004951c1b450bc753c710e9280c5746ce6ffedee253ddbcbf54cf1e4",
+                  "x-checker-data": {
+                      "type": "pypi",
+                      "name": "tqdm"
+                  }
+              }
+          ]
+      },
+      {
+        "name": "python3-vosk",
+        "skip-arches": ["aarch64"],
+        "buildsystem": "simple",
+        "build-commands": [
+          "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"vosk\" --no-build-isolation"
+        ],
+        "sources": [
+          {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fc/ca/83398cfcd557360a3d7b2d732aee1c5f6999f68618d1645f38d53e14c9ff/vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+            "sha256": "25e025093c4399d7278f543568ed8cc5460ac3a4bf48c23673ace1e25d26619f",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "vosk"
+            }
+          },
+          {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a4/23/3130a69fa0bf4f5566a52e415c18cd854bf561547bb6505666a6eb1bb625/vosk-0.3.45-py3-none-manylinux2014_aarch64.whl",
+            "sha256": "54efb47dd890e544e9e20f0316413acec7f8680d04ec095c6140ab4e70262704",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "vosk"
+            }
+          },
+          {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/32/6d/728d89a4fe8d0573193eb84761b6a55e25690bac91e5bbf30308c7f80051/vosk-0.3.45-py3-none-linux_armv7l.whl",
+            "sha256": "4221f83287eefe5abbe54fc6f1da5774e9e3ffcbbdca1705a466b341093b072e",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "vosk"
+            }
           }
         ]
       }
