@@ -2,10 +2,10 @@
     "app-id": "org.kde.kdenlive",
     "default-branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm12"
+        "org.freedesktop.Sdk.Extension.llvm14"
     ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -29,7 +29,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "21.08",
+            "version": "22.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "subdirectories": true,
@@ -37,7 +37,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.swh": {
             "directory": "extensions/Plugins/swh",
-            "version": "21.08",
+            "version": "22.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -45,7 +45,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.TAP": {
             "directory": "extensions/Plugins/TAP",
-            "version": "21.08",
+            "version": "22.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -546,8 +546,8 @@
             "build-options": {
                 "arch": {
                     "x86_64": {
-                        "prepend-path": "/usr/lib/sdk/llvm12/bin",
-                        "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib",
+                        "prepend-path": "/usr/lib/sdk/llvm14/bin",
+                        "prepend-ld-library-path": "/usr/lib/sdk/llvm14/lib",
                         "config-opts": [
                             "--enable-ffnvcodec",
                             "--enable-cuda-llvm",
