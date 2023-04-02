@@ -99,8 +99,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/85/dc/549a807a53c13fd4a8dac286f117a7a71260defea9ec0c05d6027f2ae273/websockets-10.4.tar.gz",
-                    "sha256": "eef610b23933c54d5d921c92578ae5f89813438fded840c2e9809d378dc765d3",
+                    "url": "https://files.pythonhosted.org/packages/06/e7/de79d7cdde692dedb0944c42a03c358118f13cdff79d016a0504dbca35e4/websockets-11.0.tar.gz",
+                    "sha256": "19d638549c470f5fd3b67b52b2a08f2edba5a04e05323a706937e35f5f19d056",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "websockets"
