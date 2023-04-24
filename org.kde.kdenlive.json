@@ -614,47 +614,47 @@
         {
             "name": "ffmpeg",
             "config-opts": [
-                "--enable-rpath",
-                "--enable-gpl",
-                "--disable-static",
-                "--enable-shared",
                 "--disable-doc",
+                "--disable-static",
+                "--enable-amf",
+                "--enable-cuda-llvm",
+                "--enable-cuvid",
+                "--enable-ffnvcodec",
+                "--enable-gnutls",
+                "--enable-gpl",
+                "--enable-libaom",
+                "--enable-libass",
+                "--enable-libdav1d",
                 "--enable-libfontconfig",
                 "--enable-libfreetype",
+                "--enable-libmp3lame",
+                "--enable-libopenjpeg",
                 "--enable-libopus",
                 "--enable-libpulse",
                 "--enable-librsvg",
+                "--enable-libv4l2",
+                "--enable-libvidstab",
+                "--enable-libvorbis",
                 "--enable-libvpx",
-                "--enable-libdav1d",
-                "--enable-libxml2",
                 "--enable-libx264",
                 "--enable-libx265",
-                "--enable-libv4l2",
-                "--enable-libmp3lame",
+                "--enable-libxml2",
                 "--enable-libzimg",
-                "--enable-vaapi",
+                "--enable-nvdec",
+                "--enable-nvenc",
                 "--enable-opencl",
-                "--enable-libass",
-                "--enable-gnutls",
-                "--enable-libvorbis",
-                "--enable-libvidstab",
-                "--enable-libaom",
-                "--enable-libopenjpeg"
+                "--enable-rpath",
+                "--enable-shared",
+                "--enable-vaapi",
+                "--enable-vdpau"
             ],
             "build-options": {
+                "prepend-path": "/usr/lib/sdk/llvm15/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm15/lib",
                 "arch": {
                     "x86_64": {
-                        "prepend-path": "/usr/lib/sdk/llvm15/bin",
-                        "prepend-ld-library-path": "/usr/lib/sdk/llvm15/lib",
                         "config-opts": [
-                            "--enable-ffnvcodec",
-                            "--enable-cuda-llvm",
-                            "--enable-nvenc",
-                            "--enable-vdpau",
-                            "--enable-nvdec",
-                            "--enable-cuvid",
-                            "--enable-libmfx",
-                            "--enable-amf"
+                            "--enable-libmfx"
                         ]
                     }
                 }
