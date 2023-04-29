@@ -859,6 +859,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-id-corruption.patch"
                 }
             ]
         }
