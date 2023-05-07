@@ -589,8 +589,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-23.2.0.tar.gz",
-                    "sha256": "6b33ec917ef0c6395fb66c7b93aae4ae31b3d1dedb5d7d39e0c69f45acb7c4fb",
+                    "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-23.2.1.tar.gz",
+                    "sha256": "186bb82fc9fe23ed21be51a58036c66b109f64c49d923ebe8ac922133338991e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21814,
