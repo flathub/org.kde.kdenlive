@@ -117,8 +117,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl",
-                    "sha256": "4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18",
+                    "url": "https://files.pythonhosted.org/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl",
+                    "sha256": "c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "certifi",
@@ -146,8 +146,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/cf/e1/2aa539876d9ed0ddc95882451deb57cfd7aa8dbf0b8dbce68e045549ba56/requests-2.29.0-py3-none-any.whl",
-                    "sha256": "e8f3c9be120d3333921d213eef078af392fba3933ab7ed2d1cba3b56f2568c3b",
+                    "url": "https://files.pythonhosted.org/packages/96/80/034ffeca15c0f4e01b7b9c6ad0fb704b44e190cde4e757edbd60be404c41/requests-2.30.0-py3-none-any.whl",
+                    "sha256": "10e94cc4f3121ee6da529d358cdaeaff2f1c409cd377dbc72b825852f2f7e294",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "requests",
@@ -156,8 +156,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl",
-                    "sha256": "aa751d169e23c7479ce47a0cb0da579e3ede798f994f5816a74e4f4500dcea42",
+                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
+                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "urllib3",
