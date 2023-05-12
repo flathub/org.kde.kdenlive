@@ -301,13 +301,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.6/exiv2-0.27.6-Source.tar.gz",
-                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 769,
-                        "stable-only": true,
-                        "url-template": "https://github.com/Exiv2/exiv2/releases/download/v$version/exiv2-$version-Source.tar.gz"
-                    }
+                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6"
                 }
             ]
         },
@@ -851,18 +845,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.04.0/src/kdenlive-23.04.0.tar.xz",
-                    "sha256": "eba17db62714e56eb9433499d559dab0657677c6876b0735a756b0d9afc48e6a",
+                    "url": "https://download.kde.org/stable/release-service/23.04.1/src/kdenlive-23.04.1.tar.xz",
+                    "sha256": "957cf1d00017e850690dd17ee1856ab91eb455b4704360a580d6091798e7d04b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-id-corruption.patch"
                 }
             ]
         }
