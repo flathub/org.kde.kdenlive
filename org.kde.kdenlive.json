@@ -335,8 +335,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.2.0.tar.gz",
-                    "sha256": "51bbcbebb40be75c75dba7df211b0ef1bd0463b02b80b7d34e93efeaceb98d3b",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.3.0.tar.gz",
+                    "sha256": "00aa65a887445c806b2a467abc3ccc4b0855f7eaf38ed2011a1ff41e74844fa0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -556,12 +556,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.6.0",
+                    "tag": "v3.6.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "3c65175b1972da4a1992c1dae2365b48d13f9a8d"
+                    "commit": "7ade96172b95adc91a5d85bf80c90989cd543ee8"
                 }
             ]
         },
@@ -583,8 +583,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-23.2.0.tar.gz",
-                    "sha256": "6b33ec917ef0c6395fb66c7b93aae4ae31b3d1dedb5d7d39e0c69f45acb7c4fb",
+                    "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-23.2.2.tar.gz",
+                    "sha256": "12f23a78104edc1c9bfa755effd2723866d107ad752f72d3839fcc8db0503cec",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21814,
