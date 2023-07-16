@@ -504,8 +504,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.29.tar.gz",
-                    "sha256": "be42e4acd973fc7a228f087313bee9eaca08df031ec4596f14fb2eabef528628",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.30.tar.gz",
+                    "sha256": "4a9d43c730a76df6636932cee007917409d5b3607b61cecdf6dfab410f7b5f1d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
