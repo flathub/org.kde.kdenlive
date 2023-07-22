@@ -244,8 +244,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
-                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6",
+                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-6.0.0.tar.gz",
+                    "sha256": "b4a2531bdcfe3368c78182a151885cc61cb1fc49fcdeaac520c55bd230ea5bfa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10227,
