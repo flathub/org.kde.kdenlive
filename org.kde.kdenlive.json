@@ -244,8 +244,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
-                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6",
+                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-6.0.1.tar.gz",
+                    "sha256": "2161c8ba9e96ea64cc855724358bc5d90d9bbe13446e6e6b83ccdcbbb86789c0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10227,
@@ -335,8 +335,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.3.0.tar.gz",
-                    "sha256": "00aa65a887445c806b2a467abc3ccc4b0855f7eaf38ed2011a1ff41e74844fa0",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.3.1.tar.gz",
+                    "sha256": "dd6dbe49ba743421d8ced07781ca09c2ac62522beec16abf1750ef6fe859ddc9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
