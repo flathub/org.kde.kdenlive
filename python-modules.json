@@ -175,8 +175,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/40/14/63f9a5bc62e8a50585b8a7a6de1ffab8eab09aaa5321b86127919ee7de02/tqdm-4.65.1-py3-none-any.whl",
-                    "sha256": "16181c62ad2c6f8f6f29876e66322faad1c7fd3cc70aa9cc25ff63e50d1da031",
+                    "url": "https://files.pythonhosted.org/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl",
+                    "sha256": "6c431f7dee4f57284c8f4bd2eb1d4af00d730d38cc6098bd79880bcbec676276",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "tqdm",
