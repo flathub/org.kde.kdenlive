@@ -526,14 +526,16 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/FFmpeg/nv-codec-headers/archive/refs/tags/n12.0.16.0.tar.gz",
-                    "sha256": "2a1533b65f55f9da52956faf0627ed3b74868ac0c7f269990edd21369113b48f",
+                    "type": "git",
+                    "url": "https://github.com/FFmpeg/nv-codec-headers.git",
+                    "tag": "n11.1.5.2",
+                    "commit": "f8ae7a49bfef2f99d2c931a791dc3863fda67bf3",
                     "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 223796,
-                        "stable-only": true,
-                        "url-template": "https://github.com/FFmpeg/nv-codec-headers/archive/refs/tags/n$version.tar.gz"
+                        "type": "git",
+                        "tag-pattern": "^n([\\d.]+)$",
+                        "versions": {
+                            "<": "12"
+                        }
                     }
                 }
             ]
