@@ -244,8 +244,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
-                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6",
+                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-6.0.1.tar.gz",
+                    "sha256": "42d29cc2b5fa378ba3a978faeb1885a0075acf0fecb5ee50f0d76f6c7d8ab28c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10227,
@@ -611,8 +611,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.6.0/SVT-AV1-v1.6.0.tar.bz2",
-                    "sha256": "c6b49111a2d4c5113f1ada0c2f716d94bd4a8db704623d453066826401ecdab5",
+                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2",
+                    "sha256": "e7995dfc8774f301ac94367a2e5d266dc855cf62ee3d39a635f3a014708e98e1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 24271,
@@ -863,8 +863,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.04.3/src/kdenlive-23.04.3.tar.xz",
-                    "sha256": "313b4e0cc2c789c6c58b848b6282df45336c90b5863780de2c9bb9a8572dc94b",
+                    "url": "https://download.kde.org/stable/release-service/23.08.0/src/kdenlive-23.08.0.tar.xz",
+                    "sha256": "5f63f6cc1d7f7578014ef0fdb3f20e85254f05d7066911329ce568b967e4d207",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
