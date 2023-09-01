@@ -250,6 +250,9 @@
                         "type": "anitya",
                         "project-id": 10227,
                         "stable-only": true,
+                        "versions": {
+                            "<": "6"
+                        },
                         "url-template": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-$version.tar.gz"
                     }
                 }
@@ -556,12 +559,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.6.1",
+                    "tag": "v3.7.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "7ade96172b95adc91a5d85bf80c90989cd543ee8"
+                    "commit": "6054fae218eda6e53e1e3b4f7ef0fff4877c7bf1"
                 }
             ]
         },
