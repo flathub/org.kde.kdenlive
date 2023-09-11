@@ -250,6 +250,9 @@
                         "type": "anitya",
                         "project-id": 10227,
                         "stable-only": true,
+                        "versions": {
+                            "<": "6"
+                        },
                         "url-template": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-$version.tar.gz"
                     }
                 }
