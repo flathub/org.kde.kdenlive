@@ -291,6 +291,28 @@
             ]
         },
         {
+            "name": "inih",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Ddefault_library=shared",
+                "-Ddistro_install=true",
+                "-Dwith_INIReader=true"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz",
+                    "sha256": "f03f98ca35c3adb56b2358573c8d3eda319ccd5287243d691e724b7eafa970b3",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 11600,
+                        "stable-only": true,
+                        "url-template": "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "exiv2",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -303,8 +325,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.6/exiv2-0.27.6-Source.tar.gz",
-                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6"
+                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.28.0/exiv2-0.28.0-Source.tar.gz",
+                    "sha256": "89af3b5ef7277753ef7a7b5374ae017c6b9e304db3b688f1948e73e103491f3d",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 769,
+                        "stable-only": true,
+                        "url-template": "https://github.com/Exiv2/exiv2/releases/download/v$version/exiv2-$version-Source.tar.gz"
+                    }
                 }
             ]
         },
