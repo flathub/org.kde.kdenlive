@@ -788,8 +788,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/23.07/mediainfo_23.07.tar.xz",
-                    "sha256": "b6d7da9e29995fd34a22100825b843e74c32c7bc67adb01166b1beedea49f5d0",
+                    "url": "https://mediaarea.net/download/source/mediainfo/23.09/mediainfo_23.09.tar.xz",
+                    "sha256": "4e0fe94daa3a9e60fe937b6160d9db9d3c57a0e4729edad35cc112ebccf236ac",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
