@@ -10,8 +10,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/e1/c6/b74ecd55ee088ae512d3b7d54daeb55130b4da28657b11e1c5f32877a19b/pyaaf2-1.7.0.tar.gz",
-                    "sha256": "4d37dd8a2591e45a865ec6b0820d875d1dd48947b9604463fc9ec57b2c901a10",
+                    "url": "https://files.pythonhosted.org/packages/77/c5/f3ad278fa038c7e0de5d3a084bae8bc2a403d2223acf9e0b5a7ad4f97768/pyaaf2-1.7.1.tar.gz",
+                    "sha256": "e18e5a84bca4ea18c1b9e8384958e2f6d296195c901a448f71f830b22b89c225",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyaaf2"
@@ -156,8 +156,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9b/81/62fd61001fa4b9d0df6e31d47ff49cfa9de4af03adecf339c7bc30656b37/urllib3-2.0.4-py3-none-any.whl",
-                    "sha256": "de7df1803967d2c2a98e4b11bb7d6bd9210474c46e8a0401514e3a42a75ebde4",
+                    "url": "https://files.pythonhosted.org/packages/37/dc/399e63f5d1d96bb643404ee830657f4dfcf8503f5ba8fa3c6d465d0c57fe/urllib3-2.0.5-py3-none-any.whl",
+                    "sha256": "ef16afa8ba34a1f989db38e1dbbe0c302e4289a47856990d0682e374563ce35e",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "urllib3",
