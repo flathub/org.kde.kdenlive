@@ -156,8 +156,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/37/dc/399e63f5d1d96bb643404ee830657f4dfcf8503f5ba8fa3c6d465d0c57fe/urllib3-2.0.5-py3-none-any.whl",
-                    "sha256": "ef16afa8ba34a1f989db38e1dbbe0c302e4289a47856990d0682e374563ce35e",
+                    "url": "https://files.pythonhosted.org/packages/26/40/9957270221b6d3e9a3b92fdfba80dd5c9661ff45a664b47edd5d00f707f5/urllib3-2.0.6-py3-none-any.whl",
+                    "sha256": "7a7c7003b000adf9e7ca2a377c9688bbc54ed41b985789ed576570342a375cd2",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "urllib3",
