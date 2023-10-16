@@ -891,6 +891,8 @@
                 "-DCMAKE_BUILD_TYPE=Release"
             ],
             "post-install": [
+                "cp /app/share/icons/hicolor/scalable/mimetypes/{,$FLATPAK_ID.}application-x-kdenlive.svgz",
+                "cp /app/share/icons/hicolor/scalable/mimetypes/{,$FLATPAK_ID.}application-x-kdenlivetitle.svgz",
                 "install -d /app/extensions/Plugins"
             ],
             "sources": [
@@ -904,6 +906,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/kdenlive-mime-icon.patch"
                 }
             ]
         }
