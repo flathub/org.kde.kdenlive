@@ -18,6 +18,7 @@
         "--socket=pulseaudio",
         "--share=network",
         "--filesystem=host",
+        "--filesystem=xdg-run/pipewire-0",
         "--system-talk-name=org.freedesktop.UDisks2",
         "--env=TMPDIR=/var/tmp",
         "--env=QT_ENABLE_HIGHDPI_SCALING=1",
@@ -203,34 +204,6 @@
                         "project-id": 15959,
                         "stable-only": true,
                         "url-template": "https://github.com/georgmartius/vid.stab/archive/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "jack2",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./waf configure --prefix=/app --htmldir=/app/share/doc/jack/ --classic",
-                "./waf build -j $FLATPAK_BUILDER_N_JOBS",
-                "./waf install"
-            ],
-            "cleanup": [
-                "/bin",
-                "/share",
-                "/lib/jack",
-                "/lib/libjackserver.so*"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/jackaudio/jack2/archive/v1.9.22.tar.gz",
-                    "sha256": "1e42b9fc4ad7db7befd414d45ab2f8a159c0b30fcd6eee452be662298766a849",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 21358,
-                        "stable-only": true,
-                        "url-template": "https://github.com/jackaudio/jack2/archive/v$version.tar.gz"
                     }
                 }
             ]
