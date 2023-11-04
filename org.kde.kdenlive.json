@@ -572,7 +572,7 @@
             ]
         },
         {
-            "name": "mediasdk",
+            "name": "intel-onevpl-runtime",
             "skip-arches": [
                 "aarch64"
             ],
@@ -582,21 +582,40 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DBUILD_SAMPLES=OFF",
                 "-DBUILD_TESTS=OFF",
-                "-DBUILD_TOOLS=OFF",
-                "-DBUILD_TESTS=OFF",
-                "-DMFX_ENABLE_SW_FALLBACK=OFF"
+                "-DBUILD_TOOLS=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-23.2.2.tar.gz",
-                    "sha256": "12f23a78104edc1c9bfa755effd2723866d107ad752f72d3839fcc8db0503cec",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-23.3.4.tar.gz",
+                    "sha256": "9de6bfd17259b7434f2bb4fb6d2874decf9b1d4587ec9b90d91188049921e32f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21814,
                         "stable-only": true,
-                        "url-template": "https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-$version.tar.gz"
+                        "url-template": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-$version.tar.gz"
                     }
+                }
+            ]
+        },
+        {
+            "name": "oneapi-libvpl",
+            "skip-arches": [
+                "aarch64"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_SAMPLES=OFF",
+                "-DBUILD_TESTS=OFF",
+                "-DBUILD_TOOLS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/oneapi-src/oneVPL/archive/refs/tags/v2023.3.1.zip",
+                    "sha256": "ea8d4ae355f14b0f40a8dfb1035ed1ebc2a4827e5447845d9a97d4bd466812bc"
                 }
             ]
         },
@@ -672,7 +691,7 @@
                 "arch": {
                     "x86_64": {
                         "config-opts": [
-                            "--enable-libmfx"
+                            "--enable-libvpl"
                         ]
                     }
                 }
