@@ -325,13 +325,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.28.0/exiv2-0.28.0-Source.tar.gz",
-                    "sha256": "89af3b5ef7277753ef7a7b5374ae017c6b9e304db3b688f1948e73e103491f3d",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.1.tar.gz",
+                    "sha256": "3078651f995cb6313b1041f07f4dd1bf0e9e4d394d6e2adc6e92ad0b621291fa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
                         "stable-only": true,
-                        "url-template": "https://github.com/Exiv2/exiv2/releases/download/v$version/exiv2-$version-Source.tar.gz"
+                        "url-template": "https://github.com/Exiv2/exiv2/archive/refs/tags/v$version.tar.gz"
                     }
                 }
             ]
@@ -896,8 +896,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.2/src/kdenlive-23.08.2.tar.xz",
-                    "sha256": "f64350cd6453b4f5a75014357532ec9c987247a0b2bda9595d1ca948c8149b87",
+                    "url": "https://download.kde.org/stable/release-service/23.08.3/src/kdenlive-23.08.3.tar.xz",
+                    "sha256": "87ecc8a4664e2d50e9e362b98ebbe5222b087cd13ed2d0289f3ab61e805c2e8f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
