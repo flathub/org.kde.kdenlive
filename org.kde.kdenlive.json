@@ -765,8 +765,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/23.10/libmediainfo_23.10.tar.xz",
-                    "sha256": "76ebe502e0f310b559d5dd90727d9aafd5fabaaeca3442f38e629dfc07da0d22",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/23.11/libmediainfo_23.11.tar.xz",
+                    "sha256": "197e54fcc79e3c0d5df44a8f58dc4e018bc2f85d13fa3bed54af3dc56d5e853d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -788,8 +788,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/23.10/mediainfo_23.10.tar.xz",
-                    "sha256": "b743ae2521d9d8e8b9a5850d7c2a29de30ba777db52738d0dfba17cc046776e7",
+                    "url": "https://mediaarea.net/download/source/mediainfo/23.11/mediainfo_23.11.tar.xz",
+                    "sha256": "801cb1b0d1bffcc1226deca6212a1ee35322e8bb12630a33bbb07a92a8a8c9c3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
