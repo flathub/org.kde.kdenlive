@@ -339,8 +339,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.3.1.tar.gz",
-                    "sha256": "dd6dbe49ba743421d8ced07781ca09c2ac62522beec16abf1750ef6fe859ddc9",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.3.2.tar.gz",
+                    "sha256": "304291e0ecb456a8b054fe04e14adc50ace54d0223b7b29165ff5343e820ef9d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
