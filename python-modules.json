@@ -35,6 +35,10 @@
                         "type": "pypi",
                         "name": "OpenTimelineIO"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0001-Support-compiling-with-GCC-13-1605.patch"
                 }
             ]
         },
