@@ -573,8 +573,8 @@
         },
         {
             "name": "intel-onevpl-runtime",
-            "skip-arches": [
-                "aarch64"
+            "only-arches": [
+                "x86_64"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
