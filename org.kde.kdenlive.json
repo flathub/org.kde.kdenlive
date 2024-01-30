@@ -902,6 +902,10 @@
                 {
                     "type": "patch",
                     "path": "patches/kdenlive-mime-icon.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-org.kde.kdenlive.appdata-Add-developer_name.patch"
                 }
             ]
         }
