@@ -587,8 +587,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.1.1.tar.gz",
-                    "sha256": "e0bd388c04740dd9f2e8ca989bc54428c13a531ed4c097d00f06aa6e58a6d15c",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.1.2.tar.gz",
+                    "sha256": "6193fc21219ec78d97a8c896f15d2618608458af4dcaac24a2d134313099c896",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -757,8 +757,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/23.11/libmediainfo_23.11.tar.xz",
-                    "sha256": "197e54fcc79e3c0d5df44a8f58dc4e018bc2f85d13fa3bed54af3dc56d5e853d",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.01/libmediainfo_24.01.tar.xz",
+                    "sha256": "a02dfc6689f485cec06fa12a3414c3c3aa2853b4dde18aeab4b54a56c8316259",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -780,8 +780,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/23.11/mediainfo_23.11.tar.xz",
-                    "sha256": "801cb1b0d1bffcc1226deca6212a1ee35322e8bb12630a33bbb07a92a8a8c9c3",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.01/mediainfo_24.01.tar.xz",
+                    "sha256": "72fda0ee2e87e1effd5f5c85741ff1aa66cba10248cdfea87afaa4e98d956c65",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
