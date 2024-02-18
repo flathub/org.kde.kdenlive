@@ -780,8 +780,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.01/mediainfo_24.01.tar.xz",
-                    "sha256": "72fda0ee2e87e1effd5f5c85741ff1aa66cba10248cdfea87afaa4e98d956c65",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.01.1/mediainfo_24.01.1.tar.xz",
+                    "sha256": "32ea646d5c86c63d54418d10b2736260ab43e4b727f81e8dd5ecf5e9b5e3fd34",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
@@ -890,8 +890,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.4/src/kdenlive-23.08.4.tar.xz",
-                    "sha256": "65c611090d8e16a0f3ae52700a44fbecac7ec5f136188faca38b43f34502d313",
+                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/kdenlive-23.08.5.tar.xz",
+                    "sha256": "9ae96458e6a257c323f9845341410a140740260f3f8971ce35004de5161a83db",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
