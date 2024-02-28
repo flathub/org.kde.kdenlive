@@ -854,7 +854,7 @@
                 {
                     "type": "git",
                     "url": "http://git.sesse.net/movit",
-                    "commit": "0b1705581552217b0e387bd687d65e4e3410ab91"
+                    "commit": "7af0417ef03b66e15bd6da7802a7db30c92dd9c3"
                 }
             ]
         },
@@ -871,7 +871,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "f6c84d82193e8595278e9a61346a960457c149b2"
+                    "commit": "4b427bfa708db50eb0a3d840c6f83b71269f7e41"
                 }
             ]
         },
