@@ -614,8 +614,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL/archive/refs/tags/v2023.3.1.zip",
-                    "sha256": "ea8d4ae355f14b0f40a8dfb1035ed1ebc2a4827e5447845d9a97d4bd466812bc"
+                    "url": "https://github.com/intel/libvpl/archive/refs/tags/v2023.4.0.tar.gz",
+                    "sha256": "978398c7bb1665a6ad7a1a15cc57dc0204608e56c88436e376b717320a9e63fd"
                 }
             ]
         },
