@@ -853,7 +853,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "http://git.sesse.net/movit",
+                    "url": "https://git.sesse.net/movit",
                     "commit": "0b1705581552217b0e387bd687d65e4e3410ab91"
                 }
             ]
