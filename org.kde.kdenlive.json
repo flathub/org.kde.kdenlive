@@ -217,8 +217,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
-                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6",
+                    "url": "https://github.com/thestk/rtaudio/archive/refs/tags/5.2.0.tar.gz",
+                    "sha256": "a8d9c738addffd485c3f0bab14cbba72600267e3113f274398c67829bbb49332",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10227,
@@ -226,7 +226,7 @@
                         "versions": {
                             "<": "6"
                         },
-                        "url-template": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-$version.tar.gz"
+                        "url-template": "https://github.com/thestk/rtaudio/archive/refs/tags/$version.tar.gz"
                     }
                 }
             ]
