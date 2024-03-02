@@ -431,13 +431,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2",
+                    "url": "https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2",
                     "sha256": "cbb7fe8a6307f5ce533a05cded70bb93c3ba06395ab9b6d007eb53b75d805f5b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9998,
                         "stable-only": true,
-                        "url-template": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-$version.tar.bz2"
+                        "url-template": "https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-$version.tar.bz2"
                     }
                 }
             ]
