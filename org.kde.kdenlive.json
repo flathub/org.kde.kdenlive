@@ -850,9 +850,15 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DMOD_OPENCV=ON",
+                "-DMOD_GLAXNIMATE=OFF",
+                "-DMOD_GLAXNIMATE=ON",
+                "-DMOD_GLAXNIMATE_QT6=ON",
                 "-DMOD_MOVIT=ON",
-                "-DMOD_GLAXNIMATE=ON"
+                "-DMOD_MOVIT=ON",
+                "-DMOD_OPENCV=ON",
+                "-DMOD_OPENCV=ON",
+                "-DMOD_QT6=ON",
+                "-DMOD_QT=OFF"
             ],
             "sources": [
                 {
