@@ -898,7 +898,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "0001-org.kde.kdenlive.appdata-Add-developer_name.patch"
+                    "path": "patches/appdata-flatpak-guidelines.patch"
                 }
             ]
         }
