@@ -1,0 +1,20 @@
+diff --git a/data/org.kde.kdenlive.xml b/data/org.kde.kdenlive.xml
+index 028e397..e142832 100644
+--- a/data/org.kde.kdenlive.xml
++++ b/data/org.kde.kdenlive.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/x-kdenlive">
++    <icon name="org.kde.kdenlive.application-x-kdenlive" />
+     <comment>Kdenlive video project document</comment>
+     <comment xml:lang="ar">مستند مشروع «كِيدِينلايف» فيديو</comment>
+     <comment xml:lang="az">Kdenlive video layihəsi sənədi</comment>
+@@ -36,6 +37,7 @@
+     <glob pattern="*.kdenlive"/>
+   </mime-type>
+   <mime-type type="application/x-kdenlivetitle">
++    <icon name="org.kde.kdenlive.application-x-kdenlivetitle" />
+     <comment>Kdenlive video title</comment>
+     <comment xml:lang="ar">عنوان فيديو «كِيدِينلايف»</comment>
+     <comment xml:lang="az">Kdenlive video başlığı</comment>
