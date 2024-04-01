@@ -532,14 +532,11 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n11.1.5.3",
-                    "commit": "43d91706e097565f57b311e567f0219838bcc2f6",
+                    "tag": "n12.1.14.0",
+                    "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^n([\\d.]+)$",
-                        "versions": {
-                            "<": "12"
-                        }
+                        "tag-pattern": "^n([\\d.]+)$"
                     }
                 }
             ]
@@ -587,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.1.5.tar.gz",
-                    "sha256": "e006d59399dbd0c3b3ecd91610822d655e9303b25a385a9a3ac94a42bf34b284",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.0.tar.gz",
+                    "sha256": "34438637670b13140153c8a6be6b32d755ba72f68b2bbb01a8ec630c3e453900",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -757,8 +754,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.01/libmediainfo_24.01.tar.xz",
-                    "sha256": "a02dfc6689f485cec06fa12a3414c3c3aa2853b4dde18aeab4b54a56c8316259",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.03/libmediainfo_24.03.tar.xz",
+                    "sha256": "cc2bb44e407c890ab566934c56763918505ab58c14134b53f0d1da9eea242c8d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -780,8 +777,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.01.1/mediainfo_24.01.1.tar.xz",
-                    "sha256": "32ea646d5c86c63d54418d10b2736260ab43e4b727f81e8dd5ecf5e9b5e3fd34",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.03/mediainfo_24.03.tar.xz",
+                    "sha256": "6ff8f1fa2f859a13091f75a2cf913486644f6e259ad1c25afb9a93e48444c563",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
