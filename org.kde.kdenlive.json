@@ -532,8 +532,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n12.1.14.0",
-                    "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+                    "tag": "n12.2.72.0",
+                    "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^n([\\d.]+)$"
@@ -699,8 +699,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
-                    "sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.0.tar.xz",
+                    "sha256": "4426a94dd2c814945456600c8adfc402bee65ec14a70e8c531ec9a2cd651da7b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
