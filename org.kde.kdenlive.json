@@ -885,10 +885,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/kdenlive-mime-icon.patch"
                 }
             ]
         }
