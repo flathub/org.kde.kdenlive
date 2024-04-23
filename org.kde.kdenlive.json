@@ -532,8 +532,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n12.1.14.0",
-                    "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+                    "tag": "n12.2.72.0",
+                    "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^n([\\d.]+)$"
@@ -559,12 +559,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.8.2",
+                    "tag": "v3.9.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "615b5f541e4434aebd993036bc97ebc1a77ebc25"
+                    "commit": "6cab58c3925e0f4138e15a4ed510161ea83b6db1"
                 }
             ]
         },
@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.0.tar.gz",
-                    "sha256": "34438637670b13140153c8a6be6b32d755ba72f68b2bbb01a8ec630c3e453900",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.1.tar.gz",
+                    "sha256": "b261d87d91a56a6a462f6a129ddd97945a49637995ee6aa67ebd9b26c0a3c1a0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -699,8 +699,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
-                    "sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.0.tar.xz",
+                    "sha256": "4426a94dd2c814945456600c8adfc402bee65ec14a70e8c531ec9a2cd651da7b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -754,8 +754,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.03/libmediainfo_24.03.tar.xz",
-                    "sha256": "cc2bb44e407c890ab566934c56763918505ab58c14134b53f0d1da9eea242c8d",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.04/libmediainfo_24.04.tar.xz",
+                    "sha256": "76a6ff060887773f25977b588ae508484bb12d11cb7a2be3322daa9c6e53f1b2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -777,8 +777,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.03/mediainfo_24.03.tar.xz",
-                    "sha256": "6ff8f1fa2f859a13091f75a2cf913486644f6e259ad1c25afb9a93e48444c563",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.04/mediainfo_24.04.tar.xz",
+                    "sha256": "ebeb1cb701a23059c736cb33b91a3172c4f98e7341e44a0b30a11919191a274d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
@@ -877,8 +877,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.02.1/src/kdenlive-24.02.1.tar.xz",
-                    "sha256": "1f77475259a82c5ba2d94ee975f4aeaa9b0c0db125504c13ef718b1408575056",
+                    "url": "https://download.kde.org/stable/release-service/24.02.2/src/kdenlive-24.02.2.tar.xz",
+                    "sha256": "c84b6264aef2ea794e0301827f46c01e12b6d9592158937e184dddc4c3946ee3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
