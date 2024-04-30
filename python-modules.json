@@ -33,7 +33,10 @@
                     "sha256": "bb093fb1d1a6e0f2c0ebbda6f7be0906080a63d611da5aa9b6c5d0f1f2f86916",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "OpenTimelineIO"
+                        "name": "OpenTimelineIO",
+                        "versions": {
+                            "<": "0.16"
+                        }
                     }
                 },
                 {
