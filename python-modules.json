@@ -10,8 +10,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/c5/65/cd8c6eac8632ba817387d56f112c7a4bbea3760377ea8a8a78ea1b60ecac/pyaaf2-1.6.0.tar.gz",
-                    "sha256": "83815554dbe56aabae4cf48d02e58cd7c102733d649672832ec8a2542d3f24ad",
+                    "url": "https://files.pythonhosted.org/packages/77/c5/f3ad278fa038c7e0de5d3a084bae8bc2a403d2223acf9e0b5a7ad4f97768/pyaaf2-1.7.1.tar.gz",
+                    "sha256": "e18e5a84bca4ea18c1b9e8384958e2f6d296195c901a448f71f830b22b89c225",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyaaf2"
