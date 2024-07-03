@@ -318,8 +318,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libass/libass/releases/download/0.17.2/libass-0.17.2.tar.xz",
-                    "sha256": "e8261b51d66ba933fe99248c6fdd8767ed96c5a7e5363c83992c735a2c2fbf74",
+                    "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz",
+                    "sha256": "eae425da50f0015c21f7b3a9c7262a910f0218af469e22e2931462fed3c50959",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1560,
@@ -508,8 +508,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.33.tar.gz",
-                    "sha256": "86b39d5bd4652338bf7b4e48efec58472bb57a985250bc149e7908534a915c8e",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.34.tar.gz",
+                    "sha256": "a8f8363ee9b89c7fb93fa8cca521f602d5fd2c083382fc14f05c37d952905cc6",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.4.tar.gz",
-                    "sha256": "82f0cedc7d8aafe4c360d057bcd6d0ae6eec6df1da2738dfa70a620968730146",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
+                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -633,8 +633,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.0/SVT-AV1-v2.1.0.tar.bz2",
-                    "sha256": "2bfd098770bba185cd1ced8e1ff389837e3dca0d8b5cfb0d97c925a61dbbf955",
+                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.2/SVT-AV1-v2.1.2.tar.bz2",
+                    "sha256": "a1d95875f7539d49f7c8fdec0623fbf984804a168da6289705d53268e3b38412",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 24271,
@@ -754,8 +754,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.05/libmediainfo_24.05.tar.xz",
-                    "sha256": "b14f79104b1d0d78de9fb42805f29d54fdf01c3e4291cc3638e04d09d145b8d6",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz",
+                    "sha256": "0683f28a2475dc2417205ba528debccc407da4d9fa6516eb4b75b3ff7244e96e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -777,8 +777,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.05/mediainfo_24.05.tar.xz",
-                    "sha256": "b6451edc3d1bf54c17218e8e950818cf0e7b4913e6da28e9119400526a8e89f0",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.06/mediainfo_24.06.tar.xz",
+                    "sha256": "32f4a82a31e386e177fdf6e4c237053e475b501089269ab2c729452a09313520",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
