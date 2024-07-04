@@ -754,8 +754,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.05/libmediainfo_24.05.tar.xz",
-                    "sha256": "b14f79104b1d0d78de9fb42805f29d54fdf01c3e4291cc3638e04d09d145b8d6",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz",
+                    "sha256": "0683f28a2475dc2417205ba528debccc407da4d9fa6516eb4b75b3ff7244e96e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -777,8 +777,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.05/mediainfo_24.05.tar.xz",
-                    "sha256": "b6451edc3d1bf54c17218e8e950818cf0e7b4913e6da28e9119400526a8e89f0",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.06/mediainfo_24.06.tar.xz",
+                    "sha256": "32f4a82a31e386e177fdf6e4c237053e475b501089269ab2c729452a09313520",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
