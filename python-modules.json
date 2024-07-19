@@ -5,7 +5,7 @@
             "name": "pyaaf2",
             "buildsystem": "simple",
             "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
+                "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/"
             ],
             "sources": [
                 {
@@ -24,21 +24,35 @@
             "buildsystem": "simple",
             "build-commands": [
                 "sed -e \"s|\\('-DOTIO_PYTHON_INSTALL:BOOL=ON'\\)|\\1 , '-DCMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES=/usr/include/python3.9'|\" -i setup.py",
-                "python3 setup.py install --prefix=/app --root=/"
+                "python3 setup.py install --prefix=${FLATPAK_DEST} --root=/"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/6d/5f/e9e9227b475b27a2b922e059edf01aab0b1b034c490c7eb54f46fd64b3a3/OpenTimelineIO-0.15.0.tar.gz",
-                    "sha256": "bb093fb1d1a6e0f2c0ebbda6f7be0906080a63d611da5aa9b6c5d0f1f2f86916",
+                    "url": "https://files.pythonhosted.org/packages/8d/cf/9a8392a17295a6215f8edb5bb8b52f17f28f1fab8a1d9e6bbc6968785063/opentimelineio-0.17.0.tar.gz",
+                    "sha256": "10ef324e710457e9977387cd9ef91eb24a9837bfb370aec3330f9c0f146cea85",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "OpenTimelineIO"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "name": "python3-otio-kdenlive-adapter",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"otio-kdenlive-adapter\" --no-build-isolation"
+            ],
+            "sources": [
                 {
-                    "type": "patch",
-                    "path": "patches/0001-Support-compiling-with-GCC-13-1605.patch"
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/56/81/adc84754021a436458faa037e0b85366a283550bfef54ac2bcc85e39e161/otio_kdenlive_adapter-0.0.2-py3-none-any.whl",
+                    "sha256": "71426ed646f43c55a2c7d4f755a91668b3f0a4e65322e25fd3146905b2218719",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "otio-kdenlive-adapter"
+                    }
                 }
             ]
         },
@@ -70,7 +84,7 @@
             ],
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=/app --root=/ \"cffi\" --no-build-isolation"
+                "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --root=/ \"cffi\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -121,8 +135,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ba/06/a07f096c664aeb9f01624f858c3add0a4e913d6c96257acb4fce61e7de14/certifi-2024.2.2-py3-none-any.whl",
-                    "sha256": "dc383c07b76109f368f6106eee2b593b04a011ea4d55f652c6ca24a754d1cdd1",
+                    "url": "https://files.pythonhosted.org/packages/1c/d5/c84e1a17bf61d4df64ca866a1c9a913874b4e9bdc131ec689a0ad013fb36/certifi-2024.7.4-py3-none-any.whl",
+                    "sha256": "c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "certifi",
@@ -140,8 +154,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl",
-                    "sha256": "c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f",
+                    "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl",
+                    "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "idna",
@@ -150,8 +164,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                    "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f",
+                    "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+                    "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "requests",
@@ -160,8 +174,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a2/73/a68704750a7679d0b6d3ad7aa8d4da8e14e151ae82e6fee774e6e0d05ec8/urllib3-2.2.1-py3-none-any.whl",
-                    "sha256": "450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d",
+                    "url": "https://files.pythonhosted.org/packages/ca/1c/89ffc63a9605b583d5df2be791a27bc1a42b7c32bab68d3c8f2f73a98cd4/urllib3-2.2.2-py3-none-any.whl",
+                    "sha256": "a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "urllib3",
@@ -179,8 +193,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2a/14/e75e52d521442e2fcc9f1df3c5e456aead034203d4797867980de558ab34/tqdm-4.66.2-py3-none-any.whl",
-                    "sha256": "1ee4f8a893eb9bef51c6e35730cebf234d5d0b6bd112b0271e10ed7c24a02bd9",
+                    "url": "https://files.pythonhosted.org/packages/18/eb/fdb7eb9e48b7b02554e1664afd3bd3f117f6b6d6c5881438a0b055554f9b/tqdm-4.66.4-py3-none-any.whl",
+                    "sha256": "b75ca56b413b030bc3f00af51fd2c1a1a5eac6a0c1cca83cbb37a5c52abce644",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "tqdm",

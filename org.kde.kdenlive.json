@@ -2,7 +2,7 @@
     "app-id": "org.kde.kdenlive",
     "default-branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.6",
+    "runtime-version": "6.7",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.llvm17"
@@ -298,8 +298,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.2.tar.gz",
-                    "sha256": "543bead934135f20f438e0b6d8858c55c5fcb7ff80f5d1d55489965f1aad58b9",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz",
+                    "sha256": "1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -318,8 +318,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.xz",
-                    "sha256": "f0da0bbfba476c16ae3e1cfd862256d30915911f7abaa1b16ce62ee653192784",
+                    "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz",
+                    "sha256": "eae425da50f0015c21f7b3a9c7262a910f0218af469e22e2931462fed3c50959",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1560,
@@ -339,8 +339,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.3.2.tar.gz",
-                    "sha256": "304291e0ecb456a8b054fe04e14adc50ace54d0223b7b29165ff5343e820ef9d",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.3.3.tar.gz",
+                    "sha256": "aeeefe3a9b44761b2cf110017d2b1dfa2ceeb873da96d283ba5157380c5d0ce5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -407,8 +407,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/werman/noise-suppression-for-voice/archive/refs/tags/v1.03.tar.gz",
-                    "sha256": "8c85cae3ebbb3a18facc38930a3b67ca90e3ad609526a0018c71690de35baf04",
+                    "url": "https://github.com/werman/noise-suppression-for-voice/archive/refs/tags/v1.10.tar.gz",
+                    "sha256": "6e0c11aeb8392891750b0243c2ba695dab07654bf3f4e01adbed927b36cc690a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 326607,
@@ -488,8 +488,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2023.12.14.tar.gz",
-                    "sha256": "407d5e109a70ec1b6cd3380ce357c21e3d3651a91caae6d0d8e1719c69a1791d",
+                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.05.08.tar.gz",
+                    "sha256": "3c3dd236d35f4960028f4f58ce8d963fb63f3d50251d1e9854b76f1caab9a309",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223257,
@@ -508,8 +508,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.33.tar.gz",
-                    "sha256": "86b39d5bd4652338bf7b4e48efec58472bb57a985250bc149e7908534a915c8e",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.34.tar.gz",
+                    "sha256": "a8f8363ee9b89c7fb93fa8cca521f602d5fd2c083382fc14f05c37d952905cc6",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -562,12 +562,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.8.2",
+                    "tag": "v3.9.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "615b5f541e4434aebd993036bc97ebc1a77ebc25"
+                    "commit": "8ad484f8a18ed1853c094e7d3a4e023b2a92df28"
                 }
             ]
         },
@@ -587,8 +587,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.0.tar.gz",
-                    "sha256": "34438637670b13140153c8a6be6b32d755ba72f68b2bbb01a8ec630c3e453900",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
+                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -636,8 +636,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.0.0/SVT-AV1-v2.0.0.tar.bz2",
-                    "sha256": "f9c076c377e504be15e195db8dd36d91233bc37cb8e82530382f38bc1926df02",
+                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.2/SVT-AV1-v2.1.2.tar.bz2",
+                    "sha256": "a1d95875f7539d49f7c8fdec0623fbf984804a168da6289705d53268e3b38412",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 24271,
@@ -702,8 +702,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
-                    "sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz",
+                    "sha256": "bce9eeb0f17ef8982390b1f37711a61b4290dc8c2a0c1a37b5857e85bfb0e4ff",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -757,8 +757,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.03/libmediainfo_24.03.tar.xz",
-                    "sha256": "cc2bb44e407c890ab566934c56763918505ab58c14134b53f0d1da9eea242c8d",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz",
+                    "sha256": "0683f28a2475dc2417205ba528debccc407da4d9fa6516eb4b75b3ff7244e96e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -780,8 +780,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.03/mediainfo_24.03.tar.xz",
-                    "sha256": "6ff8f1fa2f859a13091f75a2cf913486644f6e259ad1c25afb9a93e48444c563",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.06/mediainfo_24.06.tar.xz",
+                    "sha256": "32f4a82a31e386e177fdf6e4c237053e475b501089269ab2c729452a09313520",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
@@ -806,8 +806,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.9.0.tar.gz",
-                    "sha256": "ddf76f9dffd322c7c3cb1f721d0887f62d747b82059342213138dc190f28bc6c",
+                    "url": "https://github.com/opencv/opencv/archive/4.10.0.tar.gz",
+                    "sha256": "b2171af5be6b26f7a06b1229948bbb2bdaa74fcf5cd097e0af6378fce50a6eb9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -817,8 +817,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv_contrib/archive/4.9.0.tar.gz",
-                    "sha256": "8952c45a73b75676c522dd574229f563e43c271ae1d5bbbd26f8e2b6bc1a4dae",
+                    "url": "https://github.com/opencv/opencv_contrib/archive/4.10.0.tar.gz",
+                    "sha256": "65597f8fb8dc2b876c1b45b928bbcc5f772ddbaf97539bf1b737623d0604cba1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -861,7 +861,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "e896a41da0859bf297b76bfa26a6cc4cd2db3740"
+                    "commit": "a6bd0b38e3c9a523edf64b9e73248703ad516556"
                 }
             ]
         },
@@ -880,18 +880,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.02.1/src/kdenlive-24.02.1.tar.xz",
-                    "sha256": "1f77475259a82c5ba2d94ee975f4aeaa9b0c0db125504c13ef718b1408575056",
+                    "url": "https://download.kde.org/stable/release-service/24.05.2/src/kdenlive-24.05.2.tar.xz",
+                    "sha256": "057f12c28b5eec9716383b5093f7ca0a345cc9066dd5c7614fe3d9188429a708",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/kdenlive-mime-icon.patch"
                 }
             ]
         }
