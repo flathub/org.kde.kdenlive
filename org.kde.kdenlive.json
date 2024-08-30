@@ -559,12 +559,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.9.1",
+                    "tag": "v3.10.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "8ad484f8a18ed1853c094e7d3a4e023b2a92df28"
+                    "commit": "c2fe6bf370f7c14fbaf12884b76244a3cfd7c5fc"
                 }
             ]
         },
