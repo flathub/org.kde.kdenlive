@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
-                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.3.3.tar.gz",
+                    "sha256": "a6afafc126210e03f41eea582049bfd629cbb985687db3f5c5a35150b9e0f5b4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -877,8 +877,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.0/src/kdenlive-24.08.0.tar.xz",
-                    "sha256": "e4306a2aa5a7535cea50aeff493ea9de8b7292d499d7204c41780cb044752f96",
+                    "url": "https://download.kde.org/stable/release-service/24.08.1/src/kdenlive-24.08.1.tar.xz",
+                    "sha256": "55b42af545304ec26bf20b4e9e79e89e91d61481fbbb93a5df7c74e86fbae142",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
