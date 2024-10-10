@@ -508,8 +508,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.34.tar.gz",
-                    "sha256": "a8f8363ee9b89c7fb93fa8cca521f602d5fd2c083382fc14f05c37d952905cc6",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.35.tar.gz",
+                    "sha256": "5d93101eae5895247bea58cff40bb84424158170ae7f931105666157cc187636",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
-                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.3.4.tar.gz",
+                    "sha256": "978672104e6767223fbfb34fa9a0c0d954dcff9109891dc4911413dbc553ed71",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -699,8 +699,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz",
-                    "sha256": "8646515b638a3ad303e23af6a3587734447cb8fc0a0c064ecdb8e95c4fd8b389",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.1.tar.xz",
+                    "sha256": "40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -877,8 +877,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.1/src/kdenlive-24.08.1.tar.xz",
-                    "sha256": "55b42af545304ec26bf20b4e9e79e89e91d61481fbbb93a5df7c74e86fbae142",
+                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/kdenlive-24.08.2.tar.xz",
+                    "sha256": "1556689ee92e769735b591bbf67b418671810feeed09ea565e9c8a00bdbf8fb7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
