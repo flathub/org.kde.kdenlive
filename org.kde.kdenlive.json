@@ -581,11 +581,11 @@
                 "-DBUILD_TESTS=OFF",
                 "-DBUILD_TOOLS=OFF"
             ],
-            "sources": [
+           "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.3.4.tar.gz",
-                    "sha256": "978672104e6767223fbfb34fa9a0c0d954dcff9109891dc4911413dbc553ed71",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
+                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
