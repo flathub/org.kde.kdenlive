@@ -193,8 +193,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/48/5d/acf5905c36149bbaec41ccf7f2b68814647347b72075ac0b1fe3022fdc73/tqdm-4.66.5-py3-none-any.whl",
-                    "sha256": "90279a3770753eafc9194a0364852159802111925aa30eb3f9d85b0e805ac7cd",
+                    "url": "https://files.pythonhosted.org/packages/41/73/02342de9c2d20922115f787e101527b831c0cffd2105c946c4a4826bcfd4/tqdm-4.66.6-py3-none-any.whl",
+                    "sha256": "223e8b5359c2efc4b30555531f09e9f2f3589bcd7fdd389271191031b49b7a63",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "tqdm",
