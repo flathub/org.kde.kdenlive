@@ -488,8 +488,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.05.08.tar.gz",
-                    "sha256": "3c3dd236d35f4960028f4f58ce8d963fb63f3d50251d1e9854b76f1caab9a309",
+                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz",
+                    "sha256": "159f2a550592bae49859fee83d372acd152328fdf95c0dcd8b9409f8fad5db93",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223257,
@@ -559,12 +559,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.11.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "c2fe6bf370f7c14fbaf12884b76244a3cfd7c5fc"
+                    "commit": "d6f30ae474dd6c358f26de0a0fc26a0d7340a84c"
                 }
             ]
         },
@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
-                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.4.2.tar.gz",
+                    "sha256": "7da10ac696cb1308593dfa500f36b597bde81ceec3faf4951f9000dd080bb3e3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -633,8 +633,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.2.1/SVT-AV1-v2.2.1.tar.bz2",
-                    "sha256": "3fd002b88816506f84b6d624659be5cbadb4cdf5a11258a5cbc6bfc488c82d01",
+                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.3.0/SVT-AV1-v2.3.0.tar.bz2",
+                    "sha256": "f65358499f572a47d6b076dda73681a8162b02c0b619a551bc2d62ead8ee719a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 24271,
@@ -754,8 +754,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz",
-                    "sha256": "0683f28a2475dc2417205ba528debccc407da4d9fa6516eb4b75b3ff7244e96e",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/24.11/libmediainfo_24.11.tar.xz",
+                    "sha256": "96e44a617f90c8b63bb685ad53be6716b7df4221793c329780f02aea6e707aa1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -777,8 +777,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.06/mediainfo_24.06.tar.xz",
-                    "sha256": "32f4a82a31e386e177fdf6e4c237053e475b501089269ab2c729452a09313520",
+                    "url": "https://mediaarea.net/download/source/mediainfo/24.11/mediainfo_24.11.tar.xz",
+                    "sha256": "876a63a69d79dd1db6b6e69077a8a630421247751460b964381e3483835670fc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
@@ -831,8 +831,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.3.0.tar.bz2",
-                    "sha256": "d9ef89e2b8ef9f85b13ac3c2faec30e20acf2c9f3a9c8c45ce637f2bc95e576c",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-4.0.0.tar.bz2",
+                    "sha256": "af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -877,8 +877,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/kdenlive-24.08.2.tar.xz",
-                    "sha256": "1556689ee92e769735b591bbf67b418671810feeed09ea565e9c8a00bdbf8fb7",
+                    "url": "https://download.kde.org/stable/release-service/24.08.3/src/kdenlive-24.08.3.tar.xz",
+                    "sha256": "b61b60c53bbd1657fe816bb3c08954f7b9f7c76a62d099fabd3cd9190a3bb39d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
