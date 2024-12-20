@@ -559,12 +559,12 @@
                 {
                     "type": "git",
                     "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.11.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "c2fe6bf370f7c14fbaf12884b76244a3cfd7c5fc"
+                    "commit": "d6f30ae474dd6c358f26de0a0fc26a0d7340a84c"
                 }
             ]
         },
@@ -584,8 +584,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
-                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.4.3.tar.gz",
+                    "sha256": "0af830633a848bfc6cefd42a14bd723acf4bc81da833ffa4dcd7e40d185bb79a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
