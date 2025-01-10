@@ -164,9 +164,7 @@
         },
         {
             "name": "sox",
-            "config-opts": [
-                "--disable-static"
-            ],
+            "buildsystem": "cmake-ninja",
             "cleanup": [
                 "/bin"
             ],
