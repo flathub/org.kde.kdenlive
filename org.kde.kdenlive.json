@@ -491,6 +491,28 @@
             ]
         },
         {
+            "name": "nv-codec-headers",
+            "cleanup": [
+                "*"
+            ],
+            "no-autogen": true,
+            "make-install-args": [
+                "PREFIX=/app"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/FFmpeg/nv-codec-headers.git",
+                    "tag": "n12.2.72.0",
+                    "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^n([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
             "name": "intel-onevpl-runtime",
             "only-arches": [
                 "x86_64"
