@@ -231,7 +231,6 @@
         },
         {
             "name": "gavl",
-            "rm-configure": true,
             "config-opts": [
                 "--without-doxygen",
                 "--disable-static",
