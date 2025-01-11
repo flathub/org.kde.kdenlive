@@ -235,7 +235,8 @@
             "config-opts": [
                 "--without-doxygen",
                 "--disable-static",
-                "--enable-shared"
+                "--enable-shared",
+                "--with-cpuflags=none"
             ],
             "sources": [
                 {
