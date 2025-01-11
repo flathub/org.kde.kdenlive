@@ -241,11 +241,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/gmerlin/gavl/1.4.0/gavl-1.4.0.tar.gz",
-                    "sha256": "51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce",
-                    "mirror-urls": [
-                        "http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz"
-                    ]
+                    "url": "https://salsa.debian.org/multimedia-team/gavl/-/archive/upstream/2.0.0_svngit.20240111.a5dd20c/gavl-upstream-2.0.0_svngit.20240111.a5dd20c.tar.gz",
+                    "sha256": "2d9c62f09d97ef74da5390bec86517549fe0b80c6549e1f2af9312d4c386a099",
                 },
                 {
                     "type": "shell",
