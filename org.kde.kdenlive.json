@@ -2,10 +2,10 @@
     "app-id": "org.kde.kdenlive",
     "default-branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm17"
+        "org.freedesktop.Sdk.Extension.llvm19"
     ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -30,7 +30,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "subdirectories": true,
@@ -38,7 +38,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.swh": {
             "directory": "extensions/Plugins/swh",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -46,7 +46,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.TAP": {
             "directory": "extensions/Plugins/TAP",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -173,17 +173,15 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2",
-                    "sha256": "81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c",
-                    "mirror-urls": [
-                        "http://http.debian.net/debian/pool/main/s/sox/sox_14.4.2.orig.tar.bz2"
-                    ],
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 4858,
-                        "stable-only": true,
-                        "url-template": "https://downloads.sourceforge.net/project/sox/sox/$version/sox-$version.tar.bz2"
-                    }
+                    "url": "https://sourceforge.net/code-snapshots/git/s/so/sox/code.git/sox-code-f3094754a7c2a7e55c35621d20fa9945736e72df.zip",
+                    "sha256": "ab0820a7dfe40a6ca2da6086d4df66ecfbdd5d7f84bca97c44b96936aa192f85"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "autogen.sh",
+                    "commands": [
+                        "autoreconf -vfi"
+                    ]
                 }
             ]
         },
@@ -233,20 +231,17 @@
         },
         {
             "name": "gavl",
-            "rm-configure": true,
             "config-opts": [
                 "--without-doxygen",
                 "--disable-static",
-                "--enable-shared"
+                "--enable-shared",
+                "--with-cpuflags=none"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/gmerlin/gavl/1.4.0/gavl-1.4.0.tar.gz",
-                    "sha256": "51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce",
-                    "mirror-urls": [
-                        "http://http.debian.net/debian/pool/main/g/gavl/gavl_1.4.0.orig.tar.gz"
-                    ]
+                    "url": "https://salsa.debian.org/multimedia-team/gavl/-/archive/upstream/2.0.0_svngit.20240111.a5dd20c/gavl-upstream-2.0.0_svngit.20240111.a5dd20c.tar.gz",
+                    "sha256": "2d9c62f09d97ef74da5390bec86517549fe0b80c6549e1f2af9312d4c386a099"
                 },
                 {
                     "type": "shell",
@@ -419,30 +414,6 @@
             ]
         },
         {
-            "name": "v4l-utils",
-            "config-opts": [
-                "--disable-static",
-                "--disable-doxygen-doc",
-                "--disable-libdvbv5",
-                "--disable-v4l-utils",
-                "--disable-qv4l2",
-                "--with-udevdir=/app/lib/udev"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2",
-                    "sha256": "cbb7fe8a6307f5ce533a05cded70bb93c3ba06395ab9b6d007eb53b75d805f5b",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 9998,
-                        "stable-only": true,
-                        "url-template": "https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-$version.tar.bz2"
-                    }
-                }
-            ]
-        },
-        {
             "name": "x264",
             "config-opts": [
                 "--disable-cli",
@@ -542,33 +513,6 @@
             ]
         },
         {
-            "name": "aom",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_PREFIX=/app",
-                "-DBUILD_SHARED_LIBS=1",
-                "-DENABLE_DOCS=0",
-                "-DENABLE_EXAMPLES=0",
-                "-DENABLE_TESTDATA=0",
-                "-DENABLE_TESTS=0",
-                "-DENABLE_TOOLS=0"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://aomedia.googlesource.com/aom.git",
-                    "tag": "v3.11.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "d6f30ae474dd6c358f26de0a0fc26a0d7340a84c"
-                }
-            ]
-        },
-        {
             "name": "intel-onevpl-runtime",
             "only-arches": [
                 "x86_64"
@@ -617,34 +561,6 @@
             ]
         },
         {
-            "name": "dav1d",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://code.videolan.org/videolan/dav1d/-/archive/0.9.0/dav1d-0.9.0.tar.gz",
-                    "sha256": "ad6b89340f6e1a5c0c043763c0e28bb42d8930426f7dec049a8bc5e70076dd1a"
-                }
-            ]
-        },
-        {
-            "name": "svt-av1",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.3.0/SVT-AV1-v2.3.0.tar.bz2",
-                    "sha256": "f65358499f572a47d6b076dda73681a8162b02c0b619a551bc2d62ead8ee719a",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 24271,
-                        "stable-only": true,
-                        "url-template": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v$version/SVT-AV1-v$version.tar.bz2"
-                    }
-                }
-            ]
-        },
-        {
             "name": "ffmpeg",
             "config-opts": [
                 "--disable-doc",
@@ -683,8 +599,8 @@
                 "--enable-vdpau"
             ],
             "build-options": {
-                "prepend-path": "/usr/lib/sdk/llvm17/bin",
-                "prepend-ld-library-path": "/usr/lib/sdk/llvm17/lib",
+                "prepend-path": "/usr/lib/sdk/llvm19/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm19/lib",
                 "arch": {
                     "x86_64": {
                         "config-opts": [
