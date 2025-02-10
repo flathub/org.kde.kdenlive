@@ -293,8 +293,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz",
-                    "sha256": "1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.4.tar.gz",
+                    "sha256": "65cb3a813f34fb6db7a72bba3fc295dd6c419082d2d8bbf96518be6d1024b784",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -479,8 +479,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.35.tar.gz",
-                    "sha256": "5d93101eae5895247bea58cff40bb84424158170ae7f931105666157cc187636",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.tar.gz",
+                    "sha256": "501617a2667ce417703be068a8855b1a64b7a6586ea03d93eb44dfa645090fbe",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -503,8 +503,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n12.2.72.0",
-                    "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+                    "tag": "n13.0.19.0",
+                    "commit": "e844e5b26f46bb77479f063029595293aa8f812d",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^n([\\d.]+)$"
@@ -528,8 +528,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-24.2.5.tar.gz",
-                    "sha256": "ccb76812642d84d4d8a56d28df60ef6d450cbb09969a59ee6c4a819098617b5d",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.1.1.tar.gz",
+                    "sha256": "4ba550244827d554c8b36032f1535290c816021242153c2b503dfc45219b95f1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -794,8 +794,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.1/src/kdenlive-24.12.1.tar.xz",
-                    "sha256": "6d1345462a1ad9a725dbf9ab42b8b340eeafc8437d9c0f52ac5ebacfdfd9b8b2",
+                    "url": "https://download.kde.org/stable/release-service/24.12.2/src/kdenlive-24.12.2.tar.xz",
+                    "sha256": "37be18de3583fda33fb246f312f5a4e25c1e64ae6d746668244252e2033ef489",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
