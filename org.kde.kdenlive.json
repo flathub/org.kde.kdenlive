@@ -120,7 +120,13 @@
                 {
                     "type": "archive",
                     "url": "http://www.fftw.org/fftw-3.3.10.tar.gz",
-                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467"
+                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 803,
+                        "stable-only": true,
+                        "url-template": "https://www.fftw.org/fftw-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -782,8 +788,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/kdenlive-24.12.3.tar.xz",
-                    "sha256": "449c7e53d9501f434b955f228dcb29f3cb42642c41b053dd8e4cd30b8861843e",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/kdenlive-25.04.0.tar.xz",
+                    "sha256": "3f07e23e5e58441acd02b89d969b33940994d9d1a8a8006b15e61eb575abd519",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
