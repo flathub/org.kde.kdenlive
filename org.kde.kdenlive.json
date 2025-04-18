@@ -66,27 +66,6 @@
         "*.cmake"
     ],
     "modules": [
-        "python-modules.json",
-        {
-            "name": "rttr",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DBUILD_EXAMPLES=OFF",
-                "-DBUILD_DOCUMENTATION=OFF",
-                "-DBUILD_UNIT_TESTS=OFF",
-                "-DBUILD_PACKAGE=OFF",
-                "-DBUILD_STATIC=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/rttrorg/rttr/releases/download/v0.9.6/rttr-0.9.6-src.tar.gz",
-                    "sha256": "f62caee43016489320f8a69145c9208cddd72e451ea95618bc26a49a4cd6c990"
-                }
-            ]
-        },
         {
             "name": "eigen",
             "buildsystem": "cmake-ninja",
@@ -140,7 +119,13 @@
                 {
                     "type": "archive",
                     "url": "http://www.fftw.org/fftw-3.3.10.tar.gz",
-                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467"
+                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 803,
+                        "stable-only": true,
+                        "url-template": "https://www.fftw.org/fftw-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -201,29 +186,6 @@
                         "project-id": 15959,
                         "stable-only": true,
                         "url-template": "https://github.com/georgmartius/vid.stab/archive/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "rtaudio",
-            "config-opts": [
-                "--disable-static",
-                "--enable-shared"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/thestk/rtaudio/archive/refs/tags/5.2.0.tar.gz",
-                    "sha256": "a8d9c738addffd485c3f0bab14cbba72600267e3113f274398c67829bbb49332",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 10227,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6"
-                        },
-                        "url-template": "https://github.com/thestk/rtaudio/archive/refs/tags/$version.tar.gz"
                     }
                 }
             ]
@@ -777,12 +739,45 @@
                 }
             ]
         },
+         {
+            "name": "Imath",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DPYTHON=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
+                    "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da"
+                }
+            ]
+        },
+        {
+            "name": "opentimelineio",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts":[
+                "-DOTIO_FIND_IMATH=ON",
+                "-DOTIO_DEPENDENCIES_INSTALL=OFF",
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO.git/",
+                    "tag": "v0.17.0"
+                }
+            ]
+        },
         {
             "name": "kdenlive",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DFETCH_OTIO=OFF"
             ],
             "post-install": [
                 "cp /app/share/icons/hicolor/scalable/mimetypes/{,$FLATPAK_ID.}application-x-kdenlive.svgz",
@@ -792,8 +787,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/kdenlive-24.12.3.tar.xz",
-                    "sha256": "449c7e53d9501f434b955f228dcb29f3cb42642c41b053dd8e4cd30b8861843e",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/kdenlive-25.04.0.tar.xz",
+                    "sha256": "3f07e23e5e58441acd02b89d969b33940994d9d1a8a8006b15e61eb575abd519",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
