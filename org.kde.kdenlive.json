@@ -186,29 +186,6 @@
             ]
         },
         {
-            "name": "rtaudio",
-            "config-opts": [
-                "--disable-static",
-                "--enable-shared"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/thestk/rtaudio/archive/refs/tags/5.2.0.tar.gz",
-                    "sha256": "a8d9c738addffd485c3f0bab14cbba72600267e3113f274398c67829bbb49332",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 10227,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6"
-                        },
-                        "url-template": "https://github.com/thestk/rtaudio/archive/refs/tags/$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "gavl",
             "config-opts": [
                 "--without-doxygen",
