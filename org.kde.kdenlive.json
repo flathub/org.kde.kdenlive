@@ -230,8 +230,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz",
-                    "sha256": "e79216260d5dffe809bda840be48ab0eec7737b2bb9f02d2275c1b46344ea7b7",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
+                    "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.1.3.tar.gz",
-                    "sha256": "28b1ec37cc747db296e0a8bdd824206aa26d14623737bcd94d245009976cc552",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.0.tar.gz",
+                    "sha256": "b7b2f243d12e6747a1b47f4dc556c922a90c758a213215c2beb2935343ff3abf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -631,8 +631,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/24.12/libmediainfo_24.12.tar.xz",
-                    "sha256": "1f4986207f75deb290915e6bf0b33e3e455774305dd266ffe8997c01aad65b27",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/25.03/libmediainfo_25.03.tar.xz",
+                    "sha256": "35f1fdab81239ca355c6de358a84fbde0477fed8eb350e5dfef6a598145c5207",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -654,8 +654,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/24.12/mediainfo_24.12.tar.xz",
-                    "sha256": "3699ae650ce71893a932ce2eaa2a35f8da47e6f721f93d695b0beb0aad4e9997",
+                    "url": "https://mediaarea.net/download/source/mediainfo/25.03/mediainfo_25.03.tar.xz",
+                    "sha256": "c293bb30f231dc5310b980efd84fe7d336b8310b68e83265cf166d7f7fc386c9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
