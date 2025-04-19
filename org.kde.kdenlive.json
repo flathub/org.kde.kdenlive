@@ -118,7 +118,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.fftw.org/fftw-3.3.10.tar.gz",
+                    "url": "https://www.fftw.org/fftw-3.3.10.tar.gz",
                     "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
                     "x-checker-data": {
                         "type": "anitya",
@@ -739,7 +739,7 @@
                 }
             ]
         },
-         {
+        {
             "name": "Imath",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -758,7 +758,7 @@
             "name": "opentimelineio",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "config-opts":[
+            "config-opts": [
                 "-DOTIO_FIND_IMATH=ON",
                 "-DOTIO_DEPENDENCIES_INSTALL=OFF",
                 "-DBUILD_TESTING=OFF"
