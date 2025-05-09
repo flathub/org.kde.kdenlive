@@ -440,8 +440,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/releases/download/v1.4.36/AMF-headers-v1.4.36.tar.gz",
-                    "sha256": "ec07ee21b820a73f5bae224e92fd3c492f52732d4885f0637f48189afdd87564",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.tar.gzz",
+                    "sha256": "240a42033babc7920e5476506d5ac0c5628f67908833168e746406808d0ef146",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
