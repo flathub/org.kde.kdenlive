@@ -440,8 +440,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.0.tar.gz",
-                    "sha256": "4abdf1ffecbffc78bfd74a9376595d14aecfa1a419147bcaa6113cf24bb28060",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.tar.gz",
+                    "sha256": "240a42033babc7920e5476506d5ac0c5628f67908833168e746406808d0ef146",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -735,7 +735,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "cd93d17eb6a6bb3c6f76d611772d798edf5c89cd"
+                    "commit": "066da68e735a6a75083d992844cbaa5932d7d74f"
                 }
             ]
         },
@@ -787,8 +787,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/kdenlive-25.04.0.tar.xz",
-                    "sha256": "3f07e23e5e58441acd02b89d969b33940994d9d1a8a8006b15e61eb575abd519",
+                    "url": "https://download.kde.org/stable/release-service/25.04.1/src/kdenlive-25.04.1.tar.xz",
+                    "sha256": "ca01121fde6f52e415b5b84ff2f4d9ff689e03759b568bec005127125ab1e947",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
