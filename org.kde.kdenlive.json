@@ -440,7 +440,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.tar.gzz",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.4.36.tar.gz",
                     "sha256": "240a42033babc7920e5476506d5ac0c5628f67908833168e746406808d0ef146",
                     "x-checker-data": {
                         "type": "anitya",
@@ -787,7 +787,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.kde.org/stable/release-service/25.04.1/src/kdenlive-25.04.1.tar.xz",
+                    "url": "httpS://download.kde.org/stable/release-service/25.04.1/src/kdenlive-25.04.1.tar.xz",
                     "sha256": "ca01121fde6f52e415b5b84ff2f4d9ff689e03759b568bec005127125ab1e947",
                     "x-checker-data": {
                         "type": "anitya",
