@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.2.tar.gz",
-                    "sha256": "097e0fb12ba885bc8c25a6e14bc2723a93f1a3f644b959b222ed8bd7110b6ed3",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.3.tar.gz",
+                    "sha256": "74529ff2bfb6cdc1c4b4cd3ba6d88bf9dd73452f66812ec794ed58802e0bfd3e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
