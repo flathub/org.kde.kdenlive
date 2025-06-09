@@ -795,6 +795,18 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
+                },
+                {
+                  "type": "patch",
+                  "path": "patches/otio-error.patch"
+                },
+                {
+                  "type": "patch",
+                  "path": "patches/otio-unused-metadata.patch"
+                },
+                {
+                  "type": "patch",
+                  "path": "patches/otio-unused-variables.patch"
                 }
             ]
         }
