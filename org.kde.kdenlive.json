@@ -789,7 +789,6 @@
                     "type": "git",
                     "url": "https://invent.kde.org/multimedia/kdenlive.git",
                     "commit": "305c03d80d734336d36723aef1c63020be3cacec"
-                    }
                 }
             ]
         }
