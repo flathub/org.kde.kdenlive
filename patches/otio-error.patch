@@ -1,0 +1,24 @@
+From df8399772d321781ffb266cfab7fc9d5081d946b Mon Sep 17 00:00:00 2001
+From: Darby Johnston <darbyjohnston@yahoo.com>
+Date: Sat, 7 Jun 2025 14:22:12 -0700
+Subject: [PATCH] Fix missing OTIO error status
+
+---
+ src/otio/otioexport.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/otio/otioexport.cpp b/src/otio/otioexport.cpp
+index 0571be98a0..cf8d85fbd5 100644
+--- a/src/otio/otioexport.cpp
++++ b/src/otio/otioexport.cpp
+@@ -94,7 +94,7 @@ void OtioExport::exportTimeline(const std::shared_ptr<TimelineItemModel> &timeli
+ 
+     // Write the OTIO timeline to disk.
+     OTIO_NS::ErrorStatus otioError;
+-    bool r = otioTimeline->to_json_file(fileName.toStdString());
++    bool r = otioTimeline->to_json_file(fileName.toStdString(), &otioError);
+     if (m_exportingDialog) {
+         m_exportingDialog->setValue(timeline->getClipsCount());
+         m_exportingDialog->close();
+-- 
+GitLab
