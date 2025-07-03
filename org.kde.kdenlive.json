@@ -274,8 +274,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz",
-                    "sha256": "eae425da50f0015c21f7b3a9c7262a910f0218af469e22e2931462fed3c50959",
+                    "url": "https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz",
+                    "sha256": "78f1179b838d025e9c26e8fef33f8092f65611444ffa1bfc0cfac6a33511a05a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1560,
@@ -420,8 +420,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz",
-                    "sha256": "159f2a550592bae49859fee83d372acd152328fdf95c0dcd8b9409f8fad5db93",
+                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.06.13.tar.gz",
+                    "sha256": "8bf2fda271c3511ee1cd9780b97446e9fa0cf2b0765cdd54aee60074a4567644",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223257,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.3.tar.gz",
-                    "sha256": "74529ff2bfb6cdc1c4b4cd3ba6d88bf9dd73452f66812ec794ed58802e0bfd3e",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.6.tar.gz",
+                    "sha256": "d236ede2ab87063d0d8d52932779ff446a885b8dc4ef840d1a756c6776ef6fef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -680,8 +680,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.11.0.tar.gz",
-                    "sha256": "9a7c11f924eff5f8d8070e297b322ee68b9227e003fd600d4b8122198091665f",
+                    "url": "https://github.com/opencv/opencv/archive/4.12.0.tar.gz",
+                    "sha256": "44c106d5bb47efec04e531fd93008b3fcd1d27138985c5baf4eafac0e1ec9e9d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -691,8 +691,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv_contrib/archive/4.11.0.tar.gz",
-                    "sha256": "2dfc5957201de2aa785064711125af6abb2e80a64e2dc246aca4119b19687041",
+                    "url": "https://github.com/opencv/opencv_contrib/archive/4.12.0.tar.gz",
+                    "sha256": "4197722b4c5ed42b476d42e29beb29a52b6b25c34ec7b4d589c3ae5145fee98e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -787,8 +787,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.2/src/kdenlive-25.04.2.tar.xz",
-                    "sha256": "338552fbe675df671e05a5ebce8744e8b1d07db9e36f44e83655eff9ce2d4281",
+                    "url": "https://download.kde.org/stable/release-service/25.04.3/src/kdenlive-25.04.3.tar.xz",
+                    "sha256": "36f8927e59ed997b1f9584b570bda5b5aa34dc1316b20e5d48f13181731abc89",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -797,16 +797,16 @@
                     }
                 },
                 {
-                  "type": "patch",
-                  "path": "patches/otio-error.patch"
+                    "type": "patch",
+                    "path": "patches/otio-error.patch"
                 },
                 {
-                  "type": "patch",
-                  "path": "patches/otio-unused-metadata.patch"
+                    "type": "patch",
+                    "path": "patches/otio-unused-metadata.patch"
                 },
                 {
-                  "type": "patch",
-                  "path": "patches/otio-unused-variables.patch"
+                    "type": "patch",
+                    "path": "patches/otio-unused-variables.patch"
                 }
             ]
         }
