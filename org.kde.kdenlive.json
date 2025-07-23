@@ -420,8 +420,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.06.13.tar.gz",
-                    "sha256": "8bf2fda271c3511ee1cd9780b97446e9fa0cf2b0765cdd54aee60074a4567644",
+                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.07.22.tar.gz",
+                    "sha256": "98f0a3ea26b4aec051e533cb1750db2998ab8e82eda97269ed6efe66ec94a240",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223257,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.6.tar.gz",
-                    "sha256": "d236ede2ab87063d0d8d52932779ff446a885b8dc4ef840d1a756c6776ef6fef",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.3.0.tar.gz",
+                    "sha256": "81b4121cbda7de54af549cb2cc4b9717891fa4edc494c5d5bb22b5c29c34232b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
