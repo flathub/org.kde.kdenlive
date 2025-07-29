@@ -230,8 +230,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
-                    "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r61.tar.gz",
+                    "sha256": "7caf26a2202a4ca689df3fe4175dfa74e0faa18fcca07331bba934fd0ecb8f12",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -420,8 +420,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.06.13.tar.gz",
-                    "sha256": "8bf2fda271c3511ee1cd9780b97446e9fa0cf2b0765cdd54aee60074a4567644",
+                    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2025.07.22.tar.gz",
+                    "sha256": "98f0a3ea26b4aec051e533cb1750db2998ab8e82eda97269ed6efe66ec94a240",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223257,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.2.6.tar.gz",
-                    "sha256": "d236ede2ab87063d0d8d52932779ff446a885b8dc4ef840d1a756c6776ef6fef",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.3.0.tar.gz",
+                    "sha256": "81b4121cbda7de54af549cb2cc4b9717891fa4edc494c5d5bb22b5c29c34232b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -631,8 +631,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/25.04/libmediainfo_25.04.tar.xz",
-                    "sha256": "ad45ed7c9db7807aa803845ca88bad9526aa8da883a58127e5390aaa2d81bbb1",
+                    "url": "https://mediaarea.net/download/source/libmediainfo/25.07/libmediainfo_25.07.tar.xz",
+                    "sha256": "58ece66eaebd9c2fa9b01143c594bce5d21489b8c1dde0dfd2bd13aa7f6266cc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16249,
@@ -654,8 +654,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/25.04/mediainfo_25.04.tar.xz",
-                    "sha256": "4b2553fe9104332d3baca5fe61b6b87af4d493108c5b863801cdb0a4826a33ae",
+                    "url": "https://mediaarea.net/download/source/mediainfo/25.07/mediainfo_25.07.tar.xz",
+                    "sha256": "508eac1ca097f41cb3fc39625aceb0652fcab00acd0f2ebcbd1dc6800936e97d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8240,
