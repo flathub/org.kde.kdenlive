@@ -798,10 +798,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/otio-error.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "patches/otio-unused-metadata.patch"
                 },
                 {
