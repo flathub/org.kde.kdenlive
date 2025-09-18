@@ -543,7 +543,6 @@
                 "--enable-libpulse",
                 "--enable-librsvg",
                 "--enable-libsvtav1",
-                "--enable-libv4l2",
                 "--enable-libvidstab",
                 "--enable-libvorbis",
                 "--enable-libvpx",
