@@ -725,7 +725,7 @@
             "config-opts": [
                 "-DMOD_GLAXNIMATE=OFF",
                 "-DMOD_GLAXNIMATE_QT6=ON",
-                "-DMOD_MOVIT=ON",
+                "-DMOD_MOVIT=OFF",
                 "-DMOD_OPENCV=ON",
                 "-DMOD_QT6=ON",
                 "-DMOD_QT=OFF"
