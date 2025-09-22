@@ -341,13 +341,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ladspa.org/download/ladspa_sdk_1.17.tgz",
+                    "url": "https://files.kde.org/craft/sources/libs/ladspa/ladspa_sdk_1.17.tgz",
                     "sha256": "27d24f279e4b81bd17ecbdcc38e4c42991bb388826c0b200067ce0eb59d3da5b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 227231,
                         "stable-only": true,
-                        "url-template": "https://www.ladspa.org/download/ladspa_sdk_$version.tgz"
+                        "url-template": "https://files.kde.org/craft/sources/libs/ladspa/ladspa_sdk_$version.tgz"
                     }
                 }
             ]
@@ -543,7 +543,6 @@
                 "--enable-libpulse",
                 "--enable-librsvg",
                 "--enable-libsvtav1",
-                "--enable-libv4l2",
                 "--enable-libvidstab",
                 "--enable-libvorbis",
                 "--enable-libvpx",
@@ -726,7 +725,7 @@
             "config-opts": [
                 "-DMOD_GLAXNIMATE=OFF",
                 "-DMOD_GLAXNIMATE_QT6=ON",
-                "-DMOD_MOVIT=ON",
+                "-DMOD_MOVIT=OFF",
                 "-DMOD_OPENCV=ON",
                 "-DMOD_QT6=ON",
                 "-DMOD_QT=OFF"
@@ -735,7 +734,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "8988ffd6677a89445e6307ba7035241abbce3a70"
+                    "commit": "37658048a7ac07b7ae12fe601330163f6afe7638"
                 }
             ]
         },
@@ -787,8 +786,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/kdenlive-25.08.0.tar.xz",
-                    "sha256": "f86206b9f86fe5693121723d0bb1750f96c295e9b6c7eb1fea2b408f56cc30d6",
+                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/kdenlive-25.08.1.tar.xz",
+                    "sha256": "4ca96d280db39510ff42c007d9089fafcd141cc61bdddb1902ab2683a34157fb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
