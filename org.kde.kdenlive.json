@@ -230,8 +230,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r61.tar.gz",
-                    "sha256": "7caf26a2202a4ca689df3fe4175dfa74e0faa18fcca07331bba934fd0ecb8f12",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz",
+                    "sha256": "9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -254,8 +254,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.5.tar.gz",
-                    "sha256": "e1671f744e379a87ba0c984617406fdf8c0ad0c594e5122f525b2fb7c28d394d",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz",
+                    "sha256": "5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -295,8 +295,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.3.3.tar.gz",
-                    "sha256": "aeeefe3a9b44761b2cf110017d2b1dfa2ceeb873da96d283ba5157380c5d0ce5",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.4.0.tar.gz",
+                    "sha256": "6b3491ee65c775b251ecd0ba2cb86955ca2469de47c73718170442732cb9ce75",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.3.2.tar.gz",
-                    "sha256": "d71484a6e187ca3c52a7da138cfa2b43dc6776bed4f5b5ed94237a268f1c1605",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.3.4.tar.gz",
+                    "sha256": "8640073f161f6c2b919f37c8d1e8688a0e6f9b7590a2399cc0d2a89910afeafc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
