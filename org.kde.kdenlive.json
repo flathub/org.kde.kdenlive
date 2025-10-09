@@ -786,8 +786,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/kdenlive-25.08.1.tar.xz",
-                    "sha256": "4ca96d280db39510ff42c007d9089fafcd141cc61bdddb1902ab2683a34157fb",
+                    "url": "https://download.kde.org/stable/release-service/25.08.2/src/kdenlive-25.08.2.tar.xz",
+                    "sha256": "464529bae5c5fbe7473dbd0308fa8c3588f68f27b5c99644ad18329da557b8d9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
