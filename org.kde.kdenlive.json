@@ -614,57 +614,6 @@
             ]
         },
         {
-            "name": "libmediainfo",
-            "subdir": "Project/GNU/Library",
-            "config-opts": [
-                "--enable-shared",
-                "--disable-static",
-                "--with-libcurl"
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/lib/*.la"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://mediaarea.net/download/source/libmediainfo/25.09/libmediainfo_25.09.tar.xz",
-                    "sha256": "8562e8ea03e2af8bde27f66d79a0f573859b8f13193ec115abf10f735b313a12",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 16249,
-                        "stable-only": true,
-                        "url-template": "https://mediaarea.net/download/source/libmediainfo/$version/libmediainfo_$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "mediainfo-cli",
-            "subdir": "Project/GNU/CLI",
-            "cleanup": [
-                "share/pixmaps",
-                "/share/apps",
-                "/share/kde4",
-                "/share/kservices5"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://mediaarea.net/download/source/mediainfo/25.09/mediainfo_25.09.tar.xz",
-                    "sha256": "8d4ba0d8bd7d4097fd0a388d4131de40c35ac5dbe52a4760b79d8f1d29ef2e63",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 8240,
-                        "stable-only": true,
-                        "url-template": "https://mediaarea.net/download/source/mediainfo/$version/mediainfo_$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "opencv",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -786,8 +735,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/kdenlive-25.08.1.tar.xz",
-                    "sha256": "4ca96d280db39510ff42c007d9089fafcd141cc61bdddb1902ab2683a34157fb",
+                    "url": "https://download.kde.org/stable/release-service/25.08.2/src/kdenlive-25.08.2.tar.xz",
+                    "sha256": "464529bae5c5fbe7473dbd0308fa8c3588f68f27b5c99644ad18329da557b8d9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
