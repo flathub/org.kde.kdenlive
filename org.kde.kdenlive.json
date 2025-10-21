@@ -296,7 +296,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/dyne/frei0r/archive/v2.5.0.tar.gz",
-                    "sha256": "6ce8e9c1fd721c183c9524bd12f397f04121dd5bb655ee7c7d38d0dfa50faa23",
+                    "sha256": "c511aeb51faeb0de2afe47327c30026d5b76ccc910a0b93d286029f07d29c656",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
