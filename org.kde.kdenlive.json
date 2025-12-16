@@ -202,8 +202,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/multimedia-team/gavl/-/archive/upstream/2.0.0_svngit.20240111.a5dd20c/gavl-upstream-2.0.0_svngit.20240111.a5dd20c.tar.gz",
-                    "sha256": "2d9c62f09d97ef74da5390bec86517549fe0b80c6549e1f2af9312d4c386a099"
+                    "url": "https://github.com/bplaum/gavl/archive/refs/tags/v2.0.0pre2.tar.gz",
+                    "sha256": "3d0e64c3979e9a72476e65eb17b5b2d78156760aef4f7b85a6e20095ab3ef960"
                 },
                 {
                     "type": "shell",
