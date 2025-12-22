@@ -668,6 +668,20 @@
             ]
         },
         {
+            "name": "kddockwidgets",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DKDDockWidgets_FRONTENDS=qtwidgets"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/kddockwidgets-2.4.0.tar.gz",
+                    "sha256": "51dbf24fe72e43dd7cb9a289d3cab47112010f1a2ed69b6fc8ac0dff31991ed2"
+                }
+            ]
+        },
+        {
             "name": "mlt",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -735,14 +749,18 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/kdenlive-25.08.3.tar.xz",
-                    "sha256": "81ba4e911147d5dbd33bcf464b2f0ae9f57b8824dbfc7fab21f3c11bb6433783",
+                    "url": "https://download.kde.org/stable/release-service/25.12.0/src/kdenlive-25.12.0.tar.xz",
+                    "sha256": "cafee9d8ec29e99f507720f28d60bfc0963a8733f67a0ffd6a684273b8242ca5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "kdenlive-fixes.patch"
                 }
             ]
         }
