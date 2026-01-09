@@ -396,7 +396,8 @@
             "subdir": "source",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DENABLE_CLI=OFF"
+                "-DENABLE_CLI=OFF",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
             "sources": [
                 {
@@ -409,6 +410,10 @@
                         "stable-only": true,
                         "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-CMake-build-error-with-latest-CMake-4.0-release.patch"
                 }
             ]
         },
