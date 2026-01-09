@@ -201,9 +201,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/bplaum/gavl/archive/refs/tags/v2.0.0pre2.tar.gz",
-                    "sha256": "3d0e64c3979e9a72476e65eb17b5b2d78156760aef4f7b85a6e20095ab3ef960"
+                    "type": "git",
+                    "url": "https://github.com/bplaum/gavl.git",
+                    "commit": "59f4f9c52da1eb68de4b00f172c95fbd0105ff4c"
                 },
                 {
                     "type": "shell",
