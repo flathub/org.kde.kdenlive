@@ -2,10 +2,10 @@
     "app-id": "org.kde.kdenlive",
     "default-branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm19"
+        "org.freedesktop.Sdk.Extension.llvm21"
     ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -29,7 +29,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "subdirectories": true,
@@ -37,7 +37,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.swh": {
             "directory": "extensions/Plugins/swh",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -45,7 +45,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.TAP": {
             "directory": "extensions/Plugins/TAP",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -174,7 +174,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
             "sources": [
                 {
@@ -200,9 +201,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://salsa.debian.org/multimedia-team/gavl/-/archive/upstream/2.0.0_svngit.20240111.a5dd20c/gavl-upstream-2.0.0_svngit.20240111.a5dd20c.tar.gz",
-                    "sha256": "2d9c62f09d97ef74da5390bec86517549fe0b80c6549e1f2af9312d4c386a099"
+                    "type": "git",
+                    "url": "https://github.com/bplaum/gavl.git",
+                    "commit": "59f4f9c52da1eb68de4b00f172c95fbd0105ff4c"
                 },
                 {
                     "type": "shell",
@@ -395,7 +396,8 @@
             "subdir": "source",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DENABLE_CLI=OFF"
+                "-DENABLE_CLI=OFF",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
             "sources": [
                 {
@@ -408,6 +410,10 @@
                         "stable-only": true,
                         "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-CMake-build-error-with-latest-CMake-4.0-release.patch"
                 }
             ]
         },
@@ -447,28 +453,6 @@
                         "project-id": 138182,
                         "stable-only": true,
                         "url-template": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "nv-codec-headers",
-            "cleanup": [
-                "*"
-            ],
-            "no-autogen": true,
-            "make-install-args": [
-                "PREFIX=/app"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n13.0.19.0",
-                    "commit": "e844e5b26f46bb77479f063029595293aa8f812d",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^n([\\d.]+)$"
                     }
                 }
             ]
@@ -559,8 +543,8 @@
                 "--enable-vdpau"
             ],
             "build-options": {
-                "prepend-path": "/usr/lib/sdk/llvm19/bin",
-                "prepend-ld-library-path": "/usr/lib/sdk/llvm19/lib",
+                "prepend-path": "/usr/lib/sdk/llvm21/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm21/lib",
                 "arch": {
                     "x86_64": {
                         "config-opts": [
