@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-25.4.5.tar.gz",
-                    "sha256": "c1c779e86f147495e50a83feeeee290526d0cd46329f05772fae97eb271a8ef6",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.1.tar.gz",
+                    "sha256": "67fd57d1c5709b58bb6406d60e3f2c4e0b47bd38c4a82c4c46619b78f6c23e72",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -575,8 +575,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
-                    "sha256": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz",
+                    "sha256": "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -628,8 +628,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.12.0.tar.gz",
-                    "sha256": "44c106d5bb47efec04e531fd93008b3fcd1d27138985c5baf4eafac0e1ec9e9d",
+                    "url": "https://github.com/opencv/opencv/archive/4.13.0.tar.gz",
+                    "sha256": "1d40ca017ea51c533cf9fd5cbde5b5fe7ae248291ddf2af99d4c17cf8e13017d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -639,8 +639,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv_contrib/archive/4.12.0.tar.gz",
-                    "sha256": "4197722b4c5ed42b476d42e29beb29a52b6b25c34ec7b4d589c3ae5145fee98e",
+                    "url": "https://github.com/opencv/opencv_contrib/archive/4.13.0.tar.gz",
+                    "sha256": "1e0077a4fd2960a7d2f4c9e49d6ba7bb891cac2d1be36d7e8e47aa97a9d1039b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
