@@ -697,7 +697,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "37658048a7ac07b7ae12fe601330163f6afe7638"
+                    "commit": "807c472745e3f41222ef6c7c44cd28f8fb641683"
                 }
             ]
         },
@@ -729,7 +729,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO.git/",
-                    "tag": "v0.17.0"
+                    "tag": "v0.18.1"
                 }
             ]
         },
@@ -749,18 +749,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.0/src/kdenlive-25.12.0.tar.xz",
-                    "sha256": "cafee9d8ec29e99f507720f28d60bfc0963a8733f67a0ffd6a684273b8242ca5",
+                    "url": "https://download.kde.org/stable/release-service/25.12.1/src/kdenlive-25.12.1.tar.xz",
+                    "sha256": "ab40da31896a1e0931e6acd59820082c0e10cc5efc599d40025fc0a0eb8039c0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdenlive-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "kdenlive-fixes.patch"
                 }
             ]
         }
