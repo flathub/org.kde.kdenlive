@@ -254,8 +254,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz",
-                    "sha256": "5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz",
+                    "sha256": "ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -295,8 +295,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.5.1.tar.gz",
-                    "sha256": "318ec4a3042c94a00a58fccdc1eb0d911f36a22beb3504d27aefcca4598f40b0",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.5.6.tar.gz",
+                    "sha256": "bfe715df3d33c1acb857732962402bb8b0eef73e9dde1b58485d3e3b0e42e182",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -489,8 +489,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.1.tar.gz",
-                    "sha256": "67fd57d1c5709b58bb6406d60e3f2c4e0b47bd38c4a82c4c46619b78f6c23e72",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.5.tar.gz",
+                    "sha256": "d2f297dc03d4e5585bee75ce3bafc5c8a35b30ac60ff7d6b49c1ed6f6b8152a3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -749,8 +749,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.2/src/kdenlive-25.12.2.tar.xz",
-                    "sha256": "5a1f2c159734a72ec8bf9330832c25175a7f037b1b1d1c7b7fab960250bf8154",
+                    "url": "https://download.kde.org/stable/release-service/25.12.3/src/kdenlive-25.12.3.tar.xz",
+                    "sha256": "12ef075c6df73637948cdce7725bb8380ccd164b158157d495e6821804ce4a7f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
