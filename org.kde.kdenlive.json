@@ -291,7 +291,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DWITHOUT_OPENCV=ON"
             ],
             "sources": [
                 {
