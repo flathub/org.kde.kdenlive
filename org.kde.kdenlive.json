@@ -566,7 +566,7 @@
                         "type": "anitya",
                         "project-id": 5405,
                         "stable-only": true,
-                        "url-template": "https://ffmpeg.org/releases/ffmpeg-8.1.tar.xz"
+                        "url-template": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
                     }
                 }
             ]
