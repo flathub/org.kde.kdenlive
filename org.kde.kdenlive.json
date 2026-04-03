@@ -7,6 +7,9 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.llvm21"
     ],
+    "only-arches": [
+        "x86_64"
+    ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
     "finish-args": [
@@ -743,9 +746,6 @@
         },
         {
             "name": "kdenlive",
-            "only-arches": [
-                "x86_64"
-            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
