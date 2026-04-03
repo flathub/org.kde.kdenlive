@@ -694,6 +694,9 @@
         },
         {
             "name": "mlt",
+            "only-arches": [
+                "x86_64"
+            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
@@ -729,6 +732,9 @@
         },
         {
             "name": "opentimelineio",
+            "only-arches": [
+                "x86_64"
+            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
