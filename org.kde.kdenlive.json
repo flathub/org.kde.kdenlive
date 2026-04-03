@@ -528,6 +528,9 @@
         },
         {
             "name": "ffmpeg",
+            "only-arches": [
+                "x86_64"
+            ],
             "config-opts": [
                 "--disable-doc",
                 "--disable-static",
@@ -740,7 +743,9 @@
         },
         {
             "name": "kdenlive",
-            "skip-arches": ["aarch64"],
+            "only-arches": [
+                "x86_64"
+            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
