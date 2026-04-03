@@ -386,7 +386,7 @@
                 {
                     "type": "git",
                     "url": "https://code.videolan.org/videolan/x264.git",
-                    "commit": "5db6aa6cab1b146e07b60cc1736a01f21da01154"
+                    "commit": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55"
                 }
             ]
         },
@@ -403,13 +403,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_3.5.orig.tar.gz",
-                    "sha256": "e70a3335cacacbba0b3a20ec6fecd6783932288ebc8163ad74bcc9606477cae8",
+                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz",
+                    "sha256": "85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7275,
                         "stable-only": true,
-                        "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.gz"
+                        "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.xz"
                     }
                 },
                 {
@@ -531,9 +531,6 @@
         },
         {
             "name": "ffmpeg",
-            "only-arches": [
-                "x86_64"
-            ],
             "config-opts": [
                 "--disable-doc",
                 "--disable-static",
@@ -694,9 +691,6 @@
         },
         {
             "name": "mlt",
-            "only-arches": [
-                "x86_64"
-            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
@@ -732,9 +726,6 @@
         },
         {
             "name": "opentimelineio",
-            "only-arches": [
-                "x86_64"
-            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
@@ -752,9 +743,6 @@
         },
         {
             "name": "kdenlive",
-            "only-arches": [
-                "x86_64"
-            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
