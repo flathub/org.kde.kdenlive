@@ -560,8 +560,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.tar.xz",
-                    "sha256": "b072aed6871998cce9b36e7774033105ca29e33632be5b6347f3206898e0756a",
+                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
+                    "sha256": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
