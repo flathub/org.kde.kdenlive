@@ -740,6 +740,7 @@
         },
         {
             "name": "kdenlive",
+            "skip-arches": ["aarch64"],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
