@@ -7,9 +7,6 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.llvm21"
     ],
-    "skip-arches": [
-        "aarch64"
-    ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
     "finish-args": [
@@ -423,6 +420,9 @@
         },
         {
             "name": "SVT-AV1",
+            "only-arches": [
+                "x86_64"
+            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
@@ -746,6 +746,9 @@
         },
         {
             "name": "kdenlive",
+            "only-arches": [
+                "x86_64"
+            ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
