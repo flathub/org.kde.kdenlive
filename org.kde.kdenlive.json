@@ -419,6 +419,26 @@
             ]
         },
         {
+            "name": "SVT-AV1",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_APPS=OFF",
+                "-DENABLE_AVX512=ON"
+            ],
+            "sources": [
+                {
+                "type": "git",
+                "url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+                "commit": "b33dcc56cc64fcb3b3569094af8ab1d0d81ab4c1",
+                "tag": "v3.1.2"
+                }
+            ]
+        },
+        {
             "name": "opencl-headers",
             "buildsystem": "simple",
             "build-commands": [
@@ -560,13 +580,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
                     "sha256": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
                         "stable-only": true,
-                        "url-template": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
+                        "url-template": "https://www.ffmpeg.org/releases/ffmpeg-$version.tar.xz"
                     }
                 }
             ]
