@@ -7,8 +7,8 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.llvm21"
     ],
-    "only-arches": [
-        "x86_64"
+    "skip-arches": [
+        "aarch64"
     ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
