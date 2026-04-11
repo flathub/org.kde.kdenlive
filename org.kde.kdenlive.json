@@ -2,10 +2,10 @@
     "app-id": "org.kde.kdenlive",
     "default-branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.llvm19"
+        "org.freedesktop.Sdk.Extension.llvm21"
     ],
     "command": "kdenlive",
     "rename-icon": "kdenlive",
@@ -29,7 +29,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "subdirectories": true,
@@ -37,7 +37,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.swh": {
             "directory": "extensions/Plugins/swh",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -45,7 +45,7 @@
         },
         "org.freedesktop.LinuxAudio.Plugins.TAP": {
             "directory": "extensions/Plugins/TAP",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa",
             "autodelete": false,
@@ -177,7 +177,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
             "sources": [
                 {
@@ -203,9 +204,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://salsa.debian.org/multimedia-team/gavl/-/archive/upstream/2.0.0_svngit.20240111.a5dd20c/gavl-upstream-2.0.0_svngit.20240111.a5dd20c.tar.gz",
-                    "sha256": "2d9c62f09d97ef74da5390bec86517549fe0b80c6549e1f2af9312d4c386a099"
+                    "type": "git",
+                    "url": "https://github.com/bplaum/gavl.git",
+                    "commit": "59f4f9c52da1eb68de4b00f172c95fbd0105ff4c"
                 },
                 {
                     "type": "shell",
@@ -257,8 +258,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz",
-                    "sha256": "5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz",
+                    "sha256": "ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -293,13 +294,14 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DWITHOUT_OPENCV=ON"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.5.1.tar.gz",
-                    "sha256": "318ec4a3042c94a00a58fccdc1eb0d911f36a22beb3504d27aefcca4598f40b0",
+                    "url": "https://github.com/dyne/frei0r/archive/v2.5.5.tar.gz",
+                    "sha256": "e2d01f58fa0f96a7452715f052fe452212044da4bad50bf7cc1d5d0db514a9a9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -387,7 +389,7 @@
                 {
                     "type": "git",
                     "url": "https://code.videolan.org/videolan/x264.git",
-                    "commit": "5db6aa6cab1b146e07b60cc1736a01f21da01154"
+                    "commit": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55"
                 }
             ]
         },
@@ -398,19 +400,47 @@
             "subdir": "source",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DENABLE_CLI=OFF"
+                "-DENABLE_CLI=OFF",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_3.5.orig.tar.gz",
-                    "sha256": "e70a3335cacacbba0b3a20ec6fecd6783932288ebc8163ad74bcc9606477cae8",
+                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz",
+                    "sha256": "85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7275,
                         "stable-only": true,
-                        "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.gz"
+                        "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-CMake-build-error-with-latest-CMake-4.0-release.patch"
+                }
+            ]
+        },
+        {
+            "name": "SVT-AV1",
+            "only-arches": [
+                "x86_64"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_APPS=OFF",
+                "-DENABLE_AVX512=ON"
+            ],
+            "sources": [
+                {
+                "type": "git",
+                "url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+                "commit": "b33dcc56cc64fcb3b3569094af8ab1d0d81ab4c1",
+                "tag": "v3.1.2"
                 }
             ]
         },
@@ -455,28 +485,6 @@
             ]
         },
         {
-            "name": "nv-codec-headers",
-            "cleanup": [
-                "*"
-            ],
-            "no-autogen": true,
-            "make-install-args": [
-                "PREFIX=/app"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                    "tag": "n13.0.19.0",
-                    "commit": "e844e5b26f46bb77479f063029595293aa8f812d",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^n([\\d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
             "name": "intel-onevpl-runtime",
             "only-arches": [
                 "x86_64"
@@ -492,8 +500,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.1.tar.gz",
-                    "sha256": "67fd57d1c5709b58bb6406d60e3f2c4e0b47bd38c4a82c4c46619b78f6c23e72",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.3.tar.gz",
+                    "sha256": "27354264bc3a60faa89478e555b382bf359989c7f3ac7b8fad2c4447474170d9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -562,8 +570,8 @@
                 "--enable-vdpau"
             ],
             "build-options": {
-                "prepend-path": "/usr/lib/sdk/llvm19/bin",
-                "prepend-ld-library-path": "/usr/lib/sdk/llvm19/lib",
+                "prepend-path": "/usr/lib/sdk/llvm21/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm21/lib",
                 "arch": {
                     "x86_64": {
                         "config-opts": [
@@ -578,8 +586,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
-                    "sha256": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
+                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.3.tar.xz",
+                    "sha256": "f0bf043299db9e3caacb435a712fc541fbb07df613c4b893e8b77e67baf3adbe",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -700,7 +708,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "807c472745e3f41222ef6c7c44cd28f8fb641683"
+                    "commit": "42487f227fbad0fc90ad99063ba8e99434786ca3"
                 }
             ]
         },
@@ -752,8 +760,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.2/src/kdenlive-25.12.2.tar.xz",
-                    "sha256": "5a1f2c159734a72ec8bf9330832c25175a7f037b1b1d1c7b7fab960250bf8154",
+                    "url": "https://download.kde.org/stable/release-service/25.12.3/src/kdenlive-25.12.3.tar.xz",
+                    "sha256": "12ef075c6df73637948cdce7725bb8380ccd164b158157d495e6821804ce4a7f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
