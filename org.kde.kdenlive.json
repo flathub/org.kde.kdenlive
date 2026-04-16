@@ -297,8 +297,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v2.5.5.tar.gz",
-                    "sha256": "e2d01f58fa0f96a7452715f052fe452212044da4bad50bf7cc1d5d0db514a9a9",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.1.2.tar.gz",
+                    "sha256": "2c848c6022a0f1b02be0568b99c7c353df82700235e85888f31ca97efded391c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -434,10 +434,10 @@
             ],
             "sources": [
                 {
-                "type": "git",
-                "url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
-                "commit": "b33dcc56cc64fcb3b3569094af8ab1d0d81ab4c1",
-                "tag": "v3.1.2"
+                    "type": "git",
+                    "url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+                    "commit": "b33dcc56cc64fcb3b3569094af8ab1d0d81ab4c1",
+                    "tag": "v3.1.2"
                 }
             ]
         },
@@ -497,8 +497,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.3.tar.gz",
-                    "sha256": "27354264bc3a60faa89478e555b382bf359989c7f3ac7b8fad2c4447474170d9",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.6.tar.gz",
+                    "sha256": "41456ec8bff819b29a69601aeaffec72fd408ea6c79ab0e4184cc11b6b04f1ba",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -583,8 +583,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.3.tar.xz",
-                    "sha256": "f0bf043299db9e3caacb435a712fc541fbb07df613c4b893e8b77e67baf3adbe",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.1.tar.xz",
+                    "sha256": "b072aed6871998cce9b36e7774033105ca29e33632be5b6347f3206898e0756a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -757,8 +757,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.3/src/kdenlive-25.12.3.tar.xz",
-                    "sha256": "12ef075c6df73637948cdce7725bb8380ccd164b158157d495e6821804ce4a7f",
+                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/kdenlive-26.04.0.tar.xz",
+                    "sha256": "be0ff5d679c5f6c72646c13fecf882b01b7c389899063c9d6417dda2f5623a62",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
