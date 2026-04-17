@@ -58,9 +58,11 @@
         "/lib/cmake",
         "/mkspecs",
         "/share/aclocal",
+        "/share/doc",
         "/share/gtk-doc",
         "/share/man",
         "/share/pkgconfig",
+        "/share/qlogging-categories6",
         "*.a",
         "*.la",
         "*.cmake"
