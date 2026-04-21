@@ -120,8 +120,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fftw.org/fftw-3.3.10.tar.gz",
-                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+                    "url": "https://www.fftw.org/fftw-3.3.11.tar.gz",
+                    "sha256": "5630c24cdeb33b131612f7eb4b1a9934234754f9f388ff8617458d0be6f239a1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 803,
@@ -299,8 +299,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v3.1.2.tar.gz",
-                    "sha256": "2c848c6022a0f1b02be0568b99c7c353df82700235e85888f31ca97efded391c",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.1.3.tar.gz",
+                    "sha256": "dcf290cdfbe583d007c300aa7733c9350ed957a0e30ca897a5c098875b8aa5dc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -585,8 +585,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.3.tar.xz",
-                    "sha256": "f0bf043299db9e3caacb435a712fc541fbb07df613c4b893e8b77e67baf3adbe",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.1.tar.xz",
+                    "sha256": "b072aed6871998cce9b36e7774033105ca29e33632be5b6347f3206898e0756a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
