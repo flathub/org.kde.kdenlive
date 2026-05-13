@@ -120,8 +120,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fftw.org/fftw-3.3.10.tar.gz",
-                    "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+                    "url": "https://www.fftw.org/fftw-3.3.11.tar.gz",
+                    "sha256": "5630c24cdeb33b131612f7eb4b1a9934234754f9f388ff8617458d0be6f239a1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 803,
@@ -299,8 +299,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v3.1.2.tar.gz",
-                    "sha256": "2c848c6022a0f1b02be0568b99c7c353df82700235e85888f31ca97efded391c",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.1.3.tar.gz",
+                    "sha256": "dcf290cdfbe583d007c300aa7733c9350ed957a0e30ca897a5c098875b8aa5dc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -472,8 +472,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.5.0.tar.gz",
-                    "sha256": "bf80ee4a77a731c5a2351b4dd74f524a18806a70099ba66a8058d91aac1150b5",
+                    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.5.2.tar.gz",
+                    "sha256": "8a70b6dc85261e6e6e57769bd81ac1e09c0a4c96bbd5e358ffbc2dee51e8e50a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
@@ -499,8 +499,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.1.6.tar.gz",
-                    "sha256": "41456ec8bff819b29a69601aeaffec72fd408ea6c79ab0e4184cc11b6b04f1ba",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.2.0.tar.gz",
+                    "sha256": "597e72a77e9eba8d6efc79a083a775ac0cc47801b2bb7572749ec84acebb1917",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -585,8 +585,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-7.1.3.tar.xz",
-                    "sha256": "f0bf043299db9e3caacb435a712fc541fbb07df613c4b893e8b77e67baf3adbe",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.1.1.tar.xz",
+                    "sha256": "b6863adde98898f42602017462871b5f6333e65aec803fdd7a6308639c52edf3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -701,7 +701,8 @@
                 "-DMOD_MOVIT=OFF",
                 "-DMOD_OPENCV=ON",
                 "-DMOD_QT6=ON",
-                "-DMOD_QT=OFF"
+                "-DMOD_QT=OFF",
+                "-DCMAKE_PREFIX_PATH=/app"
             ],
             "sources": [
                 {
