@@ -639,8 +639,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.13.0.tar.gz",
-                    "sha256": "1d40ca017ea51c533cf9fd5cbde5b5fe7ae248291ddf2af99d4c17cf8e13017d",
+                    "url": "https://github.com/opencv/opencv/archive/5.0.0.tar.gz",
+                    "sha256": "b0528f5a1d379d59d4701cb28c36e22214cc51cf64594e5b56f2d3e6c0233095",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -650,8 +650,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv_contrib/archive/4.13.0.tar.gz",
-                    "sha256": "1e0077a4fd2960a7d2f4c9e49d6ba7bb891cac2d1be36d7e8e47aa97a9d1039b",
+                    "url": "https://github.com/opencv/opencv_contrib/archive/5.0.0.tar.gz",
+                    "sha256": "c58f6344170c39abf187c56f3843b59cab1fd3e89cf19ba2ce25dc061659b27f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
