@@ -710,7 +710,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "57c03260ba4471267827fb9800f5472df90df0bd"
+                    "commit": "926f69fe56bc918b65e5ff2853ecc732fdc448e3"
                 }
             ]
         },
