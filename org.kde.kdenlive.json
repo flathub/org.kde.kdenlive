@@ -594,6 +594,10 @@
                         "stable-only": true,
                         "url-template": "https://www.ffmpeg.org/releases/ffmpeg-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "ffmpeg-8.1.1-metadata.diff"
                 }
             ]
         },
