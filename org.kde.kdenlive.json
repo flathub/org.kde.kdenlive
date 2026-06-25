@@ -708,13 +708,14 @@
                 "-DMOD_QT6=ON",
                 "-DMOD_QT=OFF",
                 "-DUSE_VST2=OFF",
+                "-DMOD_RNNOISE=OFF",
                 "-DCMAKE_PREFIX_PATH=/app"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/mltframework/mlt.git",
-                    "commit": "3c5daaa97472d38a1bf483585e28117ba41ecb82"
+                    "commit": "bef9d89c0c279e558d9625dac3399c2aa3d961bc"
                 }
             ]
         },
