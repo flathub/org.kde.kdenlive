@@ -708,6 +708,7 @@
                 "-DMOD_QT6=ON",
                 "-DMOD_QT=OFF",
                 "-DUSE_VST2=OFF",
+                "-DMOD_RNNOISE=OFF",
                 "-DCMAKE_PREFIX_PATH=/app"
             ],
             "sources": [
