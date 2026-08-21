@@ -182,8 +182,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/georgmartius/vid.stab/archive/v1.1.1.tar.gz",
-                    "sha256": "9001b6df73933555e56deac19a0f225aae152abbc0e97dc70034814a1943f3d4",
+                    "url": "https://github.com/georgmartius/vid.stab/archive/v1.1.2.tar.gz",
+                    "sha256": "96db34d48a9e3aa13736a48744b56dfb76731ac9bb5193c716de8534c9fd709d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 15959,
@@ -299,8 +299,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v3.2.3.tar.gz",
-                    "sha256": "898f80e5fdae6108a2d9b2317649af576a4b5e636c73429ee11b64397a596e12",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.4.3.tar.gz",
+                    "sha256": "656ad48303cf2d7c81061684622abc9fe4c309f5dc1f32211958bfd19cb28ff7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -499,8 +499,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.2.4.tar.gz",
-                    "sha256": "c103d936d708a3910ef8572e9403aabf423197cfce6c8a6fcf870072b6564ada",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.2.tar.gz",
+                    "sha256": "db48330107c47503089a5b7ac820f2c8e2952c05602557567908a3c1c0f06d4b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -586,8 +586,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.1.1.tar.xz",
-                    "sha256": "b6863adde98898f42602017462871b5f6333e65aec803fdd7a6308639c52edf3",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz",
+                    "sha256": "cf38e0e28c7e5605942c4a77755349b0145804a397af37eb1fb4c77cb237f635",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
@@ -767,8 +767,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/kdenlive-26.04.3.tar.xz",
-                    "sha256": "c8dbc88f6c0fb739e38fa3840f3212a0e36aa9dc273911bc19ebddb1f83f2e4e",
+                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/kdenlive-26.08.0.tar.xz",
+                    "sha256": "754e1b3e288f8529b2739cfe8ce702d3880f3f3239b0d73f2aef2c88aca49b12",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
