@@ -586,18 +586,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-8.1.1.tar.xz",
-                    "sha256": "b6863adde98898f42602017462871b5f6333e65aec803fdd7a6308639c52edf3",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz",
+                    "sha256": "cf38e0e28c7e5605942c4a77755349b0145804a397af37eb1fb4c77cb237f635",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
                         "stable-only": true,
                         "url-template": "https://www.ffmpeg.org/releases/ffmpeg-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "ffmpeg-8.1.1-metadata.diff"
                 }
             ]
         },
