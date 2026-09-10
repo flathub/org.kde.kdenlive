@@ -257,8 +257,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz",
-                    "sha256": "ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz",
+                    "sha256": "700b76b97695b2fab4ef8c79619c68ae57d09e0c130724791cafbd39e0eb4aef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -499,8 +499,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.2.4.tar.gz",
-                    "sha256": "c103d936d708a3910ef8572e9403aabf423197cfce6c8a6fcf870072b6564ada",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.3.tar.gz",
+                    "sha256": "70782df455555dfd216507d727f67fcca191959b9c911e27ae23ecc8852664ce",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -763,8 +763,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/kdenlive-26.08.0.tar.xz",
-                    "sha256": "754e1b3e288f8529b2739cfe8ce702d3880f3f3239b0d73f2aef2c88aca49b12",
+                    "url": "https://download.kde.org/stable/release-service/26.08.1/src/kdenlive-26.08.1.tar.xz",
+                    "sha256": "8a0e2cc6451de6901fec778a8b6d00165399879233a264ca5bb1b1b283266513",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
