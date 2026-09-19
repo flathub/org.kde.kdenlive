@@ -499,8 +499,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.3.tar.gz",
-                    "sha256": "70782df455555dfd216507d727f67fcca191959b9c911e27ae23ecc8852664ce",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.5.tar.gz",
+                    "sha256": "92867a0f8c09d81419102a61713e9f98dfd2af3fc9c91c6f4fb6d0c784c8e442",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -586,8 +586,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz",
-                    "sha256": "cf38e0e28c7e5605942c4a77755349b0145804a397af37eb1fb4c77cb237f635",
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz",
+                    "sha256": "8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5405,
