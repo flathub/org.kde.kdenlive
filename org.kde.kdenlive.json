@@ -411,7 +411,7 @@
                         "type": "anitya",
                         "project-id": 7275,
                         "stable-only": true,
-                        "url-template": "https://deb.debian.org/debian/pool/main/x/x265/x265_$version.orig.tar.xz"
+                        "url-template": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_$version.tar.gz"
                     }
                 },
                 {
