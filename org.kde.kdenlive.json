@@ -406,8 +406,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz",
-                    "sha256": "85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270",
+                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz",
+                    "sha256": "40b1ea0453e0309f0eba934e0ddf533f8f6295966679e8894e8f1c1c8d5e1210",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7275,
@@ -500,8 +500,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.5.tar.gz",
-                    "sha256": "92867a0f8c09d81419102a61713e9f98dfd2af3fc9c91c6f4fb6d0c784c8e442",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.4.0.tar.gz",
+                    "sha256": "6a1c5c7b3b1666273e2fd0060da13bb6d124f7473685a74c00f19044e813b14c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
