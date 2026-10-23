@@ -461,7 +461,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/refs/tags/v1.5.3.tar.gz",
-                    "sha256": "2b17561ce131d4313c152e2ab197c41a81c7bc3f53577d8deb321164db6a4a2f",
+                    "sha256": "eb7d7d14c239117478f229cf174dc359fa2ba1e0817a7cb16277cc5251709f0f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 138182,
