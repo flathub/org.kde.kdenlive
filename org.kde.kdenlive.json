@@ -393,8 +393,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz",
-                    "sha256": "85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270",
+                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz",
+                    "sha256": "40b1ea0453e0309f0eba934e0ddf533f8f6295966679e8894e8f1c1c8d5e1210",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7275,
