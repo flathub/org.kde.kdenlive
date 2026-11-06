@@ -220,8 +220,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz",
-                    "sha256": "9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r63.tar.gz",
+                    "sha256": "5d7967de62c5bfdc4f9f5ab06ce44c9e498bae021c7dac5792c0696e76aa9963",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -287,8 +287,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v3.6.0.tar.gz",
-                    "sha256": "425ddc9358151c52775a00b14e9dbd4044fc1f3aa931beef2aa3633707ba1eb8",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.7.0.tar.gz",
+                    "sha256": "352e1e583865a0bb0a7404302a14cdfb30e26c2cf1e8724605bd29067d089159",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -355,8 +355,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/werman/noise-suppression-for-voice/archive/refs/tags/v1.21.tar.gz",
-                    "sha256": "7c5bb24fa6acbc98a4847b79f5a17a5eb80f81ae30d7e39b039e362d3692d6a3",
+                    "url": "https://github.com/werman/noise-suppression-for-voice/archive/refs/tags/v1.22.tar.gz",
+                    "sha256": "6d4370fc7652cb25a6cd6bacbc36b4c45d14adde97334ad58ba89ccdd561cbd4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 326607,
@@ -393,8 +393,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz",
-                    "sha256": "85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270",
+                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz",
+                    "sha256": "40b1ea0453e0309f0eba934e0ddf533f8f6295966679e8894e8f1c1c8d5e1210",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7275,
@@ -487,8 +487,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.3.5.tar.gz",
-                    "sha256": "92867a0f8c09d81419102a61713e9f98dfd2af3fc9c91c6f4fb6d0c784c8e442",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.4.1.tar.gz",
+                    "sha256": "7550feb11581709c884cfe8e8b0968b8b387ece23388189108005aeefde09ecd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
@@ -627,8 +627,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/5.0.0.tar.gz",
-                    "sha256": "b0528f5a1d379d59d4701cb28c36e22214cc51cf64594e5b56f2d3e6c0233095",
+                    "url": "https://github.com/opencv/opencv/archive/5.1.0.tar.gz",
+                    "sha256": "638c1dae7e37e45afea21aa217dc667ad7cf57acc66cdf652c074f1e0e5ad6d2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -638,8 +638,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv_contrib/archive/5.0.0.tar.gz",
-                    "sha256": "c58f6344170c39abf187c56f3843b59cab1fd3e89cf19ba2ce25dc061659b27f",
+                    "url": "https://github.com/opencv/opencv_contrib/archive/5.1.0.tar.gz",
+                    "sha256": "6aee68285f0e7b7bf77d3656bc6568820c6f15704860fc0922def357d40ebeff",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6615,
@@ -770,8 +770,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.08.2/src/kdenlive-26.08.2.tar.xz",
-                    "sha256": "1019cda23429a526e3a2dbdd2ec93406fef0c89ca243af16dfa16ac9ae8a6bf8",
+                    "url": "https://download.kde.org/stable/release-service/26.08.3/src/kdenlive-26.08.3.tar.xz",
+                    "sha256": "4bfa3dc856ecabd1f1b3283741591350e33fd0141f878bcf6331450ee4adcaee",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
