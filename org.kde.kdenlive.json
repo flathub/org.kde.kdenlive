@@ -401,10 +401,6 @@
                         "stable-only": true,
                         "url-template": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_$version.tar.gz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-Fix-CMake-build-error-with-latest-CMake-4.0-release.patch"
                 }
             ]
         },
