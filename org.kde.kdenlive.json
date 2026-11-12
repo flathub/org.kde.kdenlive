@@ -287,8 +287,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dyne/frei0r/archive/v3.7.0.tar.gz",
-                    "sha256": "352e1e583865a0bb0a7404302a14cdfb30e26c2cf1e8724605bd29067d089159",
+                    "url": "https://github.com/dyne/frei0r/archive/v3.7.1.tar.gz",
+                    "sha256": "5543917de48d2e8cc2fa02794240a3613447d00458bc2cf606aef20f4b8da515",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10670,
@@ -483,8 +483,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.4.1.tar.gz",
-                    "sha256": "7550feb11581709c884cfe8e8b0968b8b387ece23388189108005aeefde09ecd",
+                    "url": "https://github.com/oneapi-src/oneVPL-intel-gpu/archive/intel-onevpl-26.4.2.tar.gz",
+                    "sha256": "4d114920b71592bd1978d8af32e7acb97f756b93f7466cfae7bb96ceb627ee2b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368736,
